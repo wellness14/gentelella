@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>마더앤베이비 관리자 - 기준중위소득관리</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Simple Calendar -->
+    <link href="../vendors/simple-calendar-master/dist/simple-calendar.css" rel="stylesheet">
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.css" rel="stylesheet">
+    <link href="../build/css/mystyle.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title">
+                            <img src="../build/images/partner6.png" alt="마더앤베이비로고">
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br />
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a href="policy_in_out.html">이용/탈퇴안내</a>
+                                </li>
+                                <li>
+                                    <a>약관관리
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_use_agree.html">서비스 이용약관</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_private_agree.html">개인정보취급방침</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_email_agree.html">이메일 무단수집거부</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>SEO태그
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_seo_common.html">공통관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>지사/지역/산후도우미
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_jisa.html">지사관리</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_helper.html">산후도우미 관리</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_location_setting.html">지역설정</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>선물/대여품/단말기
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_gift.html">선물/대여품/단말기 관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>서비스 프로그램
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_service.html">서비스 상품/옵션</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>바우처
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_voucher_income.html">기준중위소득관리</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_voucher_support.html">정부지원금 정책</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_voucher_location.html">지역별 정책 관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>관리자
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="#!">본사관리자</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="#!">지사계정생성</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+            
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small hide">
+                        <a data-toggle="tooltip" data-placement="top" title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+            
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu first">
+                    <nav>
+                        <div class="nav toggle">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="이름, ID, 휴대번호">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-primary btn-sm">검색</button>
+                                </span>
+                            </div>
+                        </div>
+            
+            
+            
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- 로그인 유저 확인 및 로그아웃 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    관리자 접속중
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="fa fa-sign-out pull-right"></i> 로그아웃</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 자주 쓰는 메뉴 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    자주쓰는메뉴
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fa fa-cog pull-right"></i> 메뉴설정</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">자주쓰는 메뉴를 설정해주세요.</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 주문현황 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    주문현황
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="#!">
+                                            입금대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            입금완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            계약취소신청
+                                            <span class="badge bg-red">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            환불완료
+                                            <span class="badge bg-blue">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 중
+                                            <span class="badge bg-blue-sky">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 연장
+                                            <span class="badge bg-purple">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav_menu second">
+                    <a href="index.html" class="btn btn-primary btn-sm">Home</a>
+                    <a href="order_dash.html" class="btn btn-primary btn-sm">주문</a>
+                    <a href="policy_in_out.html" class="btn btn-primary btn-sm">기본정책</a>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col policy_voucher_income" role="main">
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2>
+                                        기준중위소득관리
+                                    </h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <h4>
+                                                <i class="fa fa-slack"></i>
+                                                <strong>50% 판정기준</strong>
+                                                <small class="pull-right">최종수정일 2018.03.09</small>
+                                                <div class="clearfix"></div>
+                                            </h4>
+                                            <blockquote>
+                                                <p>* 건강보험료 본인 부담금에 의한 기준 중위소득 50% 판정 기준을 입력하세요.</p>
+                                                <p>* 입력 금액 이하일 경우 기준 중위소득(소득구간) 50% 이하로 판단</p>
+                                            </blockquote>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>가구원수</th>
+                                                        <th>건강보험료 본인부담금 직장가입자(원)</th>
+                                                        <th>건강보험료 본인부담금 지역가입자(원)</th>
+                                                        <th>건강보험료 본인부담금 직장+지역(원)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <a href="#!" class="btn btn-primary btn-sm">저장</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <h4>
+                                                <i class="fa fa-slack"></i>
+                                                <strong>60% 판정기준</strong>
+                                                <small class="pull-right">최종수정일 2018.03.09</small>
+                                                <div class="clearfix"></div>
+                                            </h4>
+                                            <blockquote>
+                                                <p>* 건강보험료 본인 부담금에 의한 기준 중위소득 60% 판정 기준을 입력하세요.</p>
+                                                <p>* 입력 금액 이하일 경우 기준 중위소득(소득구간) 50% 초과 - 60% 이하로 판단</p>
+                                            </blockquote>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>가구원수</th>
+                                                        <th>건강보험료 본인부담금 직장가입자(원)</th>
+                                                        <th>건강보험료 본인부담금 지역가입자(원)</th>
+                                                        <th>건강보험료 본인부담금 직장+지역(원)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <a href="#!" class="btn btn-primary btn-sm">저장</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <h4>
+                                                <i class="fa fa-slack"></i>
+                                                <strong>80% 판정기준</strong>
+                                                <small class="pull-right">최종수정일 2018.03.09</small>
+                                                <div class="clearfix"></div>
+                                            </h4>
+                                            <blockquote>
+                                                <p>* 건강보험료 본인 부담금에 의한 기준 중위소득 80% 판정 기준을 입력하세요.</p>
+                                                <p>* 입력 금액 이하일 경우 기준 중위소득(소득구간) 60% 초과 - 80% 이하로 판단</p>
+                                                <p>* 입력 금액 이상인 경우 80%초과 예외지원으로 판단</p>
+                                            </blockquote>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>가구원수</th>
+                                                        <th>건강보험료 본인부담금 직장가입자(원)</th>
+                                                        <th>건강보험료 본인부담금 지역가입자(원)</th>
+                                                        <th>건강보험료 본인부담금 직장+지역(원)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <a href="#!" class="btn btn-primary btn-sm">저장</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+                Wellness Intelligence ADMIN PAGE Create by - Spacemonkey
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+    </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <!-- <script src="../vendors/Chart.js/dist/Chart.min.js"></script> -->
+    <!-- jQuery Sparklines -->
+    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- Flot -->
+    <!-- <script src="../vendors/Flot/jquery.flot.js"></script> -->
+    <!-- <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script> -->
+    <!-- Flot plugins -->
+    <!-- <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script> -->
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- Simple Calendar -->
+    <!-- <script src="../vendors/simple-calendar-master/dist/jquery.simple-calendar.js"></script> -->
+    <script src="../vendors/jquery-ui-1.12.1.custom/datepicker-ko-KR.js"></script>
+    <script src="../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+</body>
+
+</html>

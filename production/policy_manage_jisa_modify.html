@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>마더앤베이비 관리자 - 지사정보수정</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Simple Calendar -->
+    <link href="../vendors/simple-calendar-master/dist/simple-calendar.css" rel="stylesheet">
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.css" rel="stylesheet">
+    <link href="../build/css/mystyle.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title">
+                            <img src="../build/images/partner6.png" alt="마더앤베이비로고">
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br />
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a href="policy_in_out.html">이용/탈퇴안내</a>
+                                </li>
+                                <li>
+                                    <a>약관관리
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_use_agree.html">서비스 이용약관</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_private_agree.html">개인정보취급방침</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_email_agree.html">이메일 무단수집거부</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>SEO태그
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_seo_common.html">공통관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>지사/지역/산후도우미
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_jisa.html">지사관리</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_helper.html">산후도우미 관리</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_location_setting.html">지역설정</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>선물/대여품/단말기
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_gift.html">선물/대여품/단말기 관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>서비스 프로그램
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_service.html">서비스 상품/옵션</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>바우처
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_voucher_income.html">기준중위소득관리</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_voucher_support.html">정부지원금 정책</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_voucher_location.html">지역별 정책 관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>관리자
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="#!">본사관리자</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="#!">지사계정생성</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+            
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small hide">
+                        <a data-toggle="tooltip" data-placement="top" title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+            
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu first">
+                    <nav>
+                        <div class="nav toggle">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="이름, ID, 휴대번호">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-primary btn-sm">검색</button>
+                                </span>
+                            </div>
+                        </div>
+            
+            
+            
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- 로그인 유저 확인 및 로그아웃 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    관리자 접속중
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="fa fa-sign-out pull-right"></i> 로그아웃</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 자주 쓰는 메뉴 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    자주쓰는메뉴
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fa fa-cog pull-right"></i> 메뉴설정</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">자주쓰는 메뉴를 설정해주세요.</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 주문현황 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    주문현황
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="#!">
+                                            입금대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            입금완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            계약취소신청
+                                            <span class="badge bg-red">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            환불완료
+                                            <span class="badge bg-blue">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 중
+                                            <span class="badge bg-blue-sky">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 연장
+                                            <span class="badge bg-purple">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav_menu second">
+                    <a href="index.html" class="btn btn-primary btn-sm">Home</a>
+                    <a href="order_dash.html" class="btn btn-primary btn-sm">주문</a>
+                    <a href="policy_in_out.html" class="btn btn-primary btn-sm">기본정책</a>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col policy_manage_jisa_modify" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>지사정보수정</h3>
+                        </div>
+                        <div class="title_right">
+                            <a href="#!" class="btn btn-primary btn-sm pull-right jisa-save" data-toggle="modal" data-target=".jisa-save-modal">저장</a>
+                            <a href="#!" class="btn btn-default btn-sm pull-right jisa-cancel">취소</a>
+                            <a href="#!" class="btn btn-danger btn-sm pull-right jisa-delete" data-toggle="modal" data-target=".jisa-delete-modal">삭제</a>
+                            <!-- 지사삭제 팝업 -->
+                            <div class="modal fade bs-example-modal-sm jisa-delete-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                            
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">지사정보삭제</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>지사정보를 삭제할까요?</p>
+                                            <p>삭제된 정보는 복구되지 않습니다.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">취소</button>
+                                            <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">삭제</button>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 지사삭제 팝업 -->
+                            <!-- 지사수정완료 팝업 -->
+                            <div class="modal fade bs-example-modal-sm jisa-save-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                            
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">지사정보수정</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>수정 완료하였습니다.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">확인</button>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 지사수정완료 팝업 -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>가맹지역 선택/변경</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <!-- 지역선택 -->
+                                    <div class="row sido">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                            <h4>
+                                                <i class="fa fa-check"></i>
+                                                시/도</h4>
+                                            <select class="select2_single form-control">
+                                                <option value="">서울(15)</option>
+                                                <option value="">경기도(5)</option>
+                                                <option value="">인천</option>
+                                                <option value="">충청북도</option>
+                                                <option value="">충청남도</option>
+                                                <option value="">대전</option>
+                                                <option value="">광주</option>
+                                                <option value="">전라북도</option>
+                                                <option value="">전라남도</option>
+                                                <option value="">강원도</option>
+                                                <option value="">경상북도</option>
+                                                <option value="">경상남도</option>
+                                                <option value="">대구</option>
+                                                <option value="">울산</option>
+                                                <option value="">부산</option>
+                                                <option value="">제주도</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-12">
+                                            <h4>
+                                                <i class="fa fa-check"></i>
+                                                시/군/구</h4>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">성동
+                                                        <span class="badge bg-default">0</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">광진
+                                                        <span class="badge bg-blue">본사</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">중랑
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">도봉
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">노원
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">강북
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">성북
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">종로
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">서대문
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">은평
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">마포
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">강서
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">양천
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">구로
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">영등포
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">금천
+                                                        <span class="badge bg-purple">홍길동</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">관악
+                                                        <span class="badge bg-blue">본사</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">동작
+                                                        <span class="badge bg-blue">본사</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">서초
+                                                        <span class="badge bg-blue">본사</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">강남
+                                                        <span class="badge bg-blue">본사</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">송파
+                                                        <span class="badge bg-blue">본사</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">강동
+                                                        <span class="badge bg-blue">본사</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">동대문
+                                                        <span class="badge bg-blue">본사</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">중구
+                                                        <span class="badge bg-default">0</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="flat" id="">
+                                                    <label for="">용산
+                                                        <span class="badge bg-default">0</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <blockquote>
+                                        <p>* 동일 지역에 중복 선택 안됨(1지역 1지사장 원칙입니다.)</p>
+                                        <p>* 이미 배정된 지역에 배치하고 싶은 경우
+                                            <ul>
+                                                <li>기존에 배정된 지사의 배정 정보 해제</li>
+                                                <li>배정 정보 해제는 해당 지사 정보의 수정페이지에서 가능합니다.</li>
+                                            </ul>
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>계약자 &middot; 사업자명 &middot; 아이디 확인 / 비밀번호 변경</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content pw-change">
+                                    <div class="row">
+                                        <dl>
+                                            <dt>계약자</dt>
+                                            <dd>조아라</dd>
+                                            <dt>사업자명</dt>
+                                            <dd>조아라</dd>
+                                            <dt>아이디</dt>
+                                            <dd>loadjisa99</dd>
+                                            <dt>비밀번호변경</dt>
+                                            <dd><input type="password" class="form-control"></dd>
+                                        </dl>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- 지사정보등록 -->
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>지사정보</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content jisa-info">
+                                    <div class="row">
+                                        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">운영자 이름
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">사업자 번호
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="last-name" name="last-name" required="required" class="form-control input-inline"> -
+                                                    <input type="text" id="last-name" name="last-name" required="required"
+                                                        class="form-control input-inline"> -
+                                                    <input type="text" id="last-name" name="last-name" required="required"
+                                                        class="form-control input-inline">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">직업소개등록번호
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    제
+                                                    <input type="text" id="last-name" name="last-name" required="required"
+                                                        class="form-control input-inline">
+                                                    <input type="text" id="last-name" name="last-name" required="required"
+                                                        class="form-control input-inline">
+                                                    <input type="text" id="last-name" name="last-name" required="required" class="form-control input-inline">
+                                                    <input type="text" id="last-name" name="last-name" required="required" class="form-control input-inline">
+                                                    <input type="text" id="last-name" name="last-name" required="required" class="form-control input-inline"> 호
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">사무실 주소
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="우편번호">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-primary btn-addr-search">검색</button>
+                                                        </span>
+                                                    </div>
+                                                    <input type="text" class="form-control addr1" placeholder="주소">
+                                                    <input type="text" class="form-control addr2" placeholder="상세주소">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">일반서비스 계좌번호
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <select name="" id="" class="form-control input-inline">
+                                                        <option value="">기업은행</option>
+                                                        <option value="">카카오뱅크</option>
+                                                        <option value="">국민은행</option>
+                                                    </select>
+                                                    <input type="number" class="form-control input-inline bank-account-num">
+                                                    <input type="text" class="form-control input-inline account-holder" placeholder="예금주">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">바우처서비스 계좌번호
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <select name="" id="" class="form-control input-inline">
+                                                        <option value="">기업은행</option>
+                                                        <option value="">카카오뱅크</option>
+                                                        <option value="">국민은행</option>
+                                                    </select>
+                                                    <input type="number" class="form-control input-inline bank-account-num">
+                                                    <input type="text" class="form-control input-inline account-holder" placeholder="예금주">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">이메일
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="email" class="form-control" placeholder="address@naver.com">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">휴대전화
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" class="form-control" placeholder="010-6515-6545">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">사무실(일반)전화
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" class="form-control" placeholder="02-5541-5512">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">팩스
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" class="form-control" placeholder="02-5541-5512">
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">계약체결일
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">계약시작
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">계약만료일
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group contract-extend">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                                    <blockquote>
+                                                        <p>* 기본 계약정보는 변경할 수 없습니다.</p>
+                                                        <p>* 계약자가 변경되는 경우에는 신규 등록하세요.</p>
+                                                    </blockquote>
+                                                    <dl>
+                                                        <dt>연장체결일</dt>
+                                                        <dd>
+                                                            <div class="input-group">
+                                                                <input type="date" class="form-control ">
+                                                            </div>
+                                                        </dd>
+                                                        <dt>연장시작일</dt>
+                                                        <dd>
+                                                            <div class="input-group">
+                                                                <input type="date" class="form-control ">
+                                                            </div>
+                                                        </dd>
+                                                        <dt>연장만료일</dt>
+                                                        <dd>
+                                                            <div class="input-group">
+                                                                <input type="date" class="form-control ">
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                    <a href="#!" class="btn btn-primary btn-sm">연장정보 반영</a>
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>번호</th>
+                                                                <th>연장체결일</th>
+                                                                <th>연장시작일</th>
+                                                                <th>연장만료일</th>
+                                                                <th>삭제</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">3</th>
+                                                                <td>2018.05.20</td>
+                                                                <td>2018.06.20</td>
+                                                                <td>2019.05.20</td>
+                                                                <td><a href="#!" class="btn btn-xs btn-danger btn-mb-0">삭제</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">2</th>
+                                                                <td>2018.05.20</td>
+                                                                <td>2018.06.20</td>
+                                                                <td>2019.05.20</td>
+                                                                <td>
+                                                                    <a href="#!" class="btn btn-xs btn-danger btn-mb-0">삭제</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>2018.05.20</td>
+                                                                <td>2018.06.20</td>
+                                                                <td>2019.05.20</td>
+                                                                <td>
+                                                                    <a href="#!" class="btn btn-xs btn-danger btn-mb-0">삭제</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <nav aria-label="Page navigation example">
+                                                        <ul class="pagination pull-right">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" href="#" tabindex="-1">이전</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">1</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">2</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">3</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">다음</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">약력(경력사항)
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <textarea name="" id="" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">특양사항
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <textarea name="" id="" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="btn-group-bottom text-center">
+                                                <a href="#!" class="btn btn-danger btn-sm jisa-delete" data-toggle="modal" data-target=".jisa-delete-modal">삭제</a>
+                                                <a href="#!" class="btn btn-default btn-sm jisa-cancel">취소</a>
+                                                <a href="#!" class="btn btn-primary btn-sm jisa-save" data-toggle="modal" data-target=".jisa-save-modal">저장</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+                Wellness Intelligence ADMIN PAGE Create by - Spacemonkey
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+    </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../vendors/jquery-ui-1.12.1.custom/datepicker-ko-KR.js"></script>
+    <script src="../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+</body>
+
+</html>

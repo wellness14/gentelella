@@ -1,0 +1,1786 @@
+// -------------------------------------------------COMMON : START
+// index layout custom
+.right_col.main_dash, .top_nav.main_top {
+    margin-left: 0 !important;
+}
+
+.location {
+    ul {
+        clear: both;
+        overflow: hidden;
+    }
+    li {
+        float: left;
+        list-style: none;
+        width: 40px;
+        a {
+            display: block;
+        }
+    }
+}
+
+// scroll bar custom
+.left_col::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.left_col::-webkit-scrollbar-track {
+  background: #ddd;
+}
+ 
+.left_col::-webkit-scrollbar-thumb {
+  background: #666; 
+}
+// scroll bar custom
+.alert-info {
+    background-color: rgb(52,152,219);
+    border-color: rgb(52,152,219);
+}
+.page-title {
+    overflow: hidden;
+}
+.main_menu_side {
+    margin-top: -24px;
+}
+.btn-group-bottom {
+    padding: 10px 0 20px;
+}
+.chk-box, .label-box {
+    padding-top: 8px;
+}
+.radio-group {
+    margin: 0 0 10px 0;
+    label {
+        margin-right: 10px;
+    }
+}
+.top_nav {
+    .nav_menu {
+        &.first {
+            margin-bottom: 0;
+        }
+        &.second {
+            .btn {
+                margin-top: 5px;
+            }
+            // padding-top: 1rem;
+        }
+    }
+}
+.btn-mb-0 {
+    margin-bottom: 0 !important;
+}
+.form-control {
+    &.input-sm {
+        width: 70px;
+        display: initial;
+    }
+    &.input-md {
+        width: 136px;
+        display: initial;
+    }
+    // &.input-lg {
+    //     width: 160px;
+    //     display: initial;
+    // }
+}
+.input-inline {
+    display: initial !important;
+    width: initial !important;
+}
+.nav {
+    &.toggle {
+        padding-top: 10px;
+        .input-group {
+            .form-control {
+                height: 29.6px;
+            }
+        }
+    }
+}
+.title_right {
+    .btn {
+        margin-top: 9px !important;
+    }
+}
+.panel_toolbox {
+    label {
+        margin-bottom: 0;
+        padding-top: 4px;
+        font-size: 11px;
+        margin-left: 4px;
+    }
+    .btn {
+        margin-bottom: -5px !important;
+    }
+}
+.consult-summary {
+    margin-left: 0;
+    .col-md-6 {
+        line-height: 28px;
+    }
+}
+.left_col {
+    width: 235px !important;
+    &.menu_fixed {
+        overflow-y: auto;
+    }
+}
+.fixed_height_460 {
+    min-height: 460px;
+}
+.fixed_height_300 {
+    min-height: 300px;
+}
+.blue {
+    color: #3498DB !important;
+}
+.hide {
+    display: none;
+}
+.nav_menu {
+    padding: 0 14px;
+}
+.toggle {
+    width: 250px !important;
+}
+.x_panel {
+    .todo-list {
+        border: 0 !important;
+    }
+}
+.x_title h2 {
+    overflow: initial !important;
+}
+.top_search {
+    .form-control {
+        border-radius: 0;
+    }
+    .input-group-btn {
+        button {
+            border-radius: 0;
+            border-left: 1px solid #eaeaea;
+        }
+    }
+}
+.branch-view {
+    margin-left: 20px;
+    button {
+        // height: 60px;
+        padding: 2px 8px;
+        font-size: 14px;
+    }
+}
+.fixed_height_645 {
+    min-height: 645px;
+}
+.fixed_height_500 {
+    min-height: 450px;
+}
+
+// 공지사항 버튼
+.panel_toolbox {
+    label {
+        cursor: pointer;
+    }
+    >li {
+        >a {
+            &.btn {
+                padding: 3px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+.main_notice {
+    .table {
+        tr {
+            &:first-child {
+                td {
+                    border-top: 0;
+                }
+            }
+            td {
+                >a {
+                    display: block;
+                }
+                .label {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+.menu_section>ul {
+    margin-top: 6px;
+}
+.input-group {
+    &.top_search {
+        padding-left: 6px;
+    }
+}
+.nav_title {
+    height: 61px !important;
+    background-color: #fff !important;
+}
+.site_title {
+    padding-left: 0 !important;
+    text-align: center;
+    img {
+        height: 80px;
+        margin-top: -10px;
+    }
+    span {
+        font-size: 1.6rem;
+    }
+}
+// -------------------------------------------------COMMON : END
+
+// -------------------------------------------------MAIN DASH : START
+.main_dash {
+    // 메인 대시보드 - 주문관리
+    .tile-stats {
+        padding: 0.5rem !important;
+        h3 {
+            font-size: 13px;
+            text-align: center;
+            margin-left: 0;
+            line-height: 2;
+        }
+        .count {
+            font-size: 16px;
+            line-height: initial;
+            text-align: center;
+            margin-right: 10px;
+            line-height: 2;
+        }
+    }
+    // 메인 대시보드 - 상담문의
+    .col-lg-6 {
+        padding-bottom: 10px;
+    }
+    .btn-new-consult {
+        width: 100%;
+    }
+    
+    // 메인 대시보드 - 업무메모
+    .main_memo {
+        textarea {
+            width: 100%;
+            height: 198px;
+            border: 1px solid #ccc;
+        }
+    }
+
+    // 메인 대시보드 - 주요현황
+    .major_status {
+        .table {
+            th, td {
+                text-align: center;
+            }
+        }
+    }
+
+    // 메인 대시보드 - 주요일정
+    .major_schedule {
+        .btn {
+            &.add-todo {
+                margin-top: -3px;
+            }
+        }
+        .to_do {
+            height: 270px;
+            overflow-y: auto;
+        }
+    }
+    // 메인 - 대시보드 : 대여용품현황
+    .rent {
+        .scroll-view {
+            height: 356px;
+            overflow-y: auto;
+        }
+        h5 {
+            font-weight: bold;
+        }
+        dl {
+            clear: both;
+            overflow: hidden;
+            padding: 0.25em;
+            margin-bottom: 10px;
+        }
+        dt, dd {
+            float: left;
+            width: 25%;
+            box-sizing: border-box;
+            padding: 0.25em;
+            font-weight: normal;
+        }
+    }
+    .message-box {
+        margin-top: 1em;
+        textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            height: 300px;
+        }
+    }
+    
+}
+// -------------------------------------------------MAIN DASH : END
+
+
+
+// -------------------------------------------------CALENDAR : 시작
+.ui-datepicker,
+.ui-datepicker table,
+.ui-datepicker tr,
+.ui-datepicker td,
+.ui-datepicker th {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-spacing: 0;
+}
+.ui-datepicker {
+    display: none;
+    padding: 35px;
+    cursor: default;
+ 
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.ui-datepicker-header {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d6d6d6;
+}
+ 
+.ui-datepicker-title { text-align: center; }
+ 
+.ui-datepicker-month {
+    position: relative;
+    padding-right: 15px;
+    color: #565656;
+}
+ 
+.ui-datepicker-year {
+    padding-left: 8px;
+    color: #a8a8a8;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    position: absolute;
+    top: -2px;
+    padding: 5px;
+    cursor: pointer;
+    a {
+        color: #141517;
+    }
+}
+ 
+.ui-datepicker-prev {
+    left: 0;
+    padding-left: 0;
+}
+ 
+.ui-datepicker-next {
+    right: 0;
+    padding-right: 0;
+}
+ 
+.ui-datepicker-prev span,
+.ui-datepicker-next span{
+    display: block;
+    width: 14px;
+    height: 20px;
+    text-indent: -9999px;
+}
+.ui-datepicker-prev span {
+    background: url("../images/prev-calendar.png") no-repeat center center;
+    background-size: 100%;
+}
+.ui-datepicker-next span {
+    background: url("../images/next-calendar.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.ui-datepicker-calendar {
+    width: 100%;
+    
+}
+.ui-datepicker-calendar th {
+    padding-top: 15px;
+    padding-bottom: 10px;
+ 
+    text-align: center;
+    font-weight: normal;
+    color: #a8a8a8;
+    color: #141517;
+}
+.ui-datepicker-calendar td {
+    padding: 0 7px;
+ 
+    text-align: center;
+    line-height: 26px;
+}
+ 
+.ui-datepicker-calendar .ui-state-default {
+    display: block;
+    text-align: center;
+    outline: none;
+ 
+    text-decoration: none;
+    color: #a8a8a8;
+ 
+    border: 1px solid transparent;
+}
+.ui-datepicker-calendar .ui-state-active {
+    color: #6a9113;
+    border: 1px solid #6a9113;
+}
+ 
+.ui-datepicker-other-month .ui-state-default { color: #565656; }
+// -------------------------------------------------CALENDAR : 끝
+
+
+// -------------------------------------------------주문 대시보드 : 시작
+
+.order_dash {
+    // 마일스톤
+    .milestone {
+        .scrolling table {
+            table-layout: inherit;
+            *margin-left: -100px;/*ie7*/
+        }
+        .scrolling tr {
+            &:last-child {
+                th, td {
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+        }
+        .scrolling td, th {
+            vertical-align: top;
+            padding: 10px;
+            min-width: 100px;
+            text-align: center;
+        }
+        .scrolling th {
+            position: absolute;
+        *position: relative; /*ie7*/
+            left: 0;
+            width: 120px;
+            &:nth-child(2) {
+                left: 120px;
+            }
+        }
+        .outer {
+            position: relative
+        }
+        .inner {
+            overflow-x: auto;
+            overflow-y: visible;
+            margin-left: 240px;
+            .today {
+                font-size: 12px;
+            }
+        }
+        
+        .table {
+            >thead:first-child>tr:first-child>th {
+                border-top: 1px solid #ddd;
+            }
+            border-collapse: collapse;
+            border: 0 !important;
+            th {
+                border-bottom-width: 1px !important;
+                height: 40px;
+            }
+            td {
+                height: 40px;
+            }
+           
+        }
+    }
+    // 출산선물 현황
+    .gift-rank {
+        padding: 19px 0;
+    }
+
+
+    // 서비스용품 대여
+    .rent {
+        .scroll-view {
+            height: 368px;
+            overflow-y: auto;
+        }
+        h5 {
+            font-weight: bold;
+        }
+        dl {
+            clear: both;
+            overflow: hidden;
+            padding: 0.25em;
+            margin-bottom: 10px;
+        }
+        dt, dd {
+            float: left;
+            width: 25%;
+            box-sizing: border-box;
+            padding: 0.25em;
+            font-weight: normal;
+        }
+    }
+    
+}
+
+// -------------------------------------------------주문 대시보드 : 끝
+
+// -------------------------------------------------주문 - 상담/문의 : 시작
+.order_consult {
+    .page-title {
+        .title_right {
+            .pull-right {
+                margin: 0;
+            }
+        }
+    }
+    .sido, .reference-type, .consult-state {
+        .select2_single {
+            border-radius: 3px;
+        }
+        ul.list-unstyled {
+            clear: both;
+            li {
+                float: left;
+                padding: 0.25rem 0.8rem;
+                .badge {
+                    font-size: 10px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .consult-search-result {
+        th {
+          text-align: center;  
+        }
+        td {
+            text-align: center;
+            vertical-align: middle;
+            // a {
+            //     height: 30px;
+            //     margin-top: 4px;
+            // }
+            .label {
+                padding-top: 0.3rem;
+            }
+        }
+    }
+}
+
+
+// -------------------------------------------------주문 - 상담/문의 : 끝
+
+// -------------------------------------------------주문 - 신규상담 : 시작
+.order_consult_new {
+    .title_left {
+        h3 {
+            small {
+                font-size: 1.4rem;
+                &:first-child {
+                    margin-left: 30px;
+                }
+                label {
+                    vertical-align: -webkit-baseline-middle;
+                }
+            }
+        }
+    }
+    .consult-save, .temp-save {
+        margin-left: 10px !important;
+    }
+    .temp-save-list {
+        .table {
+            td {
+                .btn {
+                    margin-top: 0 !important;
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+    }
+    .consult_summary {
+        .btn {
+            margin: 0;
+        }
+    }
+    .consult-branch {
+        margin-right: 20px !important;
+    }
+    .btn-addr-search {
+        margin: 0;
+        border-radius: 0 !important;
+    }
+    .addr1 {
+        margin-bottom: 10px;
+    }
+    .reference-type {
+        ul.list-unstyled {
+            clear: both;
+            width: 100%;
+            overflow: hidden;
+            li {
+                float: left;
+                padding: 0.25rem 0.8rem;
+                .badge {
+                    font-size: 10px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .input-group {
+        &.reference {
+            // .form-control {
+            //     width: 70% !important;
+            //     float: right !important;
+            // }
+        }
+    }
+    .regist-info {
+        .row {
+            padding: 10px;
+        }
+    }
+    .natal-info {
+        height: 615px;
+        // .chk-box {
+        //     .col-md-6 {
+        //         padding-top: 8px;
+        //     }
+        // }
+    }
+    .manage-start-dt {
+        .input-sm {
+            width: 100%;
+        }
+    }
+    .consult-comment {
+        textarea {
+            width: 100%;
+            height: 200px;
+        }    
+        .btn {
+            margin-top: 10px;
+        }
+    }
+    .voucher {
+        .radio-group {
+            margin-bottom: 0;
+        }
+        .label {
+            font-size: 12px;
+        }
+        .input-inline {
+            width: 100px !important;
+        }
+    }
+    .message-box {
+        margin-top: 1em;
+        textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            height: 300px;
+        }
+    }
+    .service-extend {
+        height: 1465px;
+        .label {
+            font-size: 13px;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+        .service-period {
+            width: 35% !important;
+            float: left !important;
+        }
+        .service-name {
+            width: 65% !important;
+            float: left !important;
+        }
+        .go-helper-list {
+            margin-bottom: 0;;
+        }
+        .add-overwork {
+            margin: 5px 0 0 10px;
+        }
+        .timeline .tags {
+            top: 6px;
+        }
+        .block_content {
+            .title {
+                font-size: 1.3rem;
+                .btn {
+                    margin-bottom: 2px !important;
+                }
+            }
+        }
+        .default-service {
+            h5 {
+                font-weight: bold;
+            }
+            .input-group {
+                label {
+                    margin-right: 10px;
+                }
+                .input-sm {
+                    float: initial;
+                }
+                input[type=date].input-sm {
+                    width: 160px;
+                }
+            }
+        }
+
+    }
+    .etc-info {
+        .input-group {
+            label {
+                margin-right: 10px;
+            }
+            .input-sm {
+                float: initial;
+            }
+            input[type=date].input-sm {
+                width: 160px;
+            }
+        }
+        .rent {
+            input[type=text].input-sm, input[type=date].input-sm, input[type=number].input-sm {
+                width: 160px;
+            }
+            .row {
+                margin: 10px 0;
+            }
+        }
+        .gift, .terminal {
+            input.input-sm {
+                width: 160px !important;
+            }
+        }
+    }
+    .service-price {
+        height: 445px;
+        margin-bottom: 5rem;
+        .col-md-6 {
+            padding: 8px;
+            font-size: 1.6rem;
+            // i {
+            //     font-size: 1.2rem;
+            // }
+        }
+        .total-price-label, .voucher-label, .income-label, .balance-label {
+            font-weight: 100;
+            margin-right: 10px;
+            font-size: 1.4rem;
+        }
+        .total-price, .voucher-price, .income-price, .balance-price {
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 2rem;
+        }
+        .btn.pull-right {
+            margin-top: 30px;
+        }
+        +.payment-history {
+            color: #73879C;
+            background: #FFF !important;
+            width: 100%;
+            overflow: hidden;
+            clear: both;
+            padding: 1rem;
+        }
+        .enuri-title {
+            color: #73879C !important;
+        }
+    }
+    .chk-payment {
+        color: #73879C;
+        label {
+            color: #73879C;
+        }
+
+    }    
+}
+
+
+
+// -------------------------------------------------주문 - 신규상담 : 끝
+
+// -------------------------------------------------주문 - 상담정보상세 : 시작
+.order_consult_detail {
+
+}
+
+
+
+
+// -------------------------------------------------주문 - 상담정보상세 : 끝
+
+// -------------------------------------------------주문 - 서비스 이용약관 : 시작
+.policy_use_agree {
+    .sido, .reference-type, .consult-state {
+        .select2_single {
+            border-radius: 3px;
+        }
+        ul.list-unstyled {
+            clear: both;
+            li {
+                float: left;
+                padding: 0.25rem 0.8rem;
+                .badge {
+                    font-size: 10px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    textarea {
+        height: 378px;
+    }
+    .table {
+        th, td {
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+}
+
+
+
+
+// -------------------------------------------------주문 - 서비스 이용약관 : 끝
+
+
+
+// -------------------------------------------------주문 - 기본정책 선물,대여물품관리 :  시작
+.policy_manage_gift {
+    .gift-img {
+        width: 60px;
+    }
+    
+    ul.msg_list li .image img{
+        width: 145px;        
+    }
+    .msg_list li {
+        padding: 10px !important;
+        width: 100% !important;
+    }
+    .msg_list .message {
+        margin-left: 30px;
+        clear: both;
+        width: 70%;
+        dt, dd {
+            float: left;
+        }
+        dt {
+            width: 80px;
+        }
+        dd {
+            width: calc(100% - 80px);
+        }
+        
+    }
+    .pull-left {
+        &.date {
+            width: 200px;
+        }
+    }
+    .media-body {
+        .label {
+            font-size: 12px;
+        }
+        p {
+            margin-top: 15px;
+        }
+    }
+    .terminal-list {
+        .col-md-6 {
+            margin-bottom: 20px;
+        }
+    }
+    .gift-search {
+        height: 29.6px;
+    }
+    .table {
+        th, td {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .btn {
+            margin: 0 auto;
+        }
+    }
+    input.gift-img-search {
+        height: 29.6px;
+    }
+    .rent-save {
+        margin-top: 10px;
+    }
+    .label {
+        padding-top: 0.3rem;
+    }
+    
+}
+
+// -------------------------------------------------주문 - 기본정책 선물,대여물품관리 :  끝
+
+// -------------------------------------------------주문 - 기본정책 선물등록 :  시작
+.policy_manage_gift_new {
+    input.gift-img-search {
+        height: 29.6px;
+    }
+    ul.list-unstyled {
+        clear: both;
+        overflow: hidden;
+        li {
+            float: left;
+            padding: 0.25rem 0.8rem;
+            .badge {
+                font-size: 10px;
+                font-weight: normal;
+            }
+        }
+    }
+    
+}
+// -------------------------------------------------주문 - 기본정책 선물등록 :  끝
+
+
+// -------------------------------------------------주문 - 기본정책 바우처 중위소득관리 :  시작
+
+.policy_voucher_income {
+    blockquote {
+        font-size: 12px;
+        margin-bottom: 0;
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+// -------------------------------------------------주문 - 기본정책 바우처 중위소득관리 :  끝
+
+// -------------------------------------------------주문 - 기본정책 바우처 정부지원금 정책 :  시작
+
+.policy_voucher_support {
+    blockquote {
+        font-size: 12px;
+        margin-bottom: 0;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .table {
+        td {
+            input {
+                width: 90px;
+            }
+        }
+    }
+    .input-inline {
+        width: 66px !important;
+    }
+    .table {
+        th, td {
+            text-align: center;
+        }
+        td {
+            vertical-align: middle;
+        }
+    }
+}
+// -------------------------------------------------주문 - 기본정책 바우처 정부지원금 정책 :  끝
+
+// -------------------------------------------------주문 - 기본정책 바우처 지역별 정책관리 :  시작
+
+.policy_voucher_location {
+    blockquote {
+        font-size: 12px;
+        margin-bottom: 0;
+        p {
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+    }
+    .table {
+        th, td {
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+    
+}
+// -------------------------------------------------주문 - 기본정책 바우처 지역별 정책관리 :  끝
+
+
+// -------------------------------------------------기본정책 - 지사계정생성 :  시작
+.policy_jisa_account_regist {
+    form {
+        .addr1 {
+            margin-bottom: 15px !important;
+        }
+    }
+}
+
+// -------------------------------------------------기본정책 - 지사계정생성 :  끝
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------------------주문 - 상담정보 상세 :  시작
+
+.order_consult_detail {
+    .detail-modify {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    dt {
+        overflow: hidden;
+        clear: both;
+    }
+    dt, dd {
+        float: left;
+        padding: 10px 0;
+    }
+    .basic-info {
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 80px;
+        }
+        dd {
+            width: calc(100% - 80px);
+        }
+    }
+    .recommend-consult {
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 80px;
+        }
+        dd {
+            width: calc(100% - 80px);
+        }
+    }
+    .regist-info {
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 80px;
+        }
+        dd {
+            width: calc(100% - 80px);
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+    }
+    .before-info {
+        height: 363px;
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 150px;
+        }
+        dd {
+            width: calc(100% - 150px);
+        }
+    }
+    .completion-info {
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 150px;
+        }
+        dd {
+            width: calc(100% - 150px);
+        }
+        textarea {
+            height: 100px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+    }
+    .service-offer {
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 150px;
+        }
+        dd {
+            width: calc(100% - 150px);
+        }
+        textarea {
+            height: 100px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+    }
+    .consult {
+        textarea {
+            margin-bottom: 10px;
+            height: 200px;
+        }
+    }
+    .service-price {
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 50%;
+        }
+        dd {
+            width: 50%;
+        }
+        textarea {
+            height: 100px;
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .col-md-6 {
+            margin: 10px 0;
+        }
+    }
+    .voucher {
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 150px;
+        }
+        dd {
+            width: calc(100% - 150px);
+        }
+        textarea {
+            height: 100px;
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+    }
+    .extension {
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 150px;
+        }
+        dd {
+            width: calc(100% - 150px);
+        }
+    }
+    .etc-info {
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 150px;
+        }
+        dd {
+            width: calc(100% - 150px);
+        }
+        textarea {
+            height: 100px;
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .btn {
+            margin-left: 20px;
+        }
+    }
+    .deleted-extension-info {
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 150px;
+        }
+        dd {
+            width: calc(100% - 150px);
+        }
+        textarea {
+            height: 100px;
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+    }
+    .restoration-extension-info {
+        dl {
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+        }
+        dt {
+            width: 150px;
+        }
+        dd {
+            width: calc(100% - 150px);
+        }
+        textarea {
+            height: 100px;
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+// -------------------------------------------------주문 - 상담정보 상세 :  끝
+
+// -------------------------------------------------기본정책 - 지사관리 :  시작
+.manage_jisa {
+    .table {
+        th {
+            text-align: center;
+        }
+        td {
+            text-align: center;
+        }
+    }
+}
+// -------------------------------------------------기본정책 - 지사관리 :  끝
+
+// -------------------------------------------------기본정책 - 지사등록 : 시작
+.policy_manage_jisa_new {
+    .sido, .reference-type, .consult-state {
+        .select2_single {
+            border-radius: 3px;
+        }
+        ul.list-unstyled {
+            clear: both;
+            li {
+                float: left;
+                padding: 0.25rem 0.8rem;
+                .badge {
+                    font-size: 10px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .jisa-save {
+        margin-left: 10px !important;
+    }
+    blockquote {
+        font-size: 1.2rem;
+    }
+    .load-jisa {
+        .count {
+            font-size: 1.8rem !important;
+            padding: 1rem 0 0 1rem;
+        }
+        h3 {
+            padding: 0 0 1rem 8px;
+        }
+    }
+    .input-inline {
+        width: 100px !important;
+    }
+    .jisa-info {
+        .addr1 {
+            margin-bottom: 15px;
+        }
+        select.input-inline {
+            vertical-align: middle;
+            margin-top: -1px;
+        }
+        .bank-account-num {
+            width: 250px !important;
+        }
+        .account-holder {
+            width: 200px !important;
+        }
+        textarea {
+            height: 140px;
+        }
+    }
+
+
+
+}
+// -------------------------------------------------기본정책 - 지사등록 : 끝
+
+// -------------------------------------------------기본정책 - 지사상세 : 시작
+.policy_manage_jisa_detail {
+    .go-list, .jisa-modify, .jisa-delete {
+        margin-left: 10px !important;
+    }
+    .input-inline {
+        width: 100px !important;
+    }
+    .jisa-info {
+        .addr1 {
+            margin-bottom: 15px;
+        }
+        select.input-inline {
+            vertical-align: middle;
+            margin-top: -1px;
+        }
+        .bank-account-num {
+            width: 250px !important;
+        }
+        .account-holder {
+            width: 200px !important;
+        }
+        textarea {
+            height: 140px;
+        }
+    }
+}
+// -------------------------------------------------기본정책 - 지사상세 : 끝
+
+// -------------------------------------------------기본정책 - 지사수정 : 시작
+.policy_manage_jisa_modify {
+    .sido, .reference-type, .consult-state {
+        .select2_single {
+            border-radius: 3px;
+        }
+        ul.list-unstyled {
+            clear: both;
+            li {
+                float: left;
+                padding: 0.25rem 0.8rem;
+                .badge {
+                    font-size: 10px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .jisa-save, .jisa-cancel, .jisa-delete {
+        margin-left: 10px !important;
+    }
+    .input-inline {
+        width: 100px !important;
+    }
+    .jisa-info {
+        .addr1 {
+            margin-bottom: 15px;
+        }
+        select.input-inline {
+            vertical-align: middle;
+            margin-top: -1px;
+        }
+        .bank-account-num {
+            width: 250px !important;
+        }
+        .account-holder {
+            width: 200px !important;
+        }
+        textarea {
+            height: 140px;
+        }
+    }
+    blockquote {
+        font-size: 1.2rem;
+    }
+    .pw-change {
+        dl {
+            overflow: hidden;
+            clear: both;
+            padding: 1rem;
+            margin-bottom: 0;
+        }
+        dt, dd {
+            float: left;
+            width: 25%;
+            padding: 1rem;
+        }
+        dt {
+            width: 100px;
+        }
+        dd {
+            width: calc(100% - 100px);
+            input {
+                width: 200px;
+                margin-top: -6px;
+            }
+        }
+    }
+    .contract-extend {
+        dl {
+            // overflow: hidden;
+            clear: both;
+            // padding: 1rem;
+            margin-bottom: 0;
+        }
+        dt, dd {
+            float: left;
+            width: 50%;
+            // padding: 1rem;
+        }
+        dt {
+            width: 100px;
+        }
+        dd {
+            width: calc(100% - 100px);
+        }
+        input {
+            margin-top: -8px;
+        }
+        .table {
+            th, td {
+                text-align: center;
+                .btn {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    
+}
+// -------------------------------------------------기본정책 - 지사수정 : 끝
+
+// -------------------------------------------------기본정책 - 산후도우미 등록 : 시작
+.policy_manage_helper_new {
+    .helper-save {
+        margin-left: 10px !important;
+    }
+    .avatar-view {
+        margin: 0 auto;
+        border-radius: 50%;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    }
+    .addr1 {
+        margin-bottom: 10px;
+    }
+    .sido, .reference-type, .consult-state {
+        .select2_single {
+            border-radius: 3px;
+        }
+        ul.list-unstyled {
+            clear: both;
+            li {
+                float: left;
+                padding: 0.25rem 0.8rem;
+                .badge {
+                    font-size: 10px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .start-date {
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .end-date {
+        margin-left: 10px;
+    }
+    .etc-info {
+        .x_content {
+            height: 280px;
+        }
+        .list-unstyled {
+            li {
+                float: left;
+                padding: 0.6rem 1rem 0 0;
+            }
+        }
+    }
+    
+}
+// -------------------------------------------------기본정책 - 산후도우미 등록 : 끝
+
+// -------------------------------------------------기본정책 - 산후도우미 상세정보 : 시작
+.policy_manage_helper_detail {
+    .go-list, .helper-modify, .helper-delete {
+        margin-left: 10px !important;
+    }
+    .profile_left {
+        dl {
+            clear: both;
+            overflow: hidden;
+        }
+        dt, dd {
+            padding: 10px;
+            float: left;
+            small {
+                display: block;
+            }
+        }
+        dt {
+            width: 30%;
+        }
+        dd {
+            width: 70%;
+        }
+        
+    }
+}
+// -------------------------------------------------기본정책 - 산후도우미 상세정보 : 끝
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------------------LOGIN : START
+/* colors */
+$darkBlue: #217093;
+$medBlue: #4eb8dd;
+$lightBlue: #ddf1fa;
+$inputBG: #f3fafd;
+
+.login_wrapper {
+    .login_content {
+        padding-top: 0;
+        h2 {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        >p {
+            margin-bottom: 0;
+            &.first {
+                margin-top: 2rem !important;
+            }
+        }
+        form {
+            div {
+                a {
+                    // margin: 10px 10px 0 20px;
+                }
+            }
+        }
+    }
+    form {
+        display: block; width: 100%; max-width: 400px; background-color: #FFF;
+        margin: 0; padding: 2.25em; box-sizing: border-box; border: solid 1px #DDD; border-radius: .5em;
+        font-family: 'Source Sans Pro', sans-serif;
+        .svgContainer {
+            position: relative; width: 200px; height: 200px; margin: 0 auto 1em;
+            border-radius: 50%; background: none; border: solid 2.5px #3A5E77; overflow: hidden;
+            pointer-events: none;
+            div {
+                position: relative; width: 100%; height: 0; overflow: hidden;
+                padding-bottom: 100%;
+            }
+            .mySVG {
+                position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+                pointer-events: none;
+            }
+        }
+        .inputGroup {
+            margin: 0 0 2em; padding: 0; position: relative;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        label {
+            margin: 0 0 12px; display: block;
+            font-size: 1.25em; color: #217093; font-weight: 700; font-family: inherit;
+        }
+        input[type='email'], input[type="text"], input[type='password'] {
+            display: block; margin: 0; padding: 0 1em 0 !important;
+            background-color: $inputBG; border: solid 2px $darkBlue; border-radius: 4px; -webkit-appearance: none;
+            box-sizing: border-box;
+            width: 100%; height: 40px;
+            font-size: 13px; color: #353538; font-weight: 600; font-family: inherit;
+            transition: box-shadow .2s linear, border-color .25s ease-out;
+            &:focus {
+                outline: none;
+                box-shadow: 0px 2px 10px rgba(0,0,0,.1);
+                border: solid 2px #4eb8dd;
+            }
+        }
+        input[type='email'], input[type="text"] {
+            padding: 14px 1em 0px;
+        }
+        .login {
+            display: block; margin: 0; padding: .65em 1em 1em;
+            background-color: $medBlue; border: none; border-radius: 4px;
+            box-sizing: border-box; box-shadow: none;
+            width: 100%; height: 40px;
+            font-size: 13px; color: #FFF; font-weight: 600; font-family: inherit;
+            transition: background-color .2s ease-out;
+            &:hover, &:active {
+                background-color: $darkBlue;
+                text-decoration: none;
+            }
+        }
+
+        .inputGroup1 {
+            .helper {
+                position: absolute; z-index: 1;
+                font-family: inherit;
+            }
+            .helper1 {
+                top: 0; left: 0;
+                transform: translate(1.4em, 2.6em) scale(1); transform-origin: 0 0;
+                color: $darkBlue; font-size: 1.25em; font-weight: 400; opacity: .65;
+                pointer-events: none;
+                transition: transform .2s ease-out, opacity .2s linear;
+            }
+            
+            &.focusWithText .helper {
+            /*input[type='email']:focus + .helper {*/
+                transform: translate(1.4em, 2.0em) scale(.65); opacity: 1;
+            }
+        }
+    }
+}
+// ---------------------------------------------------------------------------------LOGIN : END
+
+// ---------------------------------------------------------------------------------자주쓰는 메뉴 : 시작
+.favorite-menu {
+    .row {
+        padding: 0 2rem;
+    }
+}
+.favorite-menu-list {
+    li {
+        // word-break: break-all !important;
+        a {
+            white-space: normal;
+            .fa-star {
+                color: gold;
+            }
+        }
+    }
+}
+// ---------------------------------------------------------------------------------자주쓰는 메뉴 : 끝
+
+// ---------------------------------------------------------------------------------상담예약 - 일반 : 시작
+.consult_reserve_normal {
+    .table {
+        th, td {
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------------------회원가입 : 시작
+.member_regist {
+    h3 {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .basic_info {
+        margin: 2rem auto 0;
+        width: 100%;
+    }
+    .addr2 {
+        margin-top: 1rem;
+    }
+    .userid_wrapper {
+        .input-group {
+            margin-bottom: 0 !important;
+        }
+    }
+    .agree_content {
+        margin: 1em 0;
+        width: 100%;
+        border: 1px solid #ccc;
+        height: 100px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+// ---------------------------------------------------------------------------------매출통계 : 시작
+.sales {
+    .col-md-1 {
+        strong {
+            line-height: 3rem;
+        }
+    }
+    .sales-price {
+        font-size: 25px;
+        p {
+            margin-top: 4px;
+        }
+    }
+    .top-box {
+        overflow-y: scroll;
+        height: 200px;
+    }
+    .top-box-noscroll {
+        height: 200px;
+        &.title-control {
+            .date {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px){
+    footer {
+        margin-left: 0 !important; 
+    }
+}

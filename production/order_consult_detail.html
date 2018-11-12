@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>마더앤베이비 관리자 - 상담상세정보</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Simple Calendar -->
+    <link href="../vendors/simple-calendar-master/dist/simple-calendar.css" rel="stylesheet">
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.css" rel="stylesheet">
+    <link href="../build/css/mystyle.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title">
+                            <img src="../build/images/partner6.png" alt="마더앤베이비로고">
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br />
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a href="order_dash.html">
+                                        주문 대시보드
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="order_consult.html">상담/문의</a>
+                                </li>
+                                <li>
+                                    <a href="order_contract_payment.html">계약/결제</a>
+                                </li>
+                                <li>
+                                    <a href="order_service_now.html">서비스</a>
+                                </li>
+                                <li>
+                                    <a href="order_extension.html">연장</a>
+                                </li>
+                                <li>
+                                    <a href="order_complete.html">완료</a>
+                                </li>
+                                <li>
+                                    <a>출산선물
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="#!">현황정보</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>서비스용품
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="#!">현황정보</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+                
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small hide">
+                        <a data-toggle="tooltip" data-placement="top" title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu first">
+                    <nav>
+                        <div class="nav toggle">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="이름, ID, 휴대번호">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-primary btn-sm">검색</button>
+                                </span>
+                            </div>
+                        </div>
+            
+            
+            
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- 로그인 유저 확인 및 로그아웃 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    관리자 접속중
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="fa fa-sign-out pull-right"></i> 로그아웃</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 자주 쓰는 메뉴 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    자주쓰는메뉴
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fa fa-cog pull-right"></i> 메뉴설정</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">자주쓰는 메뉴를 설정해주세요.</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 주문현황 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    주문현황
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="#!">
+                                            입금대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            입금완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            계약취소신청
+                                            <span class="badge bg-red">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            환불완료
+                                            <span class="badge bg-blue">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 중
+                                            <span class="badge bg-blue-sky">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 연장
+                                            <span class="badge bg-purple">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav_menu second">
+                    <a href="index.html" class="btn btn-primary btn-sm">Home</a>
+                    <a href="order_dash.html" class="btn btn-primary btn-sm">주문</a>
+                    <a href="policy_in_out.html" class="btn btn-primary btn-sm">기본정책</a>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col order_consult_detail" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>상담/문의
+                            </h3>
+
+                        </div>
+
+                        <div class="title_right">
+                            <!-- <div class="btn-group pull-right"> -->
+                                <a href="" class="btn btn-primary btn-sm pull-right detail-delete">삭제</a>
+                                <a href="" class="btn btn-primary btn-sm pull-right detail-modify">수정</a>
+                                <a href="" class="btn btn-primary btn-sm pull-right go-list">목록</a>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+
+                    <!-- 개인정보 -->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>기본정보</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content basic-info">
+                                    <dl>
+                                        <dt>성함</dt>
+                                        <dd>조아라</dd>
+                                        <dt>생년월일</dt>
+                                        <dd>1990.10.10(만 27세)</dd>
+                                        <dt>연락처</dt>
+                                        <dd>010-1111-2222 | 02-111-2222</dd>
+                                        <dt>주소</dt>
+                                        <dd>서울 관악구 관악동 666-34 내일모레아파트 1동101호</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>추천 &middot; 상담정보</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content recommend-consult">
+                                    <dl>
+                                        <dt>접근분류</dt>
+                                        <dd><span class="label label-default">전화옴</span></dd>
+                                        <dt>추천경로</dt>
+                                        <dd><span class="label label-default">검색</span></dd>
+                                        <dt>상담직원</dt>
+                                        <dd><span class="label label-default">조미경</span></dd>
+                                        <dt>상담지점</dt>
+                                        <dd><span class="label label-default">관악</span></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>가입정보</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content regist-info">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-3">
+                                            <dl>
+                                                <dt>아이디</dt>
+                                                <dd><span class="label label-default">입력대기중</span></dd>
+                                            </dl>
+                                            <a href="#!" class="btn btn-primary btn-sm">가입문자 재발송</a>
+                                            <a href="#!" class="btn btn-primary btn-sm">PW변경</a>
+                                        </div>
+                                        <div class="col-md-9 col-sm-9">
+                                            <textarea name="" id="" class="form-control">* 2018.1.11 가입정보 발송 완료</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 출산정보 -->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>사전정보</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content before-info">
+                                    <dl>
+                                        <dt>지정병원</dt>
+                                        <dd></dd>
+                                        <dt>출산예정일</dt>
+                                        <dd>yyyy.mm.dd [예정일 2일전 문자발송 예약][문자내용 확인/재발송]</dd>
+                                        <dt>수술예정일</dt>
+                                        <dd></dd>
+                                        <dt>출산경험</dt>
+                                        <dd>경산 [남(9), 여(6)]</dd>
+                                        <dt>태아유형(예정)</dt>
+                                        <dd>단태아</dd>
+                                        <dt>중증장애산모</dt>
+                                        <dd>아니오</dd>
+                                        <dt>산후조리원 예정</dt>
+                                        <dd>2주 이용</dd>
+                                        <dt>관리사서비스 희망장소</dt>
+                                        <dd>자택</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>완료정보
+                                        
+                                    </h2>
+                                    <a href="#!" class="btn btn-primary btn-xs pull-right">정보등록/수정</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content completion-info">
+                                    <dl>
+                                        <dt>출산일</dt>
+                                        <dd></dd>
+                                        <dt>태아유형(출산)</dt>
+                                        <dd>성별[-] 몸무게[-kg]</dd>
+                                        <dt>산후조리원</dt>
+                                        <dd></dd>
+                                        <dt>분만형태</dt>
+                                        <dd></dd>
+                                        <dt>관리사서비스 장소</dt>
+                                        <dd>자택</dd>
+                                    </dl>
+                                    <textarea name="" id="" class="form-control">*2018.2.23 조미경(관악)이 고객에게 정보를 확인하였습니다. [완료정보 확정] *2018.2.22 고객이 완료 정보를 입력 하였음 or yyyy.mm.dd 조미경(관악)이 직접 입력하였습니다. *2018.2.18
+                                    문자발송 완료, 고객 확인 대기 중
+                                
+                                
+                                
+                                </textarea>
+                                    <a href="#!" class="btn btn-primary btn-sm pull-right">출산 완료 정보 확정</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 서비스 , 계약정보 -->
+                    <div class="row ">
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#!" class="btn btn-app">
+                                <span class="badge bg-red">1회</span>
+                                <i class="fa fa-edit"></i>
+                                바우처정보 입력</a>
+                            <a href="#!" class="btn btn-app">
+                                <span class="badge bg-red">1회</span>
+                                <i class="fa fa-info"></i>
+                                기타정보</a>
+                            <a href="#!" class="btn btn-app">
+                                <span class="badge bg-red">1회</span>
+                                <i class="fa fa-list"></i>
+                                서비스(계약)정보 | 연장(추가)정보</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>상담</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content consult">
+                                    <textarea name="" id="" class="form-control">----2018.1.13 | 작성자 : 조미경---- 서비스 신청을 위해 입금 하기로 함 ----2018.1.12 | 작성자 : 조미경---- 서비스요청시 신생아 케어에 중점을 둘 것을 부탁</textarea>
+                                    <a href="#!" class="btn btn-primary btn-sm pull-right">저장</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>서비스 제공</h2>
+                                    <a href="#!" class="btn btn-primary btn-xs pull-right">기록/수정/삭제</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content service-offer fixed_height_520">
+                                    <dl>
+                                        <dt>서비스</dt>
+                                        <dd>프라이빗</dd>
+                                        <dt>서비스 기간</dt>
+                                        <dd>2주 / 2018.02.20 ~ 2018.03.05</dd>
+                                        <dt>서비스 형태</dt>
+                                        <dd>입주 / 5일</dd>
+                                        <dt>관리사</dt>
+                                        <dd>조아라</dd>
+                                        <dt>추가금 케어형태</dt>
+                                        <dd>
+                                            가족케어 5일 : 50,000원<br/>
+                                            취학아동 5일 : 35,000원<br/>
+                                            추가가족 5일 * 3인 : 75,000원<br/>
+                                            쌍둥이케어 5일 : 150,000원
+                                        </dd>
+                                        <dt>추가금 시간초과</dt>
+                                        <dd>
+                                            21일 : 3시간 | 39,000원<br/>
+                                            22일 : 1시간 | 13,000원<br/>
+                                            24일(주말) : 2시간 | 26,000원<br/>
+                                            25일(주말) : 1시간 | 13,000원
+                                        </dd>
+                                        <dt>추가금 휴일근무</dt>
+                                        <dd>
+                                            24일 : 26,000원 <br/>
+                                            25일 : 13,000원
+                                        </dd>
+                                    </dl>
+                                    <textarea name="" id="" class="form-control">----2018.1.15 | 작성자 : 조미경---- 관리사(조아라)→관리사(김아라) 변경 완료 ----2018.1.13 | 작성자 : 조미경---- 관리사(조아라) 배정 완료 ----2018.1.12 | 작성자 :
+                                    조미경---- 서비스 시작
+                                
+                                
+                                
+                                
+                                </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-6">
+                            <div class="x_panel tile bg-dark">
+                                <div class="x_title">
+                                    <h2>서비스 금액</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content service-price fixed_height_520">
+                                    <dl>
+                                        <dt>기본 :
+                                            <span class="label label-default">프라이빗</span>
+                                            <span class="label label-default">2주</span>
+                                            <span class="label label-default">입주</span>
+                                            <span class="label label-default">5일</span>
+                                        </dt>
+                                        <dd>2,160,000원</dd>
+                                        <dt>옵션</dt>
+                                        <dd>687,000원</dd>
+                                        <dt>연장 :
+                                            <span class="label label-default">프라이빗</span>
+                                            <span class="label label-default">2주</span>
+                                            <span class="label label-default">입주</span>
+                                            <span class="label label-default">5일</span>
+                                        </dt>
+                                        <dd>2,167,000원</dd>
+                                        <dt>옵션</dt>
+                                        <dd>687,000원</dd>
+                                    </dl>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <span class="total-price-label">총액</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <span class="total-price">1,800,000원</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <span class="voucher-label">바우처</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <span class="voucher-price red">1,000,000원</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <span class="income-label">입금받음</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <span class="income-price red">750,000원</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <span class="balance-label">잔액</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <span class="balance-price green">200,000원</span>
+                                        </div>
+                                    </div>
+                                    <textarea name="" id="" class="form-control">*2018.2.23 잔액 입금확인 [조미경 확인] *2018.2.22 추가서비스 신청 [조미경 확인] *2018.2.18 잔금입금 [조미경 확인]</textarea>
+                                    <a href="#!" class="btn btn-primary btn-sm pull-right">입금확인(확인전)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>바우처</h2>
+                                    <a href="#!" class="btn btn-primary btn-xs pull-right">기록/수정/삭제</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content voucher">
+                                    <dl>
+                                        <dt>바우처 소득유형</dt>
+                                        <dd>A-가-3</dd>
+                                        <dt>바우처 서비스 기간</dt>
+                                        <dd>단축 5일</dd>
+                                        <dt>태아유형</dt>
+                                        <dd>단태아[사전정보참조]</dd>
+                                        <dt>출산순위</dt>
+                                        <dd>셋째아[사전정보참조]</dd>
+                                        <dt>정부지원금</dt>
+                                        <dd>918,000원 [자동산정]</dd>
+                                        <dt>본인부담금</dt>
+                                        <dd>102,000원 [자동산정]</dd>
+                                        <dt>거주지역</dt>
+                                        <dd>서울시 관악구 [주소 자동 참조]</dd>
+                                        <dt>지역정책</dt>
+                                        <dd>노출 글자수는 최대 5천자 까지 노출되로록 합니다.</dd>
+                                    </dl>
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>기타정보</h2>
+                                    <a href="#!" class="btn btn-primary btn-xs pull-right">수정</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content etc-info">
+                                    <dl>
+                                        <dt>반려동물</dt>
+                                        <dd>고양이</dd>
+                                        <dt>대여품목</dt>
+                                        <dd>
+                                            적외선방사 피부관리기
+                                            <br/> 시작일 2018.02.22 | 회수일 2018.02.05
+                                            <br/> 택배비 유료 | 입금 2018.02.02 | 비용 10,000
+                                            <br/> 대여비 유료 | 입금 2018.02.02 | 비용 10,000
+                                        </dd>
+                                        <dt>선물</dt>
+                                        <dd>
+                                            아기 체중계 1EA
+                                            <br/> 발송일 2018.02.22
+                                        </dd>
+                                        <dt>단말기</dt>
+                                        <dd>
+                                            <strong>단말기번호 18</strong>
+                                            <br/>
+                                            <strong>??? 2018.02.22</strong>
+                                            <br/>
+                                            <strong>회수일 2018.02.22</strong>
+                                        </dd>
+                                        <dt>현금영수증</dt>
+                                        <dd>네
+                                            <a href="#!" class="btn btn-primary btn-xs btn-mb-0">현금영수증 발행확인 (완료)</a>
+                                        </dd>
+                                    </dl>
+                        
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>연장정보1</h2>
+                                    <a href="#!" class="btn btn-primary btn-xs pull-right">기록/수정/삭제</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content extension fixed_height_450">
+                                    <dl>
+                                        <dt>서비스</dt>
+                                        <dd>프라이빗</dd>
+                                        <dt>서비스 기간</dt>
+                                        <dd>2주 / 2018.02.20 ~ 2018.03.05</dd>
+                                        <dt>서비스 형태</dt>
+                                        <dd>입주 / 주5일</dd>
+                                        <dt>관리사</dt>
+                                        <dd>조아라</dd>
+                                        <dt>추가금 케어형태</dt>
+                                        <dd>
+                                             가족케어 5일 : 50,000원
+                                            <br/> 취학아동 5일 : 35,000원
+                                            <br/> 추가가족 5일 * 3인 : 75,000원
+                                            <br/> 쌍둥이케어 5일 : 150,000원
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-6">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>삭제된 연장정보(yyyy.mm.dd 조미경 삭제)
+                                    </h2>
+                                    <a href="#!" class="btn btn-primary btn-xs pull-right">복구요청</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content deleted-extension-info fixed_height_450">
+                                    <dl>
+                                        <dt>서비스</dt>
+                                        <dd>프라이빗</dd>
+                                        <dt>서비스 기간</dt>
+                                        <dd>2주 / 2018.02.22 ~ 2018.03.22</dd>
+                                        <dt>서비스 형태</dt>
+                                        <dd>입주 / 주5일</dd>
+                                        <dt>관리사</dt>
+                                        <dd>조아라</dd>
+                                        <dt>추가금 케어형태</dt>
+                                        <dd>
+                                            가족케어 5일 : 50,000원
+                                            <br/> 취학아동 5일 : 35,000원
+                                            <br/> 추가가족 5일 * 3인 : 75,000원
+                                            <br/> 쌍둥이케어 5일 : 150,000원
+                                        </dd>
+                                    </dl>
+                                    <textarea name="" id="" class="form-control">yyyy.mm.dd 조미경 삭제</textarea>
+                                    <hr>
+                                    <small>* 삭제된 기록은 과금에 반영되지 않습니다.</small>
+                                    <br/>
+                                    <small>* 삭제된 기록은 복구되지 않습니다. (관리자에게 문의하세요)</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>복구된 연장정보 2</h2>
+                                    <a href="#!" class="btn btn-primary btn-xs pull-right">기록/수정/삭제</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content restoration-extension-info fixed_height_450">
+                                    <dl>
+                                        <dt>서비스</dt>
+                                        <dd>프라이빗</dd>
+                                        <dt>서비스 기간</dt>
+                                        <dd>2주 / 2018.02.22 ~ 2018.03.22</dd>
+                                        <dt>서비스 형태</dt>
+                                        <dd>입주 / 주5일</dd>
+                                        <dt>관리사</dt>
+                                        <dd>조아라</dd>
+                                        <dt>추가금 케어형태</dt>
+                                        <dd>
+                                            가족케어 5일 : 50,000원
+                                            <br/> 취학아동 5일 : 35,000원
+                                            <br/> 추가가족 5일 * 3인 : 75,000원
+                                            <br/> 쌍둥이케어 5일 : 150,000원
+                                        </dd>
+                                    </dl>
+                                    <textarea name="" id="" class="form-control">yyyy.mm.dd 조미경 삭제 -> yyyy.mm.dd 조미경 복구요청 -> yyyy.mm.dd 서동필 복구완료</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="text-center btn-group-bottom">
+                        <a href="#!" class="btn btn-primary btn-sm">삭제</a>
+                        <a href="#!" class="btn btn-primary btn-sm">수정</a>
+                        <a href="#!" class="btn btn-primary btn-sm">목록</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+                Wellness Intelligence ADMIN PAGE Create by - Spacemonkey
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+    </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <!-- <script src="../vendors/Chart.js/dist/Chart.min.js"></script> -->
+    <!-- jQuery Sparklines -->
+    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- Flot -->
+    <!-- <script src="../vendors/Flot/jquery.flot.js"></script> -->
+    <!-- <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script> -->
+    <!-- Flot plugins -->
+    <!-- <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script> -->
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- Simple Calendar -->
+    <!-- <script src="../vendors/simple-calendar-master/dist/jquery.simple-calendar.js"></script> -->
+    <script src="../vendors/jquery-ui-1.12.1.custom/datepicker-ko-KR.js"></script>
+    <script src="../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+</body>
+
+</html>

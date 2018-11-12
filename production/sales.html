@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>마더앤베이비 관리자</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="../vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <!-- Simple Calendar -->
+    <link href="../vendors/simple-calendar-master/dist/simple-calendar.css" rel="stylesheet">
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- PNotify -->
+    <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+    <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+    <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.css" rel="stylesheet">
+    <link href="../build/css/mystyle.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed hide">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title">
+                            <img src="../build/images/partner6.png" alt="마더앤베이비로고">
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br />
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a href="index.html">
+                                        <i class="fa fa-tachometer"></i> 대시보드
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-edit"></i> 주문
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="order_dash.html">주문 대시보드</a>
+                                        </li>
+                                        <li>
+                                            <a href="order_consult.html">상담/문의</a>
+                                        </li>
+                                        <li>
+                                            <a href="order_contract_payment.html">계약/결제</a>
+                                        </li>
+                                        <li>
+                                            <a href="order_service_now.html">서비스</a>
+                                        </li>
+                                        <li>
+                                            <a>출산선물
+                                                <span class="fa fa-chevron-down"></span>
+                                            </a>
+                                            <ul class="nav child_menu">
+                                                <li class="sub_menu">
+                                                    <a href="#!">현황정보</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>서비스용품
+                                                <span class="fa fa-chevron-down"></span>
+                                            </a>
+                                            <ul class="nav child_menu">
+                                                <li class="sub_menu">
+                                                    <a href="#!">현황정보</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-cog"></i> 기본정책
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <!-- <li>
+                                            <a href="#!">기본정책 대시보드</a>
+                                        </li> -->
+                                        <li>
+                                            <a href="policy_in_out.html">이용/탈퇴안내</a>
+                                        </li>
+                                        <li>
+                                            <a>약관관리
+                                                <span class="fa fa-chevron-down"></span>
+                                            </a>
+                                            <ul class="nav child_menu">
+                                                <li class="sub_menu">
+                                                    <a href="policy_use_agree.html">서비스 이용약관</a>
+                                                </li>
+                                                <li class="sub_menu">
+                                                    <a href="policy_private_agree.html">개인정보취급방침</a>
+                                                </li>
+                                                <li class="sub_menu">
+                                                    <a href="policy_email_agree.html">이메일 무단수집거부</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a>SEO태그
+                                                <span class="fa fa-chevron-down"></span>
+                                            </a>
+                                            <ul class="nav child_menu">
+                                                <li class="sub_menu">
+                                                    <a href="policy_seo_common.html">공통관리</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>지사/지역/산후도우미
+                                                <span class="fa fa-chevron-down"></span>
+                                            </a>
+                                            <ul class="nav child_menu">
+                                                <li class="sub_menu">
+                                                    <a href="policy_manage_jisa.html">지사관리</a>
+                                                </li>
+                                                <li class="sub_menu">
+                                                    <a href="policy_manage_helper.html">산후도우미 관리</a>
+                                                </li>
+                                                <li class="sub_menu">
+                                                    <a href="policy_manage_location_setting.html">지역설정</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>선물/대여품/단말기
+                                                <span class="fa fa-chevron-down"></span>
+                                            </a>
+                                            <ul class="nav child_menu">
+                                                <li class="sub_menu">
+                                                    <a href="policy_manage_gift.html">선물/대여품/단말기 관리</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>서비스 프로그램
+                                                <span class="fa fa-chevron-down"></span>
+                                            </a>
+                                            <ul class="nav child_menu">
+                                                <li class="sub_menu">
+                                                    <a href="policy_service.html">서비스 상품/옵션</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>바우처
+                                                <span class="fa fa-chevron-down"></span>
+                                            </a>
+                                            <ul class="nav child_menu">
+                                                <li class="sub_menu">
+                                                    <a href="policy_voucher_income.html">기준중위소득관리</a>
+                                                </li>
+                                                <li class="sub_menu">
+                                                    <a href="policy_voucher_support.html">정부지원금 정책</a>
+                                                </li>
+                                                <li class="sub_menu">
+                                                    <a href="policy_voucher_location.html">지역별 정책 관리</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>관리자
+                                                <span class="fa fa-chevron-down"></span>
+                                            </a>
+                                            <ul class="nav child_menu">
+                                                <li class="sub_menu">
+                                                    <a href="#!">본사관리자</a>
+                                                </li>
+                                                <li class="sub_menu">
+                                                    <a href="policy_jisa_account_regist.html">지사계정생성</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav main_top">
+                <div class="nav_menu first">
+                    <nav>
+                        <div class="nav toggle">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="이름, ID, 휴대번호">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-primary btn-sm">검색</button>
+                                </span>
+                            </div>
+                        </div>
+
+
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- 로그인 유저 확인 및 로그아웃 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    관리자 접속중
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="fa fa-sign-out pull-right"></i> 로그아웃</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 자주 쓰는 메뉴 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    자주쓰는메뉴
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right  favorite-menu-list">
+                                    <li>
+                                        <a href="#!" data-toggle="modal" data-target=".favorite-menu">
+                                            <i class="fa fa-cog pull-right"></i> 메뉴설정</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            자주쓰는 메뉴를 설정해주세요.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fa fa-star"></i> 주문 / 상담문의 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fa fa-star"></i> 기본정책 / 지사,지역,산후도우미 / 산후도우미 관리</a>
+                                    </li>
+                                </ul>
+                                <!-- 자주쓰는 메뉴 설정 팝업 -->
+                                <div class="modal fade bs-example-modal-lg favorite-menu" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel">자주쓰는 메뉴 설정</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <label class="control-label col-md-2 col-sm-2 col-xs-12">메뉴선택</label>
+                                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                                <select class="select2_multiple form-control" multiple="multiple">
+                                                                    <option>대메뉴</option>
+                                                                    <option>Option one</option>
+                                                                    <option>Option two</option>
+                                                                    <option>Option three</option>
+                                                                    <option>Option four</option>
+                                                                    <option>Option five</option>
+                                                                    <option>Option six</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                                <select class="select2_multiple form-control" multiple="multiple">
+                                                                    <option>중메뉴</option>
+                                                                    <option>Option one</option>
+                                                                    <option>Option two</option>
+                                                                    <option>Option three</option>
+                                                                    <option>Option four</option>
+                                                                    <option>Option five</option>
+                                                                    <option>Option six</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                                <select class="select2_multiple form-control" multiple="multiple">
+                                                                    <option>페이지 선택</option>
+                                                                    <option>Option one</option>
+                                                                    <option>Option two</option>
+                                                                    <option>Option three</option>
+                                                                    <option>Option four</option>
+                                                                    <option>Option five</option>
+                                                                    <option>Option six</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-1 col-sm-1 col-xs-12">
+                                                                <a href="#!" class="btn btn-primary btn-sm">선택</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="row">
+                                                        <label class="control-label col-md-2 col-sm-2 col-xs-12">자주쓰는 메뉴
+                                                            <br/>
+                                                            <small> ( 0 / 10 선택)</small>
+                                                        </label>
+                                                        <div class="col-md-10 col-sm-10">
+                                                            <p>자주쓰는 메뉴를 선택해 주세요. (최대10개)</p>
+                                                            <p>주문 / 출산선물 / 현황정보
+                                                                <a href="#!" class="btn btn-danger btn-xs btn-mb-0">삭제</a>
+                                                            </p>
+                                                            <p>주문 / 출산선물 / 현황정보
+                                                                <a href="#!" class="btn btn-danger btn-xs btn-mb-0">삭제</a>
+                                                            </p>
+                                                            <p>주문 / 출산선물 / 현황정보
+                                                                <a href="#!" class="btn btn-danger btn-xs btn-mb-0">삭제</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+                                                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">저장</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 자주쓰는 메뉴 설정 팝업 -->
+                            </li>
+                            <!-- 주문현황 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    주문현황
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="#!">
+                                            입금대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            입금완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            계약취소신청
+                                            <span class="badge bg-red">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            환불완료
+                                            <span class="badge bg-blue">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 중
+                                            <span class="badge bg-blue-sky">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 연장
+                                            <span class="badge bg-purple">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    </div>
+                    <div class="nav_menu second">
+                        <a href="index.html" class="btn btn-default btn-sm">Home</a>
+                        <a href="order_dash.html" class="btn btn-default btn-sm">주문</a>
+                        <a href="policy_in_out.html" class="btn btn-default btn-sm">기본정책</a>
+                        <a href="sales.html" class="btn btn-primary btn-sm">매출통계</a>
+                    </div>
+                </div>
+                <!-- /top navigation -->
+                <!-- page content -->
+                <div class="right_col main_dash sales" role="main">
+                    <div class="">
+                        <div class="row">
+                            <!-- 매출검색 -->
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="x_panel tile">
+                                    <div class="x_title">
+                                        <h2>매출 검색</h2>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content">
+                                        <div class="row">
+                                            <div class="col-md-1"><strong>지사</strong></div>
+                                            <div class="col-md-2">
+                                                <select name="" id="" class="form-control input-md">
+                                                    <option value="">지사명</option>
+                                                    <option value="">지사명</option>
+                                                    <option value="">지사명</option>
+                                                    <option value="">지사명</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-1"><strong>기간검색</strong></div>
+                                            <div class="col-md-8">
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                        <div class="control-group">
+                                                            <div class="controls">
+                                                                <div class="input-prepend input-group">
+                                                                    <span class="input-group-btn add-on">
+                                                                        <a href="#!" class="btn btn-success">검색</a>
+                                                                    </span>
+                                                                    <input type="text" style="width:200px" name="reservation" id="reservation" class="form-control" value="01/01/2016 - 01/25/2016"
+                                                                    />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="x_panel">
+                                    <div class="x_title">
+                                        <h2>기간내 매출액
+                                        </h2>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content top-box-noscroll">
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="month">본사
+                                                    <br/>매출</p>
+                                            </a>
+                                            <div class="media-body sales-price">
+                                                <p>120,120,120원</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="month">지사
+                                                    <br/>매출</p>
+                                            </a>
+                                            <div class="media-body sales-price">
+                                                <p>120,120,120원</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="month">총매
+                                                    <br/>출액</p>
+                                            </a>
+                                            <div class="media-body sales-price">
+                                                <p>120,120,120원</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="x_panel">
+                                    <div class="x_title">
+                                        <h2>기간내 계약건수
+                                        </h2>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content top-box-noscroll title-control">
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="month">본사</p>
+                                            </a>
+                                            <div class="media-body sales-price">
+                                                <p>0000건</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="month">지사</p>
+                                            </a>
+                                            <div class="media-body sales-price">
+                                                <p>0000건</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="month">총건수</p>
+                                            </a>
+                                            <div class="media-body sales-price">
+                                                <p>0000건</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="x_panel">
+                                    <div class="x_title">
+                                        <h2>기간내 연장건수
+                                        </h2>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content top-box-noscroll title-control">
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="month">본사</p>
+                                            </a>
+                                            <div class="media-body sales-price">
+                                                <p>0000건</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="month">지사</p>
+                                            </a>
+                                            <div class="media-body sales-price">
+                                                <p>0000건</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="month">총건수</p>
+                                            </a>
+                                            <div class="media-body sales-price">
+                                                <p>0000건</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="x_panel tile">
+                                    <div class="x_title">
+                                        <h2>매출액 TOP</h2>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content top-box">
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="day">1</p>
+                                            </a>
+                                            <div class="media-body">
+                                                <a class="title" href="#!">00지사</a>
+                                                <p>10,000,000원</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="day">2</p>
+                                            </a>
+                                            <div class="media-body">
+                                                <a class="title" href="#!">00지사</a>
+                                                <p>10,000,000원</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="day">3</p>
+                                            </a>
+                                            <div class="media-body">
+                                                <a class="title" href="#!">00지사</a>
+                                                <p>10,000,000원</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="day">4</p>
+                                            </a>
+                                            <div class="media-body">
+                                                <a class="title" href="#!">00지사</a>
+                                                <p>10,000,000원</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="day">5</p>
+                                            </a>
+                                            <div class="media-body">
+                                                <a class="title" href="#!">00지사</a>
+                                                <p>10,000,000원</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="day">6</p>
+                                            </a>
+                                            <div class="media-body">
+                                                <a class="title" href="#!">00지사</a>
+                                                <p>10,000,000원</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="day">7</p>
+                                            </a>
+                                            <div class="media-body">
+                                                <a class="title" href="#!">00지사</a>
+                                                <p>10,000,000원</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="day">8</p>
+                                            </a>
+                                            <div class="media-body">
+                                                <a class="title" href="#!">00지사</a>
+                                                <p>10,000,000원</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="day">9</p>
+                                            </a>
+                                            <div class="media-body">
+                                                <a class="title" href="#!">00지사</a>
+                                                <p>10,000,000원</p>
+                                            </div>
+                                        </article>
+                                        <article class="media event">
+                                            <a class="pull-left date">
+                                                <p class="day">10</p>
+                                            </a>
+                                            <div class="media-body">
+                                                <a class="title" href="#!">00지사</a>
+                                                <p>10,000,000원</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="x_panel">
+                                    <!-- <div class="x_title">
+                                        <h2>기간내 계약건수
+                                        </h2>
+                                        <div class="clearfix"></div>
+                                    </div> -->
+                                    <div class="x_content">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>날짜</th>
+                                                    <th>지사</th>
+                                                    <th>지사장</th>
+                                                    <th>계약건수</th>
+                                                    <th>계약취소</th>
+                                                    <th>연장건수</th>
+                                                    <th>상담문의</th>
+                                                    <th>서비스진행중</th>
+                                                    <th>완료</th>
+                                                    <th>매출</th>
+                                                    <th>보기</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                                <tr>
+                                                    <td>2018-05-28</td>
+                                                    <td>본사</td>
+                                                    <td>정혜윤</td>
+                                                    <td>59</td>
+                                                    <td>0</td>
+                                                    <td>25</td>
+                                                    <td>87</td>
+                                                    <td>65</td>
+                                                    <td>154</td>
+                                                    <td>10,000,000원</td>
+                                                    <td>???</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-05-28</td>
+                                                    <td>본사</td>
+                                                    <td>정혜윤</td>
+                                                    <td>59</td>
+                                                    <td>0</td>
+                                                    <td>25</td>
+                                                    <td>87</td>
+                                                    <td>65</td>
+                                                    <td>154</td>
+                                                    <td>10,000,000원</td>
+                                                    <td>???</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-05-28</td>
+                                                    <td>본사</td>
+                                                    <td>정혜윤</td>
+                                                    <td>59</td>
+                                                    <td>0</td>
+                                                    <td>25</td>
+                                                    <td>87</td>
+                                                    <td>65</td>
+                                                    <td>154</td>
+                                                    <td>10,000,000원</td>
+                                                    <td>???</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-05-28</td>
+                                                    <td>본사</td>
+                                                    <td>정혜윤</td>
+                                                    <td>59</td>
+                                                    <td>0</td>
+                                                    <td>25</td>
+                                                    <td>87</td>
+                                                    <td>65</td>
+                                                    <td>154</td>
+                                                    <td>10,000,000원</td>
+                                                    <td>???</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-05-28</td>
+                                                    <td>본사</td>
+                                                    <td>정혜윤</td>
+                                                    <td>59</td>
+                                                    <td>0</td>
+                                                    <td>25</td>
+                                                    <td>87</td>
+                                                    <td>65</td>
+                                                    <td>154</td>
+                                                    <td>10,000,000원</td>
+                                                    <td>???</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-05-28</td>
+                                                    <td>본사</td>
+                                                    <td>정혜윤</td>
+                                                    <td>59</td>
+                                                    <td>0</td>
+                                                    <td>25</td>
+                                                    <td>87</td>
+                                                    <td>65</td>
+                                                    <td>154</td>
+                                                    <td>10,000,000원</td>
+                                                    <td>???</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-05-28</td>
+                                                    <td>본사</td>
+                                                    <td>정혜윤</td>
+                                                    <td>59</td>
+                                                    <td>0</td>
+                                                    <td>25</td>
+                                                    <td>87</td>
+                                                    <td>65</td>
+                                                    <td>154</td>
+                                                    <td>10,000,000원</td>
+                                                    <td>???</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-05-28</td>
+                                                    <td>본사</td>
+                                                    <td>정혜윤</td>
+                                                    <td>59</td>
+                                                    <td>0</td>
+                                                    <td>25</td>
+                                                    <td>87</td>
+                                                    <td>65</td>
+                                                    <td>154</td>
+                                                    <td>10,000,000원</td>
+                                                    <td>???</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /page content -->
+
+                <!-- footer content -->
+                <footer>
+                    <div class="pull-right">
+                        Wellness Intelligence ADMIN PAGE Create by - Spacemonkey
+                    </div>
+                    <div class="clearfix"></div>
+                </footer>
+                <!-- /footer content -->
+            </div>
+        </div>
+
+
+
+        <!-- jQuery -->
+        <script src="../vendors/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- FastClick -->
+        <script src="../vendors/fastclick/lib/fastclick.js"></script>
+        <!-- NProgress -->
+        <script src="../vendors/nprogress/nprogress.js"></script>
+        <!-- jQuery Sparklines -->
+        <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+        <!-- bootstrap-daterangepicker -->
+        <script src="../vendors/moment/min/moment.min.js"></script>
+        <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script src="../vendors/jquery-ui-1.12.1.custom/datepicker-ko-KR.js"></script>
+        <script src="../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="../vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+        <!-- iCheck -->
+        <script src="../vendors/iCheck/icheck.min.js"></script>
+        <!-- TweenMax -->
+        <script src="../vendors/tweenmax/TweenMax.js"></script>
+        <!-- PNotify -->
+        <script src="../vendors/pnotify/dist/pnotify.js"></script>
+        <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
+        <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script>
+        <!-- Custom Theme Scripts -->
+        <script src="../build/js/custom.min.js"></script>
+        <script>
+            var year = moment().year()
+            var temp_month = moment().month()
+            var month = moment().month(temp_month).format("MM")
+            
+            $('input[name="reservation"]').daterangepicker({
+                locale: {
+                    format: 'YYYY-MM-DD',
+                    applyLabel: "적용",
+                    cancelLabel: "취소",
+                    weekLabel: "주",
+                    daysOfWeek: [
+                        "일",
+                        "월",
+                        "화",
+                        "수",
+                        "목",
+                        "금",
+                        "토"
+                    ],
+                    monthNames: [
+                        "1월",
+                        "2월",
+                        "3월",
+                        "4월",
+                        "5월",
+                        "6월",
+                        "7월",
+                        "8월",
+                        "9월",
+                        "10월",
+                        "11월",
+                        "12월",
+                    ],
+                    customRangeLabel: "기간설정"
+                },
+                startDate: year + '-' + month + '-01' ,
+                endDate: year + '-' + month + '-31',
+                ranges: {
+                    '오늘': [moment(), moment()],
+                    '이번달': [moment().startOf('month'), moment().endOf('month')],
+                    '7일': [moment().subtract(6, 'days'), moment()],
+                    '15일': [moment().subtract(14, 'days'), moment()],
+                    '30일': [moment().subtract(29, 'days'), moment()],
+                    '1개월': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
+                    '3개월': [moment().subtract(3, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                }
+            });
+        </script>
+</body>
+
+</html>

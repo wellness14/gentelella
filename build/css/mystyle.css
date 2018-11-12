@@ -1,0 +1,1433 @@
+.right_col.main_dash, .top_nav.main_top {
+  margin-left: 0 !important;
+}
+
+.location ul {
+  clear: both;
+  overflow: hidden;
+}
+.location li {
+  float: left;
+  list-style: none;
+  width: 40px;
+}
+.location li a {
+  display: block;
+}
+
+.left_col::-webkit-scrollbar {
+  width: 5px;
+}
+
+.left_col::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.left_col::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+.alert-info {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.page-title {
+  overflow: hidden;
+}
+
+.main_menu_side {
+  margin-top: -24px;
+}
+
+.btn-group-bottom {
+  padding: 10px 0 20px;
+}
+
+.chk-box, .label-box {
+  padding-top: 8px;
+}
+
+.radio-group {
+  margin: 0 0 10px 0;
+}
+.radio-group label {
+  margin-right: 10px;
+}
+
+.top_nav .nav_menu.first {
+  margin-bottom: 0;
+}
+.top_nav .nav_menu.second .btn {
+  margin-top: 5px;
+}
+
+.btn-mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.form-control.input-sm {
+  width: 70px;
+  display: initial;
+}
+.form-control.input-md {
+  width: 136px;
+  display: initial;
+}
+
+.input-inline {
+  display: initial !important;
+  width: initial !important;
+}
+
+.nav.toggle {
+  padding-top: 10px;
+}
+.nav.toggle .input-group .form-control {
+  height: 29.6px;
+}
+
+.title_right .btn {
+  margin-top: 9px !important;
+}
+
+.panel_toolbox label {
+  margin-bottom: 0;
+  padding-top: 4px;
+  font-size: 11px;
+  margin-left: 4px;
+}
+.panel_toolbox .btn {
+  margin-bottom: -5px !important;
+}
+
+.consult-summary {
+  margin-left: 0;
+}
+.consult-summary .col-md-6 {
+  line-height: 28px;
+}
+
+.left_col {
+  width: 235px !important;
+}
+.left_col.menu_fixed {
+  overflow-y: auto;
+}
+
+.fixed_height_460 {
+  min-height: 460px;
+}
+
+.fixed_height_300 {
+  min-height: 300px;
+}
+
+.blue {
+  color: #3498DB !important;
+}
+
+.hide {
+  display: none;
+}
+
+.nav_menu {
+  padding: 0 14px;
+}
+
+.toggle {
+  width: 250px !important;
+}
+
+.x_panel .todo-list {
+  border: 0 !important;
+}
+
+.x_title h2 {
+  overflow: initial !important;
+}
+
+.top_search .form-control {
+  border-radius: 0;
+}
+.top_search .input-group-btn button {
+  border-radius: 0;
+  border-left: 1px solid #eaeaea;
+}
+
+.branch-view {
+  margin-left: 20px;
+}
+.branch-view button {
+  padding: 2px 8px;
+  font-size: 14px;
+}
+
+.fixed_height_645 {
+  min-height: 645px;
+}
+
+.fixed_height_500 {
+  min-height: 450px;
+}
+
+.panel_toolbox label {
+  cursor: pointer;
+}
+.panel_toolbox > li > a.btn {
+  padding: 3px;
+  font-size: 12px;
+}
+
+.main_notice .table tr:first-child td {
+  border-top: 0;
+}
+.main_notice .table tr td > a {
+  display: block;
+}
+.main_notice .table tr td .label {
+  margin-right: 5px;
+}
+
+.menu_section > ul {
+  margin-top: 6px;
+}
+
+.input-group.top_search {
+  padding-left: 6px;
+}
+
+.nav_title {
+  height: 61px !important;
+  background-color: #fff !important;
+}
+
+.site_title {
+  padding-left: 0 !important;
+  text-align: center;
+}
+.site_title img {
+  height: 80px;
+  margin-top: -10px;
+}
+.site_title span {
+  font-size: 1.6rem;
+}
+
+.main_dash .tile-stats {
+  padding: 0.5rem !important;
+}
+.main_dash .tile-stats h3 {
+  font-size: 13px;
+  text-align: center;
+  margin-left: 0;
+  line-height: 2;
+}
+.main_dash .tile-stats .count {
+  font-size: 16px;
+  line-height: initial;
+  text-align: center;
+  margin-right: 10px;
+  line-height: 2;
+}
+.main_dash .col-lg-6 {
+  padding-bottom: 10px;
+}
+.main_dash .btn-new-consult {
+  width: 100%;
+}
+.main_dash .main_memo textarea {
+  width: 100%;
+  height: 198px;
+  border: 1px solid #ccc;
+}
+.main_dash .major_status .table th, .main_dash .major_status .table td {
+  text-align: center;
+}
+.main_dash .major_schedule .btn.add-todo {
+  margin-top: -3px;
+}
+.main_dash .major_schedule .to_do {
+  height: 270px;
+  overflow-y: auto;
+}
+.main_dash .rent .scroll-view {
+  height: 356px;
+  overflow-y: auto;
+}
+.main_dash .rent h5 {
+  font-weight: bold;
+}
+.main_dash .rent dl {
+  clear: both;
+  overflow: hidden;
+  padding: 0.25em;
+  margin-bottom: 10px;
+}
+.main_dash .rent dt, .main_dash .rent dd {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0.25em;
+  font-weight: normal;
+}
+.main_dash .message-box {
+  margin-top: 1em;
+}
+.main_dash .message-box textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 300px;
+}
+
+.ui-datepicker,
+.ui-datepicker table,
+.ui-datepicker tr,
+.ui-datepicker td,
+.ui-datepicker th {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-spacing: 0;
+}
+
+.ui-datepicker {
+  display: none;
+  padding: 35px;
+  cursor: default;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.ui-datepicker-header {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.ui-datepicker-title {
+  text-align: center;
+}
+
+.ui-datepicker-month {
+  position: relative;
+  padding-right: 15px;
+  color: #565656;
+}
+
+.ui-datepicker-year {
+  padding-left: 8px;
+  color: #a8a8a8;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  position: absolute;
+  top: -2px;
+  padding: 5px;
+  cursor: pointer;
+}
+.ui-datepicker-prev a,
+.ui-datepicker-next a {
+  color: #141517;
+}
+
+.ui-datepicker-prev {
+  left: 0;
+  padding-left: 0;
+}
+
+.ui-datepicker-next {
+  right: 0;
+  padding-right: 0;
+}
+
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+  display: block;
+  width: 14px;
+  height: 20px;
+  text-indent: -9999px;
+}
+
+.ui-datepicker-prev span {
+  background: url("../images/prev-calendar.png") no-repeat center center;
+  background-size: 100%;
+}
+
+.ui-datepicker-next span {
+  background: url("../images/next-calendar.png") no-repeat center center;
+  background-size: 100%;
+}
+
+.ui-datepicker-calendar {
+  width: 100%;
+}
+
+.ui-datepicker-calendar th {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: normal;
+  color: #a8a8a8;
+  color: #141517;
+}
+
+.ui-datepicker-calendar td {
+  padding: 0 7px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+  display: block;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  color: #a8a8a8;
+  border: 1px solid transparent;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+  color: #6a9113;
+  border: 1px solid #6a9113;
+}
+
+.ui-datepicker-other-month .ui-state-default {
+  color: #565656;
+}
+
+.order_dash .milestone .scrolling table {
+  table-layout: inherit;
+  *margin-left: -100px;
+  /*ie7*/
+}
+.order_dash .milestone .scrolling tr:last-child th, .order_dash .milestone .scrolling tr:last-child td {
+  border-bottom: 1px solid #ddd;
+}
+.order_dash .milestone .scrolling td, .order_dash .milestone th {
+  vertical-align: top;
+  padding: 10px;
+  min-width: 100px;
+  text-align: center;
+}
+.order_dash .milestone .scrolling th {
+  position: absolute;
+  *position: relative;
+  /*ie7*/
+  left: 0;
+  width: 120px;
+}
+.order_dash .milestone .scrolling th:nth-child(2) {
+  left: 120px;
+}
+.order_dash .milestone .outer {
+  position: relative;
+}
+.order_dash .milestone .inner {
+  overflow-x: auto;
+  overflow-y: visible;
+  margin-left: 240px;
+}
+.order_dash .milestone .inner .today {
+  font-size: 12px;
+}
+.order_dash .milestone .table {
+  border-collapse: collapse;
+  border: 0 !important;
+}
+.order_dash .milestone .table > thead:first-child > tr:first-child > th {
+  border-top: 1px solid #ddd;
+}
+.order_dash .milestone .table th {
+  border-bottom-width: 1px !important;
+  height: 40px;
+}
+.order_dash .milestone .table td {
+  height: 40px;
+}
+.order_dash .gift-rank {
+  padding: 19px 0;
+}
+.order_dash .rent .scroll-view {
+  height: 368px;
+  overflow-y: auto;
+}
+.order_dash .rent h5 {
+  font-weight: bold;
+}
+.order_dash .rent dl {
+  clear: both;
+  overflow: hidden;
+  padding: 0.25em;
+  margin-bottom: 10px;
+}
+.order_dash .rent dt, .order_dash .rent dd {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0.25em;
+  font-weight: normal;
+}
+
+.order_consult .page-title .title_right .pull-right {
+  margin: 0;
+}
+.order_consult .sido .select2_single, .order_consult .reference-type .select2_single, .order_consult .consult-state .select2_single {
+  border-radius: 3px;
+}
+.order_consult .sido ul.list-unstyled, .order_consult .reference-type ul.list-unstyled, .order_consult .consult-state ul.list-unstyled {
+  clear: both;
+}
+.order_consult .sido ul.list-unstyled li, .order_consult .reference-type ul.list-unstyled li, .order_consult .consult-state ul.list-unstyled li {
+  float: left;
+  padding: 0.25rem 0.8rem;
+}
+.order_consult .sido ul.list-unstyled li .badge, .order_consult .reference-type ul.list-unstyled li .badge, .order_consult .consult-state ul.list-unstyled li .badge {
+  font-size: 10px;
+  font-weight: normal;
+}
+.order_consult .consult-search-result th {
+  text-align: center;
+}
+.order_consult .consult-search-result td {
+  text-align: center;
+  vertical-align: middle;
+}
+.order_consult .consult-search-result td .label {
+  padding-top: 0.3rem;
+}
+
+.order_consult_new .title_left h3 small {
+  font-size: 1.4rem;
+}
+.order_consult_new .title_left h3 small:first-child {
+  margin-left: 30px;
+}
+.order_consult_new .title_left h3 small label {
+  vertical-align: -webkit-baseline-middle;
+}
+.order_consult_new .consult-save, .order_consult_new .temp-save {
+  margin-left: 10px !important;
+}
+.order_consult_new .temp-save-list .table td .btn {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.order_consult_new .consult_summary .btn {
+  margin: 0;
+}
+.order_consult_new .consult-branch {
+  margin-right: 20px !important;
+}
+.order_consult_new .btn-addr-search {
+  margin: 0;
+  border-radius: 0 !important;
+}
+.order_consult_new .addr1 {
+  margin-bottom: 10px;
+}
+.order_consult_new .reference-type ul.list-unstyled {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+}
+.order_consult_new .reference-type ul.list-unstyled li {
+  float: left;
+  padding: 0.25rem 0.8rem;
+}
+.order_consult_new .reference-type ul.list-unstyled li .badge {
+  font-size: 10px;
+  font-weight: normal;
+}
+.order_consult_new .regist-info .row {
+  padding: 10px;
+}
+.order_consult_new .natal-info {
+  height: 615px;
+}
+.order_consult_new .manage-start-dt .input-sm {
+  width: 100%;
+}
+.order_consult_new .consult-comment textarea {
+  width: 100%;
+  height: 200px;
+}
+.order_consult_new .consult-comment .btn {
+  margin-top: 10px;
+}
+.order_consult_new .voucher .radio-group {
+  margin-bottom: 0;
+}
+.order_consult_new .voucher .label {
+  font-size: 12px;
+}
+.order_consult_new .voucher .input-inline {
+  width: 100px !important;
+}
+.order_consult_new .message-box {
+  margin-top: 1em;
+}
+.order_consult_new .message-box textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 300px;
+}
+.order_consult_new .service-extend {
+  height: 1465px;
+}
+.order_consult_new .service-extend .label {
+  font-size: 13px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.order_consult_new .service-extend .service-period {
+  width: 35% !important;
+  float: left !important;
+}
+.order_consult_new .service-extend .service-name {
+  width: 65% !important;
+  float: left !important;
+}
+.order_consult_new .service-extend .go-helper-list {
+  margin-bottom: 0;
+}
+.order_consult_new .service-extend .add-overwork {
+  margin: 5px 0 0 10px;
+}
+.order_consult_new .service-extend .timeline .tags {
+  top: 6px;
+}
+.order_consult_new .service-extend .block_content .title {
+  font-size: 1.3rem;
+}
+.order_consult_new .service-extend .block_content .title .btn {
+  margin-bottom: 2px !important;
+}
+.order_consult_new .service-extend .default-service h5 {
+  font-weight: bold;
+}
+.order_consult_new .service-extend .default-service .input-group label {
+  margin-right: 10px;
+}
+.order_consult_new .service-extend .default-service .input-group .input-sm {
+  float: initial;
+}
+.order_consult_new .service-extend .default-service .input-group input[type=date].input-sm {
+  width: 160px;
+}
+.order_consult_new .etc-info .input-group label {
+  margin-right: 10px;
+}
+.order_consult_new .etc-info .input-group .input-sm {
+  float: initial;
+}
+.order_consult_new .etc-info .input-group input[type=date].input-sm {
+  width: 160px;
+}
+.order_consult_new .etc-info .rent input[type=text].input-sm, .order_consult_new .etc-info .rent input[type=date].input-sm, .order_consult_new .etc-info .rent input[type=number].input-sm {
+  width: 160px;
+}
+.order_consult_new .etc-info .rent .row {
+  margin: 10px 0;
+}
+.order_consult_new .etc-info .gift input.input-sm, .order_consult_new .etc-info .terminal input.input-sm {
+  width: 160px !important;
+}
+.order_consult_new .service-price {
+  height: 445px;
+  margin-bottom: 5rem;
+}
+.order_consult_new .service-price .col-md-6 {
+  padding: 8px;
+  font-size: 1.6rem;
+}
+.order_consult_new .service-price .total-price-label, .order_consult_new .service-price .voucher-label, .order_consult_new .service-price .income-label, .order_consult_new .service-price .balance-label {
+  font-weight: 100;
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+.order_consult_new .service-price .total-price, .order_consult_new .service-price .voucher-price, .order_consult_new .service-price .income-price, .order_consult_new .service-price .balance-price {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+.order_consult_new .service-price .btn.pull-right {
+  margin-top: 30px;
+}
+.order_consult_new .service-price + .payment-history {
+  color: #73879C;
+  background: #FFF !important;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  padding: 1rem;
+}
+.order_consult_new .service-price .enuri-title {
+  color: #73879C !important;
+}
+.order_consult_new .chk-payment {
+  color: #73879C;
+}
+.order_consult_new .chk-payment label {
+  color: #73879C;
+}
+
+.policy_use_agree .sido .select2_single, .policy_use_agree .reference-type .select2_single, .policy_use_agree .consult-state .select2_single {
+  border-radius: 3px;
+}
+.policy_use_agree .sido ul.list-unstyled, .policy_use_agree .reference-type ul.list-unstyled, .policy_use_agree .consult-state ul.list-unstyled {
+  clear: both;
+}
+.policy_use_agree .sido ul.list-unstyled li, .policy_use_agree .reference-type ul.list-unstyled li, .policy_use_agree .consult-state ul.list-unstyled li {
+  float: left;
+  padding: 0.25rem 0.8rem;
+}
+.policy_use_agree .sido ul.list-unstyled li .badge, .policy_use_agree .reference-type ul.list-unstyled li .badge, .policy_use_agree .consult-state ul.list-unstyled li .badge {
+  font-size: 10px;
+  font-weight: normal;
+}
+.policy_use_agree textarea {
+  height: 378px;
+}
+.policy_use_agree .table th, .policy_use_agree .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.policy_manage_gift .gift-img {
+  width: 60px;
+}
+.policy_manage_gift ul.msg_list li .image img {
+  width: 145px;
+}
+.policy_manage_gift .msg_list li {
+  padding: 10px !important;
+  width: 100% !important;
+}
+.policy_manage_gift .msg_list .message {
+  margin-left: 30px;
+  clear: both;
+  width: 70%;
+}
+.policy_manage_gift .msg_list .message dt, .policy_manage_gift .msg_list .message dd {
+  float: left;
+}
+.policy_manage_gift .msg_list .message dt {
+  width: 80px;
+}
+.policy_manage_gift .msg_list .message dd {
+  width: calc(100% - 80px);
+}
+.policy_manage_gift .pull-left.date {
+  width: 200px;
+}
+.policy_manage_gift .media-body .label {
+  font-size: 12px;
+}
+.policy_manage_gift .media-body p {
+  margin-top: 15px;
+}
+.policy_manage_gift .terminal-list .col-md-6 {
+  margin-bottom: 20px;
+}
+.policy_manage_gift .gift-search {
+  height: 29.6px;
+}
+.policy_manage_gift .table th, .policy_manage_gift .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+.policy_manage_gift .table .btn {
+  margin: 0 auto;
+}
+.policy_manage_gift input.gift-img-search {
+  height: 29.6px;
+}
+.policy_manage_gift .rent-save {
+  margin-top: 10px;
+}
+.policy_manage_gift .label {
+  padding-top: 0.3rem;
+}
+
+.policy_manage_gift_new input.gift-img-search {
+  height: 29.6px;
+}
+.policy_manage_gift_new ul.list-unstyled {
+  clear: both;
+  overflow: hidden;
+}
+.policy_manage_gift_new ul.list-unstyled li {
+  float: left;
+  padding: 0.25rem 0.8rem;
+}
+.policy_manage_gift_new ul.list-unstyled li .badge {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.policy_voucher_income blockquote {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.policy_voucher_income blockquote p {
+  margin-bottom: 0;
+}
+
+.policy_voucher_support blockquote {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.policy_voucher_support blockquote p {
+  margin-bottom: 0;
+}
+.policy_voucher_support .table td input {
+  width: 90px;
+}
+.policy_voucher_support .input-inline {
+  width: 66px !important;
+}
+.policy_voucher_support .table th, .policy_voucher_support .table td {
+  text-align: center;
+}
+.policy_voucher_support .table td {
+  vertical-align: middle;
+}
+
+.policy_voucher_location blockquote {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.policy_voucher_location blockquote p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.policy_voucher_location .table th, .policy_voucher_location .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.policy_jisa_account_regist form .addr1 {
+  margin-bottom: 15px !important;
+}
+
+.order_consult_detail .detail-modify {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+.order_consult_detail dt {
+  overflow: hidden;
+  clear: both;
+}
+.order_consult_detail dt, .order_consult_detail dd {
+  float: left;
+  padding: 10px 0;
+}
+.order_consult_detail .basic-info dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .basic-info dt {
+  width: 80px;
+}
+.order_consult_detail .basic-info dd {
+  width: calc(100% - 80px);
+}
+.order_consult_detail .recommend-consult dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .recommend-consult dt {
+  width: 80px;
+}
+.order_consult_detail .recommend-consult dd {
+  width: calc(100% - 80px);
+}
+.order_consult_detail .regist-info dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .regist-info dt {
+  width: 80px;
+}
+.order_consult_detail .regist-info dd {
+  width: calc(100% - 80px);
+}
+.order_consult_detail .regist-info textarea {
+  width: 100%;
+  height: 100px;
+}
+.order_consult_detail .before-info {
+  height: 363px;
+}
+.order_consult_detail .before-info dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .before-info dt {
+  width: 150px;
+}
+.order_consult_detail .before-info dd {
+  width: calc(100% - 150px);
+}
+.order_consult_detail .completion-info dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .completion-info dt {
+  width: 150px;
+}
+.order_consult_detail .completion-info dd {
+  width: calc(100% - 150px);
+}
+.order_consult_detail .completion-info textarea {
+  height: 100px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.order_consult_detail .service-offer dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .service-offer dt {
+  width: 150px;
+}
+.order_consult_detail .service-offer dd {
+  width: calc(100% - 150px);
+}
+.order_consult_detail .service-offer textarea {
+  height: 100px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.order_consult_detail .consult textarea {
+  margin-bottom: 10px;
+  height: 200px;
+}
+.order_consult_detail .service-price dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .service-price dt {
+  width: 50%;
+}
+.order_consult_detail .service-price dd {
+  width: 50%;
+}
+.order_consult_detail .service-price textarea {
+  height: 100px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.order_consult_detail .service-price .col-md-6 {
+  margin: 10px 0;
+}
+.order_consult_detail .voucher dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .voucher dt {
+  width: 150px;
+}
+.order_consult_detail .voucher dd {
+  width: calc(100% - 150px);
+}
+.order_consult_detail .voucher textarea {
+  height: 100px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.order_consult_detail .extension dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .extension dt {
+  width: 150px;
+}
+.order_consult_detail .extension dd {
+  width: calc(100% - 150px);
+}
+.order_consult_detail .etc-info dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .etc-info dt {
+  width: 150px;
+}
+.order_consult_detail .etc-info dd {
+  width: calc(100% - 150px);
+}
+.order_consult_detail .etc-info textarea {
+  height: 100px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.order_consult_detail .etc-info .btn {
+  margin-left: 20px;
+}
+.order_consult_detail .deleted-extension-info dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .deleted-extension-info dt {
+  width: 150px;
+}
+.order_consult_detail .deleted-extension-info dd {
+  width: calc(100% - 150px);
+}
+.order_consult_detail .deleted-extension-info textarea {
+  height: 100px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.order_consult_detail .restoration-extension-info dl {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+.order_consult_detail .restoration-extension-info dt {
+  width: 150px;
+}
+.order_consult_detail .restoration-extension-info dd {
+  width: calc(100% - 150px);
+}
+.order_consult_detail .restoration-extension-info textarea {
+  height: 100px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.manage_jisa .table th {
+  text-align: center;
+}
+.manage_jisa .table td {
+  text-align: center;
+}
+
+.policy_manage_jisa_new .sido .select2_single, .policy_manage_jisa_new .reference-type .select2_single, .policy_manage_jisa_new .consult-state .select2_single {
+  border-radius: 3px;
+}
+.policy_manage_jisa_new .sido ul.list-unstyled, .policy_manage_jisa_new .reference-type ul.list-unstyled, .policy_manage_jisa_new .consult-state ul.list-unstyled {
+  clear: both;
+}
+.policy_manage_jisa_new .sido ul.list-unstyled li, .policy_manage_jisa_new .reference-type ul.list-unstyled li, .policy_manage_jisa_new .consult-state ul.list-unstyled li {
+  float: left;
+  padding: 0.25rem 0.8rem;
+}
+.policy_manage_jisa_new .sido ul.list-unstyled li .badge, .policy_manage_jisa_new .reference-type ul.list-unstyled li .badge, .policy_manage_jisa_new .consult-state ul.list-unstyled li .badge {
+  font-size: 10px;
+  font-weight: normal;
+}
+.policy_manage_jisa_new .jisa-save {
+  margin-left: 10px !important;
+}
+.policy_manage_jisa_new blockquote {
+  font-size: 1.2rem;
+}
+.policy_manage_jisa_new .load-jisa .count {
+  font-size: 1.8rem !important;
+  padding: 1rem 0 0 1rem;
+}
+.policy_manage_jisa_new .load-jisa h3 {
+  padding: 0 0 1rem 8px;
+}
+.policy_manage_jisa_new .input-inline {
+  width: 100px !important;
+}
+.policy_manage_jisa_new .jisa-info .addr1 {
+  margin-bottom: 15px;
+}
+.policy_manage_jisa_new .jisa-info select.input-inline {
+  vertical-align: middle;
+  margin-top: -1px;
+}
+.policy_manage_jisa_new .jisa-info .bank-account-num {
+  width: 250px !important;
+}
+.policy_manage_jisa_new .jisa-info .account-holder {
+  width: 200px !important;
+}
+.policy_manage_jisa_new .jisa-info textarea {
+  height: 140px;
+}
+
+.policy_manage_jisa_detail .go-list, .policy_manage_jisa_detail .jisa-modify, .policy_manage_jisa_detail .jisa-delete {
+  margin-left: 10px !important;
+}
+.policy_manage_jisa_detail .input-inline {
+  width: 100px !important;
+}
+.policy_manage_jisa_detail .jisa-info .addr1 {
+  margin-bottom: 15px;
+}
+.policy_manage_jisa_detail .jisa-info select.input-inline {
+  vertical-align: middle;
+  margin-top: -1px;
+}
+.policy_manage_jisa_detail .jisa-info .bank-account-num {
+  width: 250px !important;
+}
+.policy_manage_jisa_detail .jisa-info .account-holder {
+  width: 200px !important;
+}
+.policy_manage_jisa_detail .jisa-info textarea {
+  height: 140px;
+}
+
+.policy_manage_jisa_modify .sido .select2_single, .policy_manage_jisa_modify .reference-type .select2_single, .policy_manage_jisa_modify .consult-state .select2_single {
+  border-radius: 3px;
+}
+.policy_manage_jisa_modify .sido ul.list-unstyled, .policy_manage_jisa_modify .reference-type ul.list-unstyled, .policy_manage_jisa_modify .consult-state ul.list-unstyled {
+  clear: both;
+}
+.policy_manage_jisa_modify .sido ul.list-unstyled li, .policy_manage_jisa_modify .reference-type ul.list-unstyled li, .policy_manage_jisa_modify .consult-state ul.list-unstyled li {
+  float: left;
+  padding: 0.25rem 0.8rem;
+}
+.policy_manage_jisa_modify .sido ul.list-unstyled li .badge, .policy_manage_jisa_modify .reference-type ul.list-unstyled li .badge, .policy_manage_jisa_modify .consult-state ul.list-unstyled li .badge {
+  font-size: 10px;
+  font-weight: normal;
+}
+.policy_manage_jisa_modify .jisa-save, .policy_manage_jisa_modify .jisa-cancel, .policy_manage_jisa_modify .jisa-delete {
+  margin-left: 10px !important;
+}
+.policy_manage_jisa_modify .input-inline {
+  width: 100px !important;
+}
+.policy_manage_jisa_modify .jisa-info .addr1 {
+  margin-bottom: 15px;
+}
+.policy_manage_jisa_modify .jisa-info select.input-inline {
+  vertical-align: middle;
+  margin-top: -1px;
+}
+.policy_manage_jisa_modify .jisa-info .bank-account-num {
+  width: 250px !important;
+}
+.policy_manage_jisa_modify .jisa-info .account-holder {
+  width: 200px !important;
+}
+.policy_manage_jisa_modify .jisa-info textarea {
+  height: 140px;
+}
+.policy_manage_jisa_modify blockquote {
+  font-size: 1.2rem;
+}
+.policy_manage_jisa_modify .pw-change dl {
+  overflow: hidden;
+  clear: both;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+.policy_manage_jisa_modify .pw-change dt, .policy_manage_jisa_modify .pw-change dd {
+  float: left;
+  width: 25%;
+  padding: 1rem;
+}
+.policy_manage_jisa_modify .pw-change dt {
+  width: 100px;
+}
+.policy_manage_jisa_modify .pw-change dd {
+  width: calc(100% - 100px);
+}
+.policy_manage_jisa_modify .pw-change dd input {
+  width: 200px;
+  margin-top: -6px;
+}
+.policy_manage_jisa_modify .contract-extend dl {
+  clear: both;
+  margin-bottom: 0;
+}
+.policy_manage_jisa_modify .contract-extend dt, .policy_manage_jisa_modify .contract-extend dd {
+  float: left;
+  width: 50%;
+}
+.policy_manage_jisa_modify .contract-extend dt {
+  width: 100px;
+}
+.policy_manage_jisa_modify .contract-extend dd {
+  width: calc(100% - 100px);
+}
+.policy_manage_jisa_modify .contract-extend input {
+  margin-top: -8px;
+}
+.policy_manage_jisa_modify .contract-extend .table th, .policy_manage_jisa_modify .contract-extend .table td {
+  text-align: center;
+}
+.policy_manage_jisa_modify .contract-extend .table th .btn, .policy_manage_jisa_modify .contract-extend .table td .btn {
+  margin: 0 auto;
+}
+
+.policy_manage_helper_new .helper-save {
+  margin-left: 10px !important;
+}
+.policy_manage_helper_new .avatar-view {
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.policy_manage_helper_new .addr1 {
+  margin-bottom: 10px;
+}
+.policy_manage_helper_new .sido .select2_single, .policy_manage_helper_new .reference-type .select2_single, .policy_manage_helper_new .consult-state .select2_single {
+  border-radius: 3px;
+}
+.policy_manage_helper_new .sido ul.list-unstyled, .policy_manage_helper_new .reference-type ul.list-unstyled, .policy_manage_helper_new .consult-state ul.list-unstyled {
+  clear: both;
+}
+.policy_manage_helper_new .sido ul.list-unstyled li, .policy_manage_helper_new .reference-type ul.list-unstyled li, .policy_manage_helper_new .consult-state ul.list-unstyled li {
+  float: left;
+  padding: 0.25rem 0.8rem;
+}
+.policy_manage_helper_new .sido ul.list-unstyled li .badge, .policy_manage_helper_new .reference-type ul.list-unstyled li .badge, .policy_manage_helper_new .consult-state ul.list-unstyled li .badge {
+  font-size: 10px;
+  font-weight: normal;
+}
+.policy_manage_helper_new .start-date {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.policy_manage_helper_new .end-date {
+  margin-left: 10px;
+}
+.policy_manage_helper_new .etc-info .x_content {
+  height: 280px;
+}
+.policy_manage_helper_new .etc-info .list-unstyled li {
+  float: left;
+  padding: 0.6rem 1rem 0 0;
+}
+
+.policy_manage_helper_detail .go-list, .policy_manage_helper_detail .helper-modify, .policy_manage_helper_detail .helper-delete {
+  margin-left: 10px !important;
+}
+.policy_manage_helper_detail .profile_left dl {
+  clear: both;
+  overflow: hidden;
+}
+.policy_manage_helper_detail .profile_left dt, .policy_manage_helper_detail .profile_left dd {
+  padding: 10px;
+  float: left;
+}
+.policy_manage_helper_detail .profile_left dt small, .policy_manage_helper_detail .profile_left dd small {
+  display: block;
+}
+.policy_manage_helper_detail .profile_left dt {
+  width: 30%;
+}
+.policy_manage_helper_detail .profile_left dd {
+  width: 70%;
+}
+
+/* colors */
+.login_wrapper .login_content {
+  padding-top: 0;
+}
+.login_wrapper .login_content h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.login_wrapper .login_content > p {
+  margin-bottom: 0;
+}
+.login_wrapper .login_content > p.first {
+  margin-top: 2rem !important;
+}
+.login_wrapper form {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  background-color: #FFF;
+  margin: 0;
+  padding: 2.25em;
+  box-sizing: border-box;
+  border: solid 1px #DDD;
+  border-radius: 0.5em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.login_wrapper form .svgContainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1em;
+  border-radius: 50%;
+  background: none;
+  border: solid 2.5px #3A5E77;
+  overflow: hidden;
+  pointer-events: none;
+}
+.login_wrapper form .svgContainer div {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+.login_wrapper form .svgContainer .mySVG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.login_wrapper form .inputGroup {
+  margin: 0 0 2em;
+  padding: 0;
+  position: relative;
+}
+.login_wrapper form .inputGroup:last-of-type {
+  margin-bottom: 0;
+}
+.login_wrapper form label {
+  margin: 0 0 12px;
+  display: block;
+  font-size: 1.25em;
+  color: #217093;
+  font-weight: 700;
+  font-family: inherit;
+}
+.login_wrapper form input[type=email], .login_wrapper form input[type=text], .login_wrapper form input[type=password] {
+  display: block;
+  margin: 0;
+  padding: 0 1em 0 !important;
+  background-color: #f3fafd;
+  border: solid 2px #217093;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  font-size: 13px;
+  color: #353538;
+  font-weight: 600;
+  font-family: inherit;
+  transition: box-shadow 0.2s linear, border-color 0.25s ease-out;
+}
+.login_wrapper form input[type=email]:focus, .login_wrapper form input[type=text]:focus, .login_wrapper form input[type=password]:focus {
+  outline: none;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border: solid 2px #4eb8dd;
+}
+.login_wrapper form input[type=email], .login_wrapper form input[type=text] {
+  padding: 14px 1em 0px;
+}
+.login_wrapper form .login {
+  display: block;
+  margin: 0;
+  padding: 0.65em 1em 1em;
+  background-color: #4eb8dd;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: none;
+  width: 100%;
+  height: 40px;
+  font-size: 13px;
+  color: #FFF;
+  font-weight: 600;
+  font-family: inherit;
+  transition: background-color 0.2s ease-out;
+}
+.login_wrapper form .login:hover, .login_wrapper form .login:active {
+  background-color: #217093;
+  text-decoration: none;
+}
+.login_wrapper form .inputGroup1 .helper {
+  position: absolute;
+  z-index: 1;
+  font-family: inherit;
+}
+.login_wrapper form .inputGroup1 .helper1 {
+  top: 0;
+  left: 0;
+  transform: translate(1.4em, 2.6em) scale(1);
+  transform-origin: 0 0;
+  color: #217093;
+  font-size: 1.25em;
+  font-weight: 400;
+  opacity: 0.65;
+  pointer-events: none;
+  transition: transform 0.2s ease-out, opacity 0.2s linear;
+}
+.login_wrapper form .inputGroup1.focusWithText .helper {
+  /*input[type='email']:focus + .helper {*/
+  transform: translate(1.4em, 2em) scale(0.65);
+  opacity: 1;
+}
+
+.favorite-menu .row {
+  padding: 0 2rem;
+}
+
+.favorite-menu-list li a {
+  white-space: normal;
+}
+.favorite-menu-list li a .fa-star {
+  color: gold;
+}
+
+.consult_reserve_normal .table th, .consult_reserve_normal .table td {
+  text-align: center;
+}
+
+.member_regist h3 {
+  text-align: center;
+  padding: 1rem 0;
+}
+.member_regist .basic_info {
+  margin: 2rem auto 0;
+  width: 100%;
+}
+.member_regist .addr2 {
+  margin-top: 1rem;
+}
+.member_regist .userid_wrapper .input-group {
+  margin-bottom: 0 !important;
+}
+.member_regist .agree_content {
+  margin: 1em 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 100px;
+  font-size: 0.9rem;
+}
+
+.sales .col-md-1 strong {
+  line-height: 3rem;
+}
+.sales .sales-price {
+  font-size: 25px;
+}
+.sales .sales-price p {
+  margin-top: 4px;
+}
+.sales .top-box {
+  overflow-y: scroll;
+  height: 200px;
+}
+.sales .top-box-noscroll {
+  height: 200px;
+}
+.sales .top-box-noscroll.title-control .date {
+  margin-top: 8px;
+}
+
+@media (min-width: 992px) {
+  footer {
+    margin-left: 0 !important;
+  }
+}

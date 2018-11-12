@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>마더앤베이비 관리자 - 산후도우미 등록</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Simple Calendar -->
+    <link href="../vendors/simple-calendar-master/dist/simple-calendar.css" rel="stylesheet">
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.css" rel="stylesheet">
+    <link href="../build/css/mystyle.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title">
+                            <img src="../build/images/partner6.png" alt="마더앤베이비로고">
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br />
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a href="policy_in_out.html">이용/탈퇴안내</a>
+                                </li>
+                                <li>
+                                    <a>약관관리
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_use_agree.html">서비스 이용약관</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_private_agree.html">개인정보취급방침</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_email_agree.html">이메일 무단수집거부</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>SEO태그
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_seo_common.html">공통관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>지사/지역/산후도우미
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_jisa.html">지사관리</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_helper.html">산후도우미 관리</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_location_setting.html">지역설정</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>선물/대여품/단말기
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_manage_gift.html">선물/대여품/단말기 관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>서비스 프로그램
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_service.html">서비스 상품/옵션</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>바우처
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="policy_voucher_income.html">기준중위소득관리</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_voucher_support.html">정부지원금 정책</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="policy_voucher_location.html">지역별 정책 관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>관리자
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu">
+                                            <a href="#!">본사관리자</a>
+                                        </li>
+                                        <li class="sub_menu">
+                                            <a href="#!">지사계정생성</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small hide">
+                        <a data-toggle="tooltip" data-placement="top" title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu first">
+                    <nav>
+                        <div class="nav toggle">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="이름, ID, 휴대번호">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-primary btn-sm">검색</button>
+                                </span>
+                            </div>
+                        </div>
+            
+            
+            
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- 로그인 유저 확인 및 로그아웃 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    관리자 접속중
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="fa fa-sign-out pull-right"></i> 로그아웃</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 자주 쓰는 메뉴 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    자주쓰는메뉴
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fa fa-cog pull-right"></i> 메뉴설정</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">자주쓰는 메뉴를 설정해주세요.</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 주문현황 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    주문현황
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="#!">
+                                            입금대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            입금완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            계약취소신청
+                                            <span class="badge bg-red">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            환불완료
+                                            <span class="badge bg-blue">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 중
+                                            <span class="badge bg-blue-sky">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 연장
+                                            <span class="badge bg-purple">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav_menu second">
+                    <a href="index.html" class="btn btn-primary btn-sm">Home</a>
+                    <a href="order_dash.html" class="btn btn-primary btn-sm">주문</a>
+                    <a href="policy_in_out.html" class="btn btn-primary btn-sm">기본정책</a>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col policy_manage_helper_detail" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>산후도우미 관리</h3>
+                        </div>
+                        <div class="title_right">
+                            <a href="policy_manage_helper.html" class="btn btn-primary btn-sm pull-right go-list">목록</a>
+                            <a href="policy_manage_helper_modify.html" class="btn btn-default btn-sm pull-right helper-modify">수정</a>
+                            <a href="#!" class="btn btn-danger btn-sm pull-right helper-delete" data-toggle="modal" data-target=".helper-delete-modal">삭제</a>
+                            <!-- 산후도우미 삭제 팝업 -->
+                            <div class="modal fade bs-example-modal-sm helper-delete-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                            
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">산후도우미 정보삭제</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>산후도우미 정보를 삭제할까요?</p>
+                                            <p>삭제된 정보는 복구되지 않습니다.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">취소</button>
+                                            <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">삭제</button>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 산후도우미 삭제 팝업 -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>산후도우미 관리</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 profile_left">
+                                        <div class="profile_img">
+                                            <div id="crop-avatar">
+                                                <!-- Current avatar -->
+                                                <img class="img-responsive avatar-view" src="images/picture.jpg" alt="Avatar" title="Change the avatar">
+                                            </div>
+                                        </div>
+                                        <h3>박신혜</h3>
+                                    
+                                        <ul class="list-unstyled user_data">
+                                            <li>
+                                                <i class="fa fa-map-marker user-profile-icon"></i> 서울특별시 관악구 관악동 666-1212 푸르지오아파트 101동 1400호
+                                            </li>
+                                    
+                                            <li>
+                                                주민등록번호 : 840528-1234567
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-phone user-profile-icon"></i> 010-0000-0000 / 02-0000-0000
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-train user-profile-icon"></i> 강남구청역
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-bell-o user-profile-icon"></i> 무교
+                                            </li>
+                                    
+                                            <li class="m-top-xs">
+                                                <i class="fa fa-bank user-profile-icon"></i> 우리은행 120-22-555-551 / 예금주 : 조아라
+                                                
+                                            </li>
+                                        </ul>
+                                    
+                                        <hr>
+                                        <!-- start 배속정보 -->
+                                        <h4><i class="fa fa-pagelines"></i> 배속정보</h4>
+                                        <dl>
+                                            <dt>소속지점</dt>
+                                            <dd>동작/관악/금천</dd>
+                                            <dt>근무요건</dt>
+                                            <dd>입주/출퇴근</dd>
+                                            <dt>희망근무지역</dt>
+                                            <dd>관악/금천</dd>
+                                            <dt>상태</dt>
+                                            <dd>근무중[김혜숙 산모 케어중] <br/><a href="#!" class="btn btn-primary btn-xs btn-mb-0">고객확인</a><a href="#!" class="btn btn-primary btn-xs btn-mb-0">상태변경</a></dd>
+                                        </dl>
+                                        <!-- end of 배속정보 -->
+                                        <hr>
+                                        <!-- start 자격정보 -->
+                                        <h4>
+                                            <i class="fa fa-pagelines"></i> 자격정보</h4>
+                                        <dl>
+                                            <dt>교육수료기관</dt>
+                                            <dd>-</dd>
+                                            <dt>배상보험가입</dt>
+                                            <dd>11111-1111</dd>
+                                            <dt>건강검진 <small>(1년 이내)</small></dt>
+                                            <dd>2018.03.20 <small>(유효기간 201일 남음)</small></dd>
+                                            <dt>수혜기간??</dt>
+                                            <dd>2018.03.20 ~ 2019.03.19</dd>
+                                        </dl>
+                                        <!-- end of 자격정보 -->
+                                    
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-12">
+                                        <h4>
+                                            <i class="fa fa-pagelines"></i> 근무일지</h4>
+                                        <dl>
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>산모</th>
+                                                    <th>근무 시작일 - 종료일</th>
+                                                    <th>이력</th>
+                                                    <th>지급비용</th>
+                                                    <th>입금확인</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>권혜숙 산모
+                                                        <a href="#!" class="btn btn-primary btn-xs btn-mb-0">고객확인</a></td>
+                                                    <td>2018.03.20 - 2018.04.20</td>
+                                                    <td>관리사교체(김아라 관리사로 교체)</td>
+                                                    <td>900,000원</td>
+                                                    <td><a href="#!" class="btn btn-primary btn-xs btn-mb-0">입금확인</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>권혜숙 산모
+                                                        <a href="#!" class="btn btn-primary btn-xs btn-mb-0">고객확인</a>
+                                                    </td>
+                                                    <td>2018.03.20 - 2018.04.20</td>
+                                                    <td>근무완료</td>
+                                                    <td>900,000원</td>
+                                                    <td>
+                                                        입금완료[조미경 확인 2018.03.20]
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>권혜숙 산모
+                                                        <a href="#!" class="btn btn-primary btn-xs btn-mb-0">고객확인</a>
+                                                    </td>
+                                                    <td>2018.03.20 - 2018.04.20</td>
+                                                    <td>근무완료</td>
+                                                    <td>900,000원</td>
+                                                    <td>
+                                                        입금완료[조미경 확인 2018.03.20]
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>권혜숙 산모
+                                                        <a href="#!" class="btn btn-primary btn-xs btn-mb-0">고객확인</a>
+                                                    </td>
+                                                    <td>2018.03.20 - 2018.04.20</td>
+                                                    <td>근무완료</td>
+                                                    <td>900,000원</td>
+                                                    <td>
+                                                        입금완료[조미경 확인 2018.03.20]
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>권혜숙 산모
+                                                        <a href="#!" class="btn btn-primary btn-xs btn-mb-0">고객확인</a>
+                                                    </td>
+                                                    <td>2018.03.20 - 2018.04.20</td>
+                                                    <td>근무완료</td>
+                                                    <td>900,000원</td>
+                                                    <td>
+                                                        입금완료[조미경 확인 2018.03.20]
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>권혜숙 산모
+                                                        <a href="#!" class="btn btn-primary btn-xs btn-mb-0">고객확인</a>
+                                                    </td>
+                                                    <td>2018.03.20 - 2018.04.20</td>
+                                                    <td>근무완료</td>
+                                                    <td>900,000원</td>
+                                                    <td>
+                                                        입금완료[조미경 확인 2018.03.20]
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>권혜숙 산모
+                                                        <a href="#!" class="btn btn-primary btn-xs btn-mb-0">고객확인</a>
+                                                    </td>
+                                                    <td>2018.03.20 - 2018.04.20</td>
+                                                    <td>근무완료</td>
+                                                    <td>900,000원</td>
+                                                    <td>
+                                                        입금완료[조미경 확인 2018.03.20]
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>권혜숙 산모
+                                                        <a href="#!" class="btn btn-primary btn-xs btn-mb-0">고객확인</a>
+                                                    </td>
+                                                    <td>2018.03.20 - 2018.04.20</td>
+                                                    <td>근무완료</td>
+                                                    <td>900,000원</td>
+                                                    <td>
+                                                        입금완료[조미경 확인 2018.03.20]
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>권혜숙 산모
+                                                        <a href="#!" class="btn btn-primary btn-xs btn-mb-0">고객확인</a>
+                                                    </td>
+                                                    <td>2018.03.20 - 2018.04.20</td>
+                                                    <td>근무완료</td>
+                                                    <td>900,000원</td>
+                                                    <td>
+                                                        입금완료[조미경 확인 2018.03.20]
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>권혜숙 산모
+                                                        <a href="#!" class="btn btn-primary btn-xs btn-mb-0">고객확인</a>
+                                                    </td>
+                                                    <td>2018.03.20 - 2018.04.20</td>
+                                                    <td>근무완료</td>
+                                                    <td>900,000원</td>
+                                                    <td>
+                                                        입금완료[조미경 확인 2018.03.20]
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                            </tbody>
+                                        </table>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination pull-right">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" tabindex="-1">이전</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">1</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">2</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">3</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">다음</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <div class="clearfix"></div>
+                                        <hr>
+                                        <h4>
+                                            <i class="fa fa-pagelines"></i> 특이사항</h4>
+                                        <textarea name="" id="" rows="5" class="form-control"></textarea>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group-bottom text-center">
+                            <a href="#!" class="btn btn-danger btn-sm helper-delete" data-toggle="modal" data-target=".helper-delete-modal">삭제</a>
+                            <a href="#!" class="btn btn-default btn-sm helper-modify">수정</a>
+                            <a href="#!" class="btn btn-primary btn-sm go-list">목록</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+                Wellness Intelligence ADMIN PAGE Create by - Spacemonkey
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+    </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../vendors/jquery-ui-1.12.1.custom/datepicker-ko-KR.js"></script>
+    <script src="../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+</body>
+
+</html>
