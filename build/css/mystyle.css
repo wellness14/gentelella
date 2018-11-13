@@ -1,6 +1,16 @@
 .right_col.main_dash, .top_nav.main_top {
   margin-left: 0 !important;
+  
 }
+.top_nav{
+    position: fixed;
+    width:100%;
+    right: 0px;
+    padding-left: 235px;
+    top:0px;
+    z-index: 99;
+}
+
 
 .location ul {
   clear: both;
@@ -1469,10 +1479,14 @@
 }
 
 
+.float-left{
+ float: left;
+    width: 400px;
+}
 
-
-
-
+.float-right{
+    float: right;
+}
 
 
 
@@ -1490,4 +1504,10 @@
   footer {
     margin-left: 0 !important;
   }
+}
+@media (max-width: 992px) {
+
+.top_nav{
+        z-index: -9999 !important;
+    }
 }
