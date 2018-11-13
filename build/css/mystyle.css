@@ -635,11 +635,17 @@
   width: 160px !important;
 }
 .order_consult_new .service-price {
-  height: 445px;
-  margin-bottom: 5rem;
+  margin-top: -10px;
 }
+.order_consult_new .service-price .row>div{
+  padding-right:15px;
+}
+.order_consult_new .service-price .row>div:nth-last-of-type(1){
+  padding-right:0px;
+}
+
 .order_consult_new .service-price .col-md-6 {
-  padding: 8px;
+  padding: 2px;
   font-size: 1.6rem;
 }
 .order_consult_new .service-price .total-price-label, .order_consult_new .service-price .voucher-label, .order_consult_new .service-price .income-label, .order_consult_new .service-price .balance-label {
@@ -653,15 +659,17 @@
   font-size: 2rem;
 }
 .order_consult_new .service-price .btn.pull-right {
-  margin-top: 30px;
+  margin-top: 0px;
 }
-.order_consult_new .service-price + .payment-history {
+.payment-history {
   color: #73879C;
   background: #FFF !important;
   width: 100%;
   overflow: hidden;
   clear: both;
-  padding: 1rem;
+  height: 160px;
+  overflow: scroll;
+  padding: 10px !important;
 }
 .order_consult_new .service-price .enuri-title {
   color: #73879C !important;
@@ -1425,6 +1433,58 @@
 .sales .top-box-noscroll.title-control .date {
   margin-top: 8px;
 }
+
+.servicePriceFix {
+    position: fixed; 
+    height: 240px;
+    width: 1200px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 99;
+    margin-bottom: 0px;
+}
+.service-price>div{
+    padding: 10px;
+}
+.service-price div:nth-of-type(1) div {
+    padding: 5px 0px;
+}
+
+/*스크롤 제이쿼리 css*/
+/*.nav-up {
+    bottom: 0px;
+}
+.nav-down {
+    bottom: -190px;
+    width: 200px;
+}*/
+
+.mouseHover{
+    bottom: -190px;
+    width: 200px;
+}
+.mouseHover:hover{
+    bottom: 0px;
+    width: 1200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 992px) {
   footer {

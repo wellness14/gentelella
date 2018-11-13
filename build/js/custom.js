@@ -6,18 +6,20 @@
  *     // code here
  * });
  */
-(function($,sr){
+(function ($, sr) {
     // debouncing function from John Hann
     // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
     var debounce = function (func, threshold, execAsap) {
-      var timeout;
+        var timeout;
 
-        return function debounced () {
-            var obj = this, args = arguments;
-            function delayed () {
+        return function debounced() {
+            var obj = this,
+                args = arguments;
+
+            function delayed() {
                 if (!execAsap)
-                    func.apply(obj, args); 
-                timeout = null; 
+                    func.apply(obj, args);
+                timeout = null;
             }
 
             if (timeout)
@@ -25,14 +27,16 @@
             else if (execAsap)
                 func.apply(obj, args);
 
-            timeout = setTimeout(delayed, threshold || 100); 
+            timeout = setTimeout(delayed, threshold || 100);
         };
     };
 
     // smartresize 
-    jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+    jQuery.fn[sr] = function (fn) {
+        return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
+    };
 
-})(jQuery,'smartresize');
+})(jQuery, 'smartresize');
 /**
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -50,7 +54,7 @@ var CURRENT_URL = window.location.href.split('#')[0].split('?')[0],
     $FOOTER = $('footer');
 
 // Sidebar
-$(document).ready(function() {
+$(document).ready(function () {
     // TODO: This is some kind of easy fix, maybe we can improve this
     var setContentHeight = function () {
         // reset height
@@ -67,12 +71,12 @@ $(document).ready(function() {
         $RIGHT_COL.css('min-height', contentHeight);
     };
 
-    $SIDEBAR_MENU.find('a').on('click', function(ev) {
+    $SIDEBAR_MENU.find('a').on('click', function (ev) {
         var $li = $(this).parent();
 
         if ($li.is('.active')) {
             $li.removeClass('active active-sm');
-            $('ul:first', $li).slideUp(function() {
+            $('ul:first', $li).slideUp(function () {
                 setContentHeight();
             });
         } else {
@@ -81,10 +85,10 @@ $(document).ready(function() {
                 $SIDEBAR_MENU.find('li').removeClass('active active-sm');
                 $SIDEBAR_MENU.find('li ul').slideUp();
             }
-            
+
             $li.addClass('active');
 
-            $('ul:first', $li).slideDown(function() {
+            $('ul:first', $li).slideDown(function () {
                 setContentHeight();
             });
         }
@@ -99,7 +103,7 @@ $(document).ready(function() {
     });
 
     // toggle small or large menu
-    $MENU_TOGGLE.on('click', function() {
+    $MENU_TOGGLE.on('click', function () {
         if ($BODY.hasClass('nav-md')) {
             $SIDEBAR_MENU.find('li.active ul').hide();
             $SIDEBAR_MENU.find('li.active').addClass('active-sm').removeClass('active');
@@ -112,7 +116,9 @@ $(document).ready(function() {
 
         setContentHeight();
 
-        $('.dataTable').each ( function () { $(this).dataTable().fnDraw(); });
+        $('.dataTable').each(function () {
+            $(this).dataTable().fnDraw();
+        });
     });
 
     // check active menu
@@ -120,12 +126,12 @@ $(document).ready(function() {
 
     $SIDEBAR_MENU.find('a').filter(function () {
         return this.href == CURRENT_URL;
-    }).parent('li').addClass('current-page').parents('ul').slideDown(function() {
+    }).parent('li').addClass('current-page').parents('ul').slideDown(function () {
         setContentHeight();
     }).parent().addClass('active');
 
     // recompute content when resizing
-    $(window).smartresize(function(){  
+    $(window).smartresize(function () {
         setContentHeight();
     });
 
@@ -136,27 +142,29 @@ $(document).ready(function() {
         $('.menu_fixed').mCustomScrollbar({
             autoHideScrollbar: true,
             theme: 'minimal',
-            mouseWheel:{ preventDefault: true }
+            mouseWheel: {
+                preventDefault: true
+            }
         });
     }
 });
 // /Sidebar
 
 // Panel toolbox
-$(document).ready(function() {
-    $('.collapse-link').on('click', function() {
+$(document).ready(function () {
+    $('.collapse-link').on('click', function () {
         var $BOX_PANEL = $(this).closest('.x_panel'),
             $ICON = $(this).find('i'),
             $BOX_CONTENT = $BOX_PANEL.find('.x_content');
-        
+
         // fix for some div with hardcoded fix class
         if ($BOX_PANEL.attr('style')) {
-            $BOX_CONTENT.slideToggle(200, function(){
+            $BOX_CONTENT.slideToggle(200, function () {
                 $BOX_PANEL.removeAttr('style');
             });
         } else {
-            $BOX_CONTENT.slideToggle(200); 
-            $BOX_PANEL.css('height', 'auto');  
+            $BOX_CONTENT.slideToggle(200);
+            $BOX_PANEL.css('height', 'auto');
         }
 
         $ICON.toggleClass('fa-chevron-up fa-chevron-down');
@@ -171,7 +179,7 @@ $(document).ready(function() {
 // /Panel toolbox
 
 // Tooltip
-$(document).ready(function() {
+$(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip({
         container: 'body'
     });
@@ -179,15 +187,15 @@ $(document).ready(function() {
 // /Tooltip
 
 // Progressbar
-$(document).ready(function() {
-	if ($(".progress .progress-bar")[0]) {
-	    $('.progress .progress-bar').progressbar();
-	}
+$(document).ready(function () {
+    if ($(".progress .progress-bar")[0]) {
+        $('.progress .progress-bar').progressbar();
+    }
 });
 // /Progressbar
 
 // Switchery
-$(document).ready(function() {
+$(document).ready(function () {
     if ($(".js-switch")[0]) {
         var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
         elems.forEach(function (html) {
@@ -200,7 +208,7 @@ $(document).ready(function() {
 // /Switchery
 
 // iCheck
-$(document).ready(function() {
+$(document).ready(function () {
     if ($("input.flat")[0]) {
         $(document).ready(function () {
             $('input.flat').iCheck({
@@ -266,7 +274,7 @@ function countChecked() {
 }
 
 // Accordion
-$(document).ready(function() {
+$(document).ready(function () {
     $(".expand").on("click", function () {
         $(this).next().slideToggle(200);
         $expand = $(this).find(">:first-child");
@@ -285,7 +293,7 @@ if (typeof NProgress != 'undefined') {
         NProgress.start();
     });
 
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         NProgress.done();
     });
 }
@@ -299,5 +307,59 @@ $(document).ready(function () {
     //     hide: false,
     //     styling: 'bootstrap3'
     // });
-    
+
 })
+
+
+////서비스금액창 스크롤시 나타나게 하기
+//
+//// Hide Header on on scroll down
+//var didScroll;
+//var lastScrollTop = 0;
+//var delta = 5;
+//var navbarHeight = $('.servicePriceFix').outerHeight();
+//
+//
+//
+//$(window).scroll(function (event) {
+//    didScroll = true;
+//});
+//
+//setInterval(function () {
+//    if (didScroll) {
+//        hasScrolled();
+//        didScroll = false;
+//    }
+//}, 250);
+//
+//function hasScrolled() {
+//    var st = $(this).scrollTop();
+//
+//    // Make sure they scroll more than delta
+//    if (Math.abs(lastScrollTop - st) <= delta)
+//        return;
+//
+//    // If they scrolled down and are past the navbar, add class .nav-up.
+//    // This is necessary so you never see what is "behind" the navbar.
+//    if (st > lastScrollTop && st > navbarHeight) {
+//        // Scroll Down (계산기 나타내기)
+//        $('.servicePriceFix').removeClass('nav-down').addClass('nav-up');
+//    } else {
+//        // Scroll Up (계산기 숨기기)
+//        if (st + $(window).height() < $(document).height()) {
+//            $('.servicePriceFix').removeClass('nav-up').addClass('nav-down');
+//        }
+//    }
+//
+//    lastScrollTop = st;
+//}
+//
+////스크롤 끝나면 서비스금액 창 사라지게하기
+//
+//$(window).scroll(function () {
+//    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+//        $('.servicePriceFix').css('opacity', '0');
+//    }else{
+//        $('.servicePriceFix').css('opacity', '1');
+//    }
+//});
