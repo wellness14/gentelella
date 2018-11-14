@@ -363,3 +363,34 @@ $(document).ready(function () {
 //        $('.servicePriceFix').css('opacity', '1');
 //    }
 //});
+
+
+//서비스금액창 마우스 호버시 more버튼 클릭하여 고정하기로 변하게 하기, 창 올라오게하기
+$('.servicePriceFix').mouseenter(function () { //마우스 엔터시
+    if ($(".servicePriceFix").hasClass("nav-stop") === false) { //servicePriceFix가 nav-stop으로 고정되어있지 않을때 
+        $('.servicePriceMore').text('클릭하여 고정하기'); //more를 클릭하여 고정하기로 변경
+    }
+    $('.servicePriceFix').removeClass('nav-down').addClass('nav-up'); //servicePriceFix에 nav-up클래스 추가, 위로 나타나게함
+
+});
+$('.servicePriceFix').mouseleave(function () { //마우스 리브시
+    if ($(".servicePriceFix").hasClass("nav-stop") === false) { //servicePriceFix가 nav-stop으로 고정되어있지 않을때 
+        $('.servicePriceMore').text('More'); //클릭하여 고정하기를 More로 변경
+    }
+    $('.servicePriceFix').removeClass('nav-up').addClass('nav-down'); //servicePriceFix에 nav-down클래스 추가, 아래로 숨김
+
+});
+
+//클릭하여 고정하기 클릭 시 서비스창 고정하기
+$('.servicePriceMore').click(function () { //servicePriceMore 클릭시
+    $('.servicePriceFix').toggleClass('nav-stop'); //nav-stop클래스 토글, nav-stop은 bottom: 0px !important임
+})
+
+//서비스창 고정 시 텍스트 변경
+$('.servicePriceMore').click(function () {
+    if ($(this).text() == '클릭하여 고정하기') {
+        $(this).text('클릭하여 고정해제');
+    } else {
+        $(this).text('클릭하여 고정하기');
+    }
+});
