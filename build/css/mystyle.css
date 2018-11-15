@@ -1449,6 +1449,16 @@
   margin-top: 8px;
 }
 
+
+
+/*------------------이지현 작업부분-----------------------*/
+
+
+/*order_consult_new*/
+.nav_menu.first>nav>div{
+    width: 400px;
+}
+
 .servicePriceFix {
     position: fixed; 
     height: 240px;
@@ -1465,32 +1475,37 @@
     padding: 5px 0px;
 }
 
-/*servicePriceFix 제이쿼리 css*/
-.nav-up {
-    bottom: 0px;
-    width: 1200px;
-}
-.nav-down {
-    bottom: -190px;
-    width: 200px;
-}
-.nav-stop {
-    bottom: 0px !important;
-    width: 1200px;
-}
+    /*servicePriceFix 제이쿼리 css*/
+    .nav-up {
+        bottom: 0px;
+        width: 1200px;
+    }
+    .nav-down {
+        bottom: -190px;
+        width: 200px;
+    }
+    .nav-stop {
+        bottom: 0px !important;
+        width: 1200px;
+    }
+
+    .priceHide {
+        height: 0px;
+        overflow: hidden;
+    }
 
 
+
+
+/*float 공통 클래스*/
 .float-left{
  float: left;
-    width: 400px;
 }
 
 .float-right{
     float: right;
 }
-
-.priceHide {
-    height: 0px;
+.overFlowHidden{
     overflow: hidden;
 }
 

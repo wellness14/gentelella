@@ -396,3 +396,8 @@ $('.servicePriceMore').click(function () {
         $(this).text('클릭하여 고정하기');
     }
 });
+
+
+//html 인클루드
+$("#include_top_nav").load("include_top_nav.html")
+$("#include_sidebar_menu").load("include_sidebar_menu.html")
