@@ -400,4 +400,4 @@ $('.servicePriceMore').click(function () {
 
 //html 인클루드
 $("#include_top_nav").load("include_top_nav.html")
-$("#include_sidebar_menu").load("include_sidebar_menu.html")
+//$("#include_sidebar_menu").load("include_sidebar_menu.html")
