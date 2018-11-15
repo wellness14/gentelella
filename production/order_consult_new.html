@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -107,7 +107,117 @@
             </div>
 
             <!-- top navigation -->
-            <div id="include_top_nav"></div>
+            <div class="top_nav">
+                <div class="nav_menu first ">
+                    <nav>
+                        <div class="nav toggle float-left">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="이름, ID, 휴대번호">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-primary btn-sm">검색</button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="nav_menu second float-left" style="margin-top: 6px">
+                            <a href="index.html" class="btn btn-primary btn-sm">Home</a>
+                            <a href="order_dash.html" class="btn btn-primary btn-sm">주문</a>
+                            <a href="policy_in_out.html" class="btn btn-primary btn-sm">기본정책</a>
+                        </div>
+
+                        <a href="#!" class="btn btn-success btn-sm pull-right float-right" style="margin-top: 13px">전체저장</a>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- 로그인 유저 확인 및 로그아웃 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    관리자 접속중
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="fa fa-sign-out pull-right"></i> 로그아웃</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 자주 쓰는 메뉴 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    자주쓰는메뉴
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fa fa-cog pull-right"></i> 메뉴설정</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">자주쓰는 메뉴를 설정해주세요.</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 주문현황 -->
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    주문현황
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="#!">
+                                            입금대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            입금완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            계약취소신청
+                                            <span class="badge bg-red">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            환불완료
+                                            <span class="badge bg-blue">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스대기
+                                            <span class="badge bg-orange">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 중
+                                            <span class="badge bg-blue-sky">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 연장
+                                            <span class="badge bg-purple">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            서비스 완료
+                                            <span class="badge bg-green">6</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+
+            </div>
             <!-- /top navigation -->
 
             <!-- page content -->
@@ -208,14 +318,14 @@
 
                                     <div class="clearfix"></div>
                                 </div>
-                                <div class="x_content" style="height: 480px">
+                                <div class="x_content fixed_height_320">
                                     <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">성함
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12 ㅑ">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -257,12 +367,10 @@
 
                                     <div class="clearfix"></div>
                                 </div>
-                                <div class="x_content reference-type">
+                                <div class="x_content reference-type fixed_height_320">
                                     <h4>
                                         <i class="fa fa-check"></i>
-                                        접근분류 선택
-                                        <small>* 홈페이지 가입은 자동으로 접근 분류가 지정됩니다.</small>
-                                    </h4>
+                                        접근분류 선택</h4>
                                     <ul class="list-unstyled">
                                         <li>
                                             <input type="checkbox" class="flat" id="loc_all">
@@ -293,17 +401,14 @@
                                             <!-- <label for="">기타</label> -->
                                             <input type="text" class="form-control" placeholder="기타 접근, 추천내용">
                                         </li>
-                                        <li>
-                                        </li>
                                     </ul>
                                     <div class="clearfix"></div>
+                                    <small>* 홈페이지 가입은 자동으로 접근 분류가 지정됩니다.</small>
                                     <hr>
                                     <h4>
                                         <i class="fa fa-check"></i>
-                                        추천경로선택
-                                        <small>* 지인추천현황은 통계메뉴에서 확인</small>
-                                    </h4>
-                                    <ul class="list-unstyled float-left" style="width: 290px">
+                                        추천경로선택</h4>
+                                    <ul class="list-unstyled">
                                         <li>
                                             <input type="checkbox" class="flat" id="">
                                             <label for="">검색을 통해</label>
@@ -318,14 +423,13 @@
                                         </li>
                                     </ul>
 
-                                    <div class="input-group reference float-left">
+                                    <div class="input-group reference">
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="추천인의 이름, id, 휴대번호">
                                             <span class="input-group-btn">
                                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".user-search">검색</button>
                                             </span>
                                         </div>
-
                                         <!-- <input type="text" class="form-control" placeholder="지인추천 선택 시 추천인의 이름이나 id, 휴대번호로 검색">
                                         <span class="input-group-btn">
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".user-search">검색</button>
@@ -378,95 +482,11 @@
                                         </div>
                                         <!-- 추천지인검색 팝업 -->
                                     </div>
+                                    <small>* 지인추천현황은 통계메뉴에서 확인</small>
                                 </div>
                             </div>
                         </div>
-                        <!-- 가입정보 -->
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <div class="x_panel tile">
-                                <div class="x_title">
-                                    <h2>가입정보</h2>
 
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="x_content regist-info">
-                                    <div class="row">
-                                        <label for="">아이디</label>
-                                        <span class="label label-warning id-state">입력대기중</span>
-                                    </div>
-                                    <div class="row">
-                                        <a href="#!" class="btn btn-primary btn-sm" data-toggle="modal" data-target=".register_sms">가입문자발송</a>
-                                        <!-- 가입문자발송 팝업 -->
-                                        <div class="modal fade bs-example-modal-lg register_sms" tabindex="-1" role="dialog" aria-hidden="true">
-                                            <div class="modal-dialog modal-xs">
-                                                <div class="modal-content">
-
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal">
-                                                            <span aria-hidden="true">×</span>
-                                                        </button>
-                                                        <h4 class="modal-title" id="myModalLabel">가입문자발송</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form action="">
-                                                            <input type="number" id="" class="form-control" placeholder="전화번호입력">
-                                                            <!-- <div class="btn-group">
-                                                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm" type="button" aria-expanded="false">전체(본사/지사전체)
-                                                                    <span class="caret"></span>
-                                                                </button>
-                                                                <ul role="menu" class="dropdown-menu">
-                                                                    <li>
-                                                                        <a href="#">본사</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">지사</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="btn-group">
-                                                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm" type="button" aria-expanded="false">모든사람에게
-                                                                    <span class="caret"></span>
-                                                                </button>
-                                                                <ul role="menu" class="dropdown-menu">
-                                                                    <li>
-                                                                        <a href="#">서동필</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">손선애</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">정혜윤</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">서원우</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div> -->
-                                                            <div class="message-box">
-                                                                <textarea name="" id="" placeholder="내용을 입력해주세요.">마더앤베이비(산후도우미) 회원가입을 부탁드립니다. 
-                                                                    
-회원가입을 완료하셔야 산후도우미 서비스를 이용할 수 있습니다. 
-                                                                    
-회원가입 이동 : http://localhost/production/member_regist.html</textarea>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">취소</button>
-                                                        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">보내기</button>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- <a href="#!" class="btn btn-primary btn-sm">문자내용보기</a> -->
-                                    </div>
-                                    <small>* 회원가입은 고객이 직접 진행해야합니다.</small>
-                                    <br />
-                                    <small>* 가입문자 발송 후 고객에게 문자도달 여부를 확인하세요.</small>
-                                </div>
-                            </div>
-                        </div>
                         <!-- 출산정보 사전정보 -->
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="x_panel tile">
@@ -598,7 +618,92 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 가입정보 -->
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>가입정보</h2>
 
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content regist-info">
+                                    <div class="row">
+                                        <label for="">아이디</label>
+                                        <span class="label label-warning id-state">입력대기중</span>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#!" class="btn btn-primary btn-sm" data-toggle="modal" data-target=".register_sms">가입문자발송</a>
+                                        <!-- 가입문자발송 팝업 -->
+                                        <div class="modal fade bs-example-modal-lg register_sms" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-xs">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                        <h4 class="modal-title" id="myModalLabel">가입문자발송</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="">
+                                                            <input type="number" id="" class="form-control" placeholder="전화번호입력">
+                                                            <!-- <div class="btn-group">
+                                                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm" type="button" aria-expanded="false">전체(본사/지사전체)
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul role="menu" class="dropdown-menu">
+                                                                    <li>
+                                                                        <a href="#">본사</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">지사</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="btn-group">
+                                                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm" type="button" aria-expanded="false">모든사람에게
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul role="menu" class="dropdown-menu">
+                                                                    <li>
+                                                                        <a href="#">서동필</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">손선애</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">정혜윤</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">서원우</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div> -->
+                                                            <div class="message-box">
+                                                                <textarea name="" id="" placeholder="내용을 입력해주세요.">마더앤베이비(산후도우미) 회원가입을 부탁드립니다. 
+                                                                    
+회원가입을 완료하셔야 산후도우미 서비스를 이용할 수 있습니다. 
+                                                                    
+회원가입 이동 : http://localhost/production/member_regist.html</textarea>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">취소</button>
+                                                        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">보내기</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <a href="#!" class="btn btn-primary btn-sm">문자내용보기</a> -->
+                                    </div>
+                                    <small>* 회원가입은 고객이 직접 진행해야합니다.</small>
+                                    <br />
+                                    <small>* 가입문자 발송 후 고객에게 문자도달 여부를 확인하세요.</small>
+                                </div>
+                            </div>
+                        </div>
                         <!-- 출산정보 완료정보 -->
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="x_panel tile fixed_height_460">
@@ -748,9 +853,9 @@
                                                 351,000원
                                             </div>
                                             <a href="#!" class="btn btn-default btn-sm pull-left" data-toggle="modal" data-target=".chk-payment" style="margin-top: 15px">입금확인</a>
-
+                                            
                                             <a href="#!" class="btn btn-default btn-sm pull-left" data-toggle="modal" data-target=".enuri" style="margin-top: 15px">에누리</a>
-
+                                            
                                         </div>
                                         <div class="col-md-4 col-sm-3">
                                             <div class="col-md-6 col-sm-6">
@@ -785,7 +890,7 @@
                                             </div>
 
                                         </div>
-
+                                        
                                         <div class="col-md-5 col-sm-5">
                                             <div class="payment-history">
                                                 <p>2018.06.11 서원우 입급확인 [기본/잔금/900,000원]</p>
@@ -807,86 +912,86 @@
                             </div>
                             <!--에누리, 입금확인 모달-->
                             <div class="modal fade bs-example-modal-lg enuri" tabindex="-1" role="dialog" aria-hidden="true">
-                                <div class="modal-dialog modal-md">
-                                    <div class="modal-content">
+                                                <div class="modal-dialog modal-md">
+                                                    <div class="modal-content">
 
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">
-                                                <span aria-hidden="true">×</span>
-                                            </button>
-                                            <h4 class="modal-title enuri-title" id="myModalLabel">에누리 금액입력</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form action="">
-                                                <div class="input-group">
-                                                    <input type="number" class="form-control" placeholder="에누리 금액입력, 단위 원">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">
+                                                                <span aria-hidden="true">×</span>
+                                                            </button>
+                                                            <h4 class="modal-title enuri-title" id="myModalLabel">에누리 금액입력</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="">
+                                                                <div class="input-group">
+                                                                    <input type="number" class="form-control" placeholder="에누리 금액입력, 단위 원">
+                                                                </div>
+                                                                <div>
+                                                                    <textarea class="form-control" placeholder="에누리 내용 입력"></textarea>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">취소</button>
+                                                            <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">완료</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    <textarea class="form-control" placeholder="에누리 내용 입력"></textarea>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">취소</button>
-                                            <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">완료</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade bs-example-modal-lg chk-payment" tabindex="-1" role="dialog" aria-hidden="true">
-                                <div class="modal-dialog modal-md">
-                                    <div class="modal-content">
+                                            </div>
+                                        <div class="modal fade bs-example-modal-lg chk-payment" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog modal-md">
+                                                    <div class="modal-content">
 
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">
-                                                <span aria-hidden="true">×</span>
-                                            </button>
-                                            <h4 class="modal-title" id="myModalLabel">입금확인</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>입금확인을 위해 아래 정보를 선택하세요.</p>
-                                            <form action="">
-                                                <h5>
-                                                    <strong>STEP 1</strong>
-                                                </h5>
-                                                <div class="radio-group">
-                                                    <input type="radio" name="extension" class="flat" id="">
-                                                    <label for="">기본</label>
-                                                    <input type="radio" name="extension" class="flat" id="">
-                                                    <label for="">연장1</label>
-                                                    <input type="radio" name="extension" class="flat" id="">
-                                                    <label for="">연장2</label>
-                                                    <input type="radio" name="extension" class="flat" id="">
-                                                    <label for="">연장3</label>
-                                                </div>
-                                                <h5>
-                                                    <strong>STEP 2</strong>
-                                                </h5>
-                                                <div class="radio-group">
-                                                    <input type="radio" name="payment-state" class="flat" id="">
-                                                    <label for="">선금</label>
-                                                    <input type="radio" name="payment-state" class="flat" id="">
-                                                    <label for="">중도금</label>
-                                                    <input type="radio" name="payment-state" class="flat" id="">
-                                                    <label for="">잔금</label>
-                                                    <p>* 중도금 또는 선금이 없는 경우 잔금으로 체크하세요.</p>
-                                                </div>
-                                                <h5>
-                                                    <strong>STEP 3</strong>
-                                                </h5>
-                                                <div class="input-group">
-                                                    <input type="number" class="form-control" placeholder="금액입력, 단위 원">
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">취소</button>
-                                            <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">완료</button>
-                                        </div>
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">
+                                                                <span aria-hidden="true">×</span>
+                                                            </button>
+                                                            <h4 class="modal-title" id="myModalLabel">입금확인</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>입금확인을 위해 아래 정보를 선택하세요.</p>
+                                                            <form action="">
+                                                                <h5>
+                                                                    <strong>STEP 1</strong>
+                                                                </h5>
+                                                                <div class="radio-group">
+                                                                    <input type="radio" name="extension" class="flat" id="">
+                                                                    <label for="">기본</label>
+                                                                    <input type="radio" name="extension" class="flat" id="">
+                                                                    <label for="">연장1</label>
+                                                                    <input type="radio" name="extension" class="flat" id="">
+                                                                    <label for="">연장2</label>
+                                                                    <input type="radio" name="extension" class="flat" id="">
+                                                                    <label for="">연장3</label>
+                                                                </div>
+                                                                <h5>
+                                                                    <strong>STEP 2</strong>
+                                                                </h5>
+                                                                <div class="radio-group">
+                                                                    <input type="radio" name="payment-state" class="flat" id="">
+                                                                    <label for="">선금</label>
+                                                                    <input type="radio" name="payment-state" class="flat" id="">
+                                                                    <label for="">중도금</label>
+                                                                    <input type="radio" name="payment-state" class="flat" id="">
+                                                                    <label for="">잔금</label>
+                                                                    <p>* 중도금 또는 선금이 없는 경우 잔금으로 체크하세요.</p>
+                                                                </div>
+                                                                <h5>
+                                                                    <strong>STEP 3</strong>
+                                                                </h5>
+                                                                <div class="input-group">
+                                                                    <input type="number" class="form-control" placeholder="금액입력, 단위 원">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">취소</button>
+                                                            <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">완료</button>
+                                                        </div>
 
-                                    </div>
-                                </div>
-                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                             <!-- 서비스 계약 정보 - 바우처 -->
                             <div class="x_panel tile fixed_height_350">
                                 <div class="x_title">
