@@ -222,7 +222,7 @@
 
             <!-- page content -->
             <div class="right_col order_consult_new" role="main">
-                <div class="">
+                <div class="content">
                     <div class="page-title">
                         <div class="title_left">
                             <h3>상담/문의
@@ -853,7 +853,92 @@
                                                 351,000원
                                             </div>
                                             <a href="#!" class="btn btn-default btn-sm pull-left" data-toggle="modal" data-target=".chk-payment" style="margin-top: 15px">입금확인</a>
-                                            <div class="modal fade bs-example-modal-lg chk-payment" tabindex="-1" role="dialog" aria-hidden="true">
+                                            
+                                            <a href="#!" class="btn btn-default btn-sm pull-left" data-toggle="modal" data-target=".enuri" style="margin-top: 15px">에누리</a>
+                                            
+                                        </div>
+                                        <div class="col-md-4 col-sm-3">
+                                            <div class="col-md-6 col-sm-6">
+                                                <span class="total-price-label">총액</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 text-right">
+                                                <span class="total-price">1,800,000원</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <span class="voucher-label">바우처</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 text-right">
+                                                <span class="voucher-price red ">1,000,000원</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <span class="voucher-label">에누리</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 text-right">
+                                                <span class="voucher-price red">200,000원</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <span class="income-label">입금받음</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 text-right">
+                                                <span class="income-price red">750,000원</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <span class="balance-label">잔액</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 text-right">
+                                                <span class="balance-price green">200,000원</span>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="col-md-5 col-sm-5">
+                                            <div class="payment-history">
+                                                <p>2018.06.11 서원우 입급확인 [기본/잔금/900,000원]</p>
+                                                <p>2018.05.15 조아라 입금확인 [기본/선금/100,000원]</p>
+                                                <p>2018.06.11 서원우 입급확인 [기본/잔금/900,000원]</p>
+                                                <p>2018.05.15 조아라 입금확인 [기본/선금/100,000원]</p>
+                                                <p>2018.06.11 서원우 입급확인 [기본/잔금/900,000원]</p>
+                                                <p>2018.05.15 조아라 입금확인 [기본/선금/100,000원]</p>
+                                                <p>2018.06.11 서원우 입급확인 [기본/잔금/900,000원]</p>
+                                                <p>2018.05.15 조아라 입금확인 [기본/선금/100,000원]</p>
+                                                <p>2018.06.11 서원우 입급확인 [기본/잔금/900,000원]</p>
+                                                <p>2018.05.15 조아라 입금확인 [기본/선금/100,000원]</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--에누리, 입금확인 모달-->
+                            <div class="modal fade bs-example-modal-lg enuri" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog modal-md">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">
+                                                                <span aria-hidden="true">×</span>
+                                                            </button>
+                                                            <h4 class="modal-title enuri-title" id="myModalLabel">에누리 금액입력</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="">
+                                                                <div class="input-group">
+                                                                    <input type="number" class="form-control" placeholder="에누리 금액입력, 단위 원">
+                                                                </div>
+                                                                <div>
+                                                                    <textarea class="form-control" placeholder="에누리 내용 입력"></textarea>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">취소</button>
+                                                            <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">완료</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <div class="modal fade bs-example-modal-lg chk-payment" tabindex="-1" role="dialog" aria-hidden="true">
                                                 <div class="modal-dialog modal-md">
                                                     <div class="modal-content">
 
@@ -907,87 +992,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="#!" class="btn btn-default btn-sm pull-left" data-toggle="modal" data-target=".enuri" style="margin-top: 15px">에누리</a>
-                                            <div class="modal fade bs-example-modal-lg enuri" tabindex="-1" role="dialog" aria-hidden="true">
-                                                <div class="modal-dialog modal-md">
-                                                    <div class="modal-content">
-
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal">
-                                                                <span aria-hidden="true">×</span>
-                                                            </button>
-                                                            <h4 class="modal-title enuri-title" id="myModalLabel">에누리 금액입력</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <form action="">
-                                                                <div class="input-group">
-                                                                    <input type="number" class="form-control" placeholder="에누리 금액입력, 단위 원">
-                                                                </div>
-                                                                <div>
-                                                                    <textarea class="form-control" placeholder="에누리 내용 입력"></textarea>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">취소</button>
-                                                            <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">완료</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-3">
-                                            <div class="col-md-6 col-sm-6">
-                                                <span class="total-price-label">총액</span>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 text-right">
-                                                <span class="total-price">1,800,000원</span>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6">
-                                                <span class="voucher-label">바우처</span>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 text-right">
-                                                <span class="voucher-price red ">1,000,000원</span>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6">
-                                                <span class="voucher-label">에누리</span>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 text-right">
-                                                <span class="voucher-price red">200,000원</span>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6">
-                                                <span class="income-label">입금받음</span>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 text-right">
-                                                <span class="income-price red">750,000원</span>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6">
-                                                <span class="balance-label">잔액</span>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 text-right">
-                                                <span class="balance-price green">200,000원</span>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-5 col-sm-5">
-                                            <div class="payment-history">
-                                                <p>2018.06.11 서원우 입급확인 [기본/잔금/900,000원]</p>
-                                                <p>2018.05.15 조아라 입금확인 [기본/선금/100,000원]</p>
-                                                <p>2018.06.11 서원우 입급확인 [기본/잔금/900,000원]</p>
-                                                <p>2018.05.15 조아라 입금확인 [기본/선금/100,000원]</p>
-                                                <p>2018.06.11 서원우 입급확인 [기본/잔금/900,000원]</p>
-                                                <p>2018.05.15 조아라 입금확인 [기본/선금/100,000원]</p>
-                                                <p>2018.06.11 서원우 입급확인 [기본/잔금/900,000원]</p>
-                                                <p>2018.05.15 조아라 입금확인 [기본/선금/100,000원]</p>
-                                                <p>2018.06.11 서원우 입급확인 [기본/잔금/900,000원]</p>
-                                                <p>2018.05.15 조아라 입금확인 [기본/선금/100,000원]</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
                             <!-- 서비스 계약 정보 - 바우처 -->
                             <div class="x_panel tile fixed_height_350">
                                 <div class="x_title">

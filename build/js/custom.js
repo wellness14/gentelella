@@ -311,7 +311,9 @@ $(document).ready(function () {
 })
 
 
-////서비스금액창 스크롤시 나타나게 하기
+// ---------------------작성자 이지현--------------------------
+
+////서비스금액창 스크롤시 나타나게 하기  (마우스 엔터버전 사용으로 사용 안함)
 //
 //// Hide Header on on scroll down
 //var didScroll;
@@ -371,14 +373,14 @@ $('.servicePriceFix').mouseenter(function () { //마우스 엔터시
         $('.servicePriceMore').text('클릭하여 고정하기'); //more를 클릭하여 고정하기로 변경
     }
     $('.servicePriceFix').removeClass('nav-down').addClass('nav-up'); //servicePriceFix에 nav-up클래스 추가, 위로 나타나게함
-
+    $('.service-price').removeClass('priceHide'); //타이틀 제외 내용 표시
 });
 $('.servicePriceFix').mouseleave(function () { //마우스 리브시
     if ($(".servicePriceFix").hasClass("nav-stop") === false) { //servicePriceFix가 nav-stop으로 고정되어있지 않을때 
         $('.servicePriceMore').text('More'); //클릭하여 고정하기를 More로 변경
+        $('.service-price').addClass('priceHide'); //타이틀 제외 내용 숨김 (고정버튼 사용 안하고 모달 사용시 오류 방지)
     }
     $('.servicePriceFix').removeClass('nav-up').addClass('nav-down'); //servicePriceFix에 nav-down클래스 추가, 아래로 숨김
-
 });
 
 //클릭하여 고정하기 클릭 시 서비스창 고정하기

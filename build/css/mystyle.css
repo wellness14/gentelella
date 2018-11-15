@@ -1,3 +1,8 @@
+.content{
+    margin-top: 50px;
+}
+
+
 .right_col.main_dash, .top_nav.main_top {
   margin-left: 0 !important;
   
@@ -1484,7 +1489,10 @@
     float: right;
 }
 
-
+.priceHide {
+    height: 0px;
+    overflow: hidden;
+}
 
 
 

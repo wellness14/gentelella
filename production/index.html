@@ -205,11 +205,11 @@
                 </div>
             </div>
 
-            <!-- top navigation -->
-            <div class="top_nav main_top">
-                <div class="nav_menu first">
+             <!-- top navigation -->
+            <div class="top_nav" style="padding-left: 0px;">
+                <div class="nav_menu first ">
                     <nav>
-                        <div class="nav toggle">
+                        <div class="nav toggle float-left">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="이름, ID, 휴대번호">
                                 <span class="input-group-btn">
@@ -217,9 +217,13 @@
                                 </span>
                             </div>
                         </div>
-                        
-                        
+                        <div class="nav_menu second float-left" style="margin-top: 6px">
+                            <a href="index.html" class="btn btn-primary btn-sm">Home</a>
+                            <a href="order_dash.html" class="btn btn-primary btn-sm">주문</a>
+                            <a href="policy_in_out.html" class="btn btn-primary btn-sm">기본정책</a>
+                        </div>
 
+                        <a href="#!" class="btn btn-success btn-sm pull-right float-right" style="margin-top: 13px">전체저장</a>
                         <ul class="nav navbar-nav navbar-right">
                             <!-- 로그인 유저 확인 및 로그아웃 -->
                             <li class="">
@@ -236,101 +240,19 @@
                             </li>
                             <!-- 자주 쓰는 메뉴 -->
                             <li class="">
-                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false" >
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     자주쓰는메뉴
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
-                                <ul class="dropdown-menu dropdown-usermenu pull-right  favorite-menu-list">
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
                                     <li>
-                                        <a href="#!" data-toggle="modal" data-target=".favorite-menu">
+                                        <a href="#!">
                                             <i class="fa fa-cog pull-right"></i> 메뉴설정</a>
                                     </li>
                                     <li>
-                                        <a href="#!">
-                                            자주쓰는 메뉴를 설정해주세요.
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="fa fa-star"></i> 주문 / 상담문의 </a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="fa fa-star"></i> 기본정책 / 지사,지역,산후도우미 / 산후도우미 관리</a>
+                                        <a href="#!">자주쓰는 메뉴를 설정해주세요.</a>
                                     </li>
                                 </ul>
-                                <!-- 자주쓰는 메뉴 설정 팝업 -->
-                                <div class="modal fade bs-example-modal-lg favorite-menu" tabindex="-1" role="dialog" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <span aria-hidden="true">×</span>
-                                                </button>
-                                                <h4 class="modal-title" id="myModalLabel">자주쓰는 메뉴 설정</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <label class="control-label col-md-2 col-sm-2 col-xs-12">메뉴선택</label>
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <select class="select2_multiple form-control" multiple="multiple">
-                                                                <option>대메뉴</option>
-                                                                <option>Option one</option>
-                                                                <option>Option two</option>
-                                                                <option>Option three</option>
-                                                                <option>Option four</option>
-                                                                <option>Option five</option>
-                                                                <option>Option six</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <select class="select2_multiple form-control" multiple="multiple">
-                                                                <option>중메뉴</option>
-                                                                <option>Option one</option>
-                                                                <option>Option two</option>
-                                                                <option>Option three</option>
-                                                                <option>Option four</option>
-                                                                <option>Option five</option>
-                                                                <option>Option six</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <select class="select2_multiple form-control" multiple="multiple">
-                                                                <option>페이지 선택</option>
-                                                                <option>Option one</option>
-                                                                <option>Option two</option>
-                                                                <option>Option three</option>
-                                                                <option>Option four</option>
-                                                                <option>Option five</option>
-                                                                <option>Option six</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-md-1 col-sm-1 col-xs-12">
-                                                            <a href="#!" class="btn btn-primary btn-sm">선택</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <div class="row">
-                                                    <label class="control-label col-md-2 col-sm-2 col-xs-12">자주쓰는 메뉴<br/> <small> ( 0 / 10  선택)</small></label>
-                                                    <div class="col-md-10 col-sm-10">
-                                                        <p>자주쓰는 메뉴를 선택해 주세요. (최대10개)</p>
-                                                        <p>주문 / 출산선물 / 현황정보 <a href="#!" class="btn btn-danger btn-xs btn-mb-0">삭제</a></p>
-                                                        <p>주문 / 출산선물 / 현황정보 <a href="#!" class="btn btn-danger btn-xs btn-mb-0">삭제</a></p>
-                                                        <p>주문 / 출산선물 / 현황정보 <a href="#!" class="btn btn-danger btn-xs btn-mb-0">삭제</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
-                                                <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">저장</button>
-                                            </div>
-                                
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 자주쓰는 메뉴 설정 팝업 -->
                             </li>
                             <!-- 주문현황 -->
                             <li class="">
@@ -390,19 +312,15 @@
                                 </ul>
                             </li>
                         </ul>
+
                     </nav>
                 </div>
-                <div class="nav_menu second">
-                    <a href="index.html" class="btn btn-primary btn-sm">Home</a>
-                    <a href="order_dash.html" class="btn btn-default btn-sm">주문</a>
-                    <a href="policy_in_out.html" class="btn btn-default btn-sm">기본정책</a>
-                    <a href="sales.html" class="btn btn-default btn-sm">매출통계</a>
-                </div>
+
             </div>
             <!-- /top navigation -->
             <!-- page content -->
             <div class="right_col main_dash" role="main">
-                <div class="">
+                <div class="content">
                     <div class="row">
                         <!-- 주문관리 -->
                         <div class="col-md-5 col-sm-5 col-xs-12">
