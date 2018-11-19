@@ -396,3 +396,15 @@ $('.servicePriceMore').click(function () {
         $(this).text('클릭하여 고정하기');
     }
 });
+
+//계약정보 토글
+
+function togglePanel(title) {
+    $(title).click(function () { //title 클릭시
+        $(this).parent().toggleClass('toggleClose'); //부모 div에 toggleClose클래스 토글, toggleClose은 height: 48px !important임
+    })
+}
+togglePanel('.toggleTitle1'); //계약정보
+togglePanel('.toggleTitle2'); //연장정보1
+togglePanel('.toggleTitle3'); //연장정보2
+togglePanel('.toggleTitle4'); //연장정보3
