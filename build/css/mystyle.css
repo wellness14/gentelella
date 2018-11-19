@@ -1473,9 +1473,8 @@
 .service-price div:nth-of-type(1) div {
     padding: 5px 0px;
 }
-.x_panel.tile div:nth-of-type(1){
-    cursor: pointer;
-}
+
+
 .glyphicon-menu-down{/*계약,연장정보 토글 오른쪽 화살표*/
     font-size: 15px; 
     position: absolute; 
