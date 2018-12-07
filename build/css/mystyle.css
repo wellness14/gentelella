@@ -1474,6 +1474,7 @@
 }
 
 
+
 .glyphicon-menu-down{/*계약,연장정보 토글 오른쪽 화살표*/
     font-size: 15px; 
     position: absolute; 
@@ -1527,15 +1528,6 @@
     height: 0px;
     overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
 
 
 @media (min-width: 992px) {

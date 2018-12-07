@@ -315,10 +315,62 @@
                             <div class="x_panel tile">
                                 <div class="x_title">
                                     <h2>기본정보</h2>
+                                    <div class="input-group" style="width: 260px; float: right; margin-bottom: 0px">
+                                        <input type="text" class="form-control" placeholder="아이디, 이름, 휴대번호 검색">
+                                        <!--((아이디,이름,휴대번호검색,성함,휴대전화,주소 정보를 가져와서 필드에 반영-->
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-secondary btn-addr-search" data-toggle="modal" data-target=".id-search">검색</button>
+
+
+                                        </span>
+                                    </div>
+                                    <div class="modal fade bs-example-modal-lg id-search">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                    <h4 class="modal-title" id="myModalLabel">검색 목록</h4>
+                                                </div>
+                                                <div class="modal-body id-search-content">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>아이디</th>
+                                                                <th>이름</th>
+                                                                <th>휴대전화</th>
+                                                                <th>일반전화</th>
+                                                                <th>주소</th>
+                                                                <th>선택</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>test_mb</td>
+                                                                <td>이지현</td>
+                                                                <td>010-000-0000</td>
+                                                                <td>010-000-0000</td>
+                                                                <td>서울 강남구 강남대로</td>
+                                                                <td>
+                                                                    <a href="#!" class="btn btn-xs btn-info">선택</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+                                                    <!-- <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">보내기</button> -->
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="clearfix"></div>
                                 </div>
-                                <div class="x_content" style="height: 450px">
+                                <div class="x_content" style="height: 445px">
                                     <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
                                         <div class="form-group">
@@ -822,72 +874,72 @@
                                 <div class="x_content service-price">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-4">
-                                           <div class ="service-price-add">
-                                            <div class="col-md-9 col-sm-8">
-                                                기본 &nbsp;:
-                                                <span class="label label-success">프라이빗</span>
-                                                <span class="label label-success">2주</span>
-                                                <span class="label label-success">입주</span>
-                                                <span class="label label-success">5일</span>
+                                            <div class="service-price-add">
+                                                <div class="col-md-9 col-sm-8">
+                                                    기본 &nbsp;:
+                                                    <span class="label label-success">프라이빗</span>
+                                                    <span class="label label-success">2주</span>
+                                                    <span class="label label-success">입주</span>
+                                                    <span class="label label-success">5일</span>
+                                                </div>
+                                                <div class="col-md-3 col-sm-4 ">
+                                                    351,000원
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    옵션 &nbsp;:
+                                                </div>
+                                                <div class="col-md-3 col-sm-4 ">
+                                                    351,000원
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    연장1 :
+                                                    <span class="label label-default">프라이빗</span>
+                                                    <span class="label label-default">2주</span>
+                                                    <span class="label label-default">입주</span>
+                                                    <span class="label label-default">5일</span>
+                                                </div>
+                                                <div class="col-md-3 col-sm-4">
+                                                    351,000원
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    옵션 &nbsp;:
+                                                </div>
+                                                <div class="col-md-3 col-sm-4">
+                                                    351,000원
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    연장2 :
+                                                    <span class="label label-default">프라이빗</span>
+                                                    <span class="label label-default">2주</span>
+                                                    <span class="label label-default">입주</span>
+                                                    <span class="label label-default">5일</span>
+                                                </div>
+                                                <div class="col-md-3 col-sm-4">
+                                                    351,000원
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    옵션 &nbsp;:
+                                                </div>
+                                                <div class="col-md-3 col-sm-4 ">
+                                                    351,000원
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    연장3 :
+                                                    <span class="label label-default">프라이빗</span>
+                                                    <span class="label label-default">2주</span>
+                                                    <span class="label label-default">입주</span>
+                                                    <span class="label label-default">5일</span>
+                                                </div>
+                                                <div class="col-md-3 col-sm-4">
+                                                    351,000원
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    옵션 &nbsp;:
+                                                </div>
+                                                <div class="col-md-3 col-sm-4">
+                                                    351,000원
+                                                </div>
                                             </div>
-                                            <div class="col-md-3 col-sm-4 ">
-                                                351,000원
-                                            </div>
-                                            <div class="col-md-9 col-sm-8">
-                                                옵션 &nbsp;:
-                                            </div>
-                                            <div class="col-md-3 col-sm-4 ">
-                                                351,000원
-                                            </div>
-                                            <div class="col-md-9 col-sm-8">
-                                                연장1 :
-                                                <span class="label label-default">프라이빗</span>
-                                                <span class="label label-default">2주</span>
-                                                <span class="label label-default">입주</span>
-                                                <span class="label label-default">5일</span>
-                                            </div>
-                                            <div class="col-md-3 col-sm-4">
-                                                351,000원
-                                            </div>
-                                            <div class="col-md-9 col-sm-8">
-                                                옵션 &nbsp;:
-                                            </div>
-                                            <div class="col-md-3 col-sm-4">
-                                                351,000원
-                                            </div>
-                                            <div class="col-md-9 col-sm-8">
-                                                연장2 :
-                                                <span class="label label-default">프라이빗</span>
-                                                <span class="label label-default">2주</span>
-                                                <span class="label label-default">입주</span>
-                                                <span class="label label-default">5일</span>
-                                            </div>
-                                            <div class="col-md-3 col-sm-4">
-                                                351,000원
-                                            </div>
-                                            <div class="col-md-9 col-sm-8">
-                                                옵션 &nbsp;:
-                                            </div>
-                                            <div class="col-md-3 col-sm-4 ">
-                                                351,000원
-                                            </div>
-                                            <div class="col-md-9 col-sm-8">
-                                                연장3 :
-                                                <span class="label label-default">프라이빗</span>
-                                                <span class="label label-default">2주</span>
-                                                <span class="label label-default">입주</span>
-                                                <span class="label label-default">5일</span>
-                                            </div>
-                                            <div class="col-md-3 col-sm-4">
-                                                351,000원
-                                            </div>
-                                            <div class="col-md-9 col-sm-8">
-                                                옵션 &nbsp;:
-                                            </div>
-                                            <div class="col-md-3 col-sm-4">
-                                                351,000원
-                                            </div>
-                                           </div>
                                             <a href="#!" class="btn btn-default btn-sm pull-left" data-toggle="modal" data-target=".chk-payment" style="margin-top: 15px">입금확인</a>
 
                                             <a href="#!" class="btn btn-default btn-sm pull-left" data-toggle="modal" data-target=".enuri" style="margin-top: 15px">에누리</a>
@@ -1373,7 +1425,7 @@
                                                                             <td>성동</td>
                                                                             <td>입주선호</td>
                                                                             <td>
-                                                                                <a href="#!" class="btn btn-xs btn-default">상세정보</a>
+                                                                                <a href="policy_manage_helper_detail.html" class="btn btn-xs btn-default" target="_blank">상세정보</a>
                                                                             </td>
                                                                             <td>
                                                                                 <a href="#!" class="btn btn-xs btn-info">선택</a>
@@ -2595,6 +2647,7 @@
                         <a href="#!" class="btn btn-default">작성취소</a>
                         <a href="#!" class="btn btn-primary">저장 후 서비스 계약정보 이동</a>
                     </div>
+
                 </div>
 
 
@@ -2644,7 +2697,7 @@
     <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
     <!-- Simple Calendar -->
     <!-- <script src="../vendors/simple-calendar-master/dist/jquery.simple-calendar.js"></script> -->
-    
+
     <script src="../vendors/jquery-ui-1.12.1.custom/datepicker-ko-KR.js"></script>
     <script src="../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 
