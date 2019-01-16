@@ -1,5 +1,5 @@
 .content{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 
@@ -1540,4 +1540,8 @@
 .top_nav{
         z-index: -9999 !important;
     }
+}
+
+#sidebar-menu {
+    margin-top: 20px;
 }

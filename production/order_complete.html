@@ -106,26 +106,22 @@
                 </div>
             </div>
 
-             <!-- top navigation -->
-            <div class="top_nav">
+            <!-- top navigation -->
+            <div class="top_nav" style="padding-left: 0px;">
                 <div class="nav_menu first ">
                     <nav>
-                        <div class="nav toggle float-left">
+                        <h1 style="display: inline-block; font-size: 25px; margin-top: 15px;">MNB산후도우미</h1>
+                        <div class="nav float-right" style="margin-top: 10px;">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="이름, ID, 휴대번호">
                                 <span class="input-group-btn">
                                     <button type="button" class="btn btn-primary btn-sm">검색</button>
                                 </span>
+                                <a href="#!" class="btn btn-success btn-sm pull-right float-right">전체저장</a>
                             </div>
                         </div>
-                        <div class="nav_menu second float-left" style="margin-top: 6px">
-                            <a href="index.html" class="btn btn-primary btn-sm">Home</a>
-                            <a href="order_dash.html" class="btn btn-primary btn-sm">주문</a>
-                            <a href="policy_in_out.html" class="btn btn-primary btn-sm">기본정책</a>
-                        </div>
 
-                        <a href="#!" class="btn btn-success btn-sm pull-right float-right" style="margin-top: 13px">전체저장</a>
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav float-right">
                             <!-- 로그인 유저 확인 및 로그아웃 -->
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -156,6 +152,7 @@
                                 </ul>
                             </li>
                             <!-- 주문현황 -->
+                            
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     주문현황
@@ -213,10 +210,13 @@
                                 </ul>
                             </li>
                         </ul>
-
                     </nav>
                 </div>
-
+                <div class="nav_menu second float-left" >
+                    <a href="index.html" class="btn btn-primary btn-sm">Home</a>
+                    <a href="order_dash.html" class="btn btn-primary btn-sm">주문</a>
+                    <a href="policy_in_out.html" class="btn btn-primary btn-sm">기본정책</a>
+                </div>
             </div>
             <!-- /top navigation -->
 
@@ -224,6 +224,10 @@
             <div class="right_col order_consult" role="main">
                 <div class="content">
                     <div class="page-title">
+                        <div class="location">
+                            <a href="#!">주문</a> &gt;
+                            <a href="#!">완료</a>
+                        </div>
                         <div class="title_left">
                             <h3>완료</h3>
                         </div>

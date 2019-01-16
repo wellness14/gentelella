@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     <!-- /sidebar menu -->
-            
+
                     <!-- /menu footer buttons -->
                     <div class="sidebar-footer hidden-small hide">
                         <a data-toggle="tooltip" data-placement="top" title="Settings">
@@ -106,26 +106,22 @@
                 </div>
             </div>
 
-             <!-- top navigation -->
-            <div class="top_nav">
+            <!-- top navigation -->
+            <div class="top_nav" style="padding-left: 0px;">
                 <div class="nav_menu first ">
                     <nav>
-                        <div class="nav toggle float-left">
+                        <h1 style="display: inline-block; font-size: 25px; margin-top: 15px;">MNB산후도우미</h1>
+                        <div class="nav float-right" style="margin-top: 10px;">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="이름, ID, 휴대번호">
                                 <span class="input-group-btn">
                                     <button type="button" class="btn btn-primary btn-sm">검색</button>
                                 </span>
+                                <a href="#!" class="btn btn-success btn-sm pull-right float-right">전체저장</a>
                             </div>
                         </div>
-                        <div class="nav_menu second float-left" style="margin-top: 6px">
-                            <a href="index.html" class="btn btn-primary btn-sm">Home</a>
-                            <a href="order_dash.html" class="btn btn-primary btn-sm">주문</a>
-                            <a href="policy_in_out.html" class="btn btn-primary btn-sm">기본정책</a>
-                        </div>
 
-                        <a href="#!" class="btn btn-success btn-sm pull-right float-right" style="margin-top: 13px">전체저장</a>
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav float-right">
                             <!-- 로그인 유저 확인 및 로그아웃 -->
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -156,6 +152,7 @@
                                 </ul>
                             </li>
                             <!-- 주문현황 -->
+
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     주문현황
@@ -213,10 +210,13 @@
                                 </ul>
                             </li>
                         </ul>
-
                     </nav>
                 </div>
-
+                <div class="nav_menu second float-left">
+                    <a href="index.html" class="btn btn-primary btn-sm">Home</a>
+                    <a href="order_dash.html" class="btn btn-primary btn-sm">주문</a>
+                    <a href="policy_in_out.html" class="btn btn-primary btn-sm">기본정책</a>
+                </div>
             </div>
             <!-- /top navigation -->
 
@@ -224,6 +224,10 @@
             <div class="right_col order_consult" role="main">
                 <div class="content">
                     <div class="page-title">
+                        <div class="location">
+                            <a href="#!">주문</a> &gt;
+                            <a href="#!">상담/문의</a>
+                        </div>
                         <div class="title_left">
                             <h3>상담/문의</h3>
                         </div>
@@ -455,7 +459,7 @@
                                                 <li>
                                                     <input type="checkbox" class="flat" id="">
                                                     <label for="">전체</label>
-                                                    
+
                                                 </li>
                                                 <li>
                                                     <input type="checkbox" class="flat" id="">
@@ -507,7 +511,7 @@
                                                 <li>
                                                     <input type="checkbox" class="flat" id="">
                                                     <label for="">전체</label>
-                                                
+
                                                 </li>
                                                 <li>
                                                     <input type="checkbox" class="flat" id="">
@@ -551,7 +555,7 @@
                                                     <label for="">전체
                                                         <span class="badge bg-default">22</span>
                                                     </label>
-                                                
+
                                                 </li>
                                                 <li>
                                                     <input type="checkbox" class="flat" id="">
@@ -579,211 +583,210 @@
                                         </div>
                                     </div>
                                     <hr>
-                                        <button id="send" type="submit" class="btn btn-primary btn-sm">위 조건으로 검색</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 검색결과 테이블 -->
-                    <div class="row consult-search-result">
-                        <div class="col-md-12 col-sm-12">
-                            <div class="x_panel tile fixed_height_460">
-                                <div class="x_title">
-                                    <h2>상담검색결과</h2>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="x_content">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped jambo_table bulk_action">
-                                            <thead>
-                                                <tr class="headings">
-                                                    <th class="column-title">보기</th>
-                                                    <th class="column-title">상담</th>
-                                                    <th class="column-title">이름</th>
-                                                    <th class="column-title">분류</th>
-                                                    <th class="column-title">상담</th>
-                                                    <th class="column-title">출산예정일</th>
-                                                    <th class="column-title">진행상태</th>
-                                                    <th class="column-title">지점</th>
-                                                    <th class="column-title">희망서비스</th>
-                                                </tr>
-                                            </thead>
-                                    
-                                            <tbody>
-                                                <tr class="even pointer">
-                                                    <td>
-                                                        <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
-                                                    </td>
-                                                    <td><span class="label label-warning">대기</span></td>
-                                                    <td>최정은</td>
-                                                    <td>전화옴</td>
-                                                    <td>조미경</td>
-                                                    <td>2018.03.26</td>
-                                                    <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
-                                                    <td>관악</td>
-                                                    <td>조리원이용 (4주이상) 출퇴근 6일</td>
-                                                </tr>
-                                                <tr class="odd pointer">
-                                                    <td>
-                                                        <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
-                                                    </td>
-                                                    <td><span class="label label-info">진행</span></td>
-                                                    <td>최정은</td>
-                                                    <td>전화옴</td>
-                                                    <td>조미경</td>
-                                                    <td>2018.03.26</td>
-                                                    <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
-                                                    <td>관악</td>
-                                                    <td>조리원이용 (4주이상) 출퇴근 6일</td>
-                                                </tr>
-                                                <tr class="even pointer">
-                                                    <td>
-                                                        <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
-                                                    </td>
-                                                    <td><span class="label label-success">완료</span></td>
-                                                    <td>최정은</td>
-                                                    <td>전화옴</td>
-                                                    <td>조미경</td>
-                                                    <td>2018.03.26</td>
-                                                    <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
-                                                    <td>관악</td>
-                                                    <td>조리원이용 (4주이상) 출퇴근 6일</td>
-                                                </tr>
-                                                <tr class="odd pointer">
-                                                    <td>
-                                                        <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
-                                                    </td>
-                                                    <td><span class="label label-warning">대기</span></td>
-                                                    <td>최정은</td>
-                                                    <td>전화옴</td>
-                                                    <td>조미경</td>
-                                                    <td>2018.03.26</td>
-                                                    <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
-                                                    <td>관악</td>
-                                                    <td>조리원이용 (4주이상) 출퇴근 6일</td>
-                                                </tr>
-                                                <tr class="even pointer">
-                                                    <td>
-                                                        <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
-                                                    </td>
-                                                    <td><span class="label label-warning">대기</span></td>
-                                                    <td>최정은</td>
-                                                    <td>전화옴</td>
-                                                    <td>조미경</td>
-                                                    <td>2018.03.26</td>
-                                                    <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
-                                                    <td>관악</td>
-                                                    <td>조리원이용 (4주이상) 출퇴근 6일</td>
-                                                </tr>
-                                                <tr class="odd pointer">
-                                                    <td>
-                                                        <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
-                                                    </td>
-                                                    <td><span class="label label-warning">대기</span></td>
-                                                    <td>최정은</td>
-                                                    <td>전화옴</td>
-                                                    <td>조미경</td>
-                                                    <td>2018.03.26</td>
-                                                    <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
-                                                    <td>관악</td>
-                                                    <td>조리원이용 (4주이상) 출퇴근 6일</td>
-                                                </tr>
-                                                <tr class="even pointer">
-                                                    <td>
-                                                        <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
-                                                    </td>
-                                                    <td><span class="label label-warning">대기</span></td>
-                                                    <td>최정은</td>
-                                                    <td>전화옴</td>
-                                                    <td>조미경</td>
-                                                    <td>2018.03.26</td>
-                                                    <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
-                                                    <td>관악</td>
-                                                    <td>조리원이용 (4주이상) 출퇴근 6일</td>
-                                                </tr>
-                                                <tr class="odd pointer">
-                                                    <td>
-                                                        <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
-                                                    </td>
-                                                    <td><span class="label label-warning">대기</span></td>
-                                                    <td>최정은</td>
-                                                    <td>전화옴</td>
-                                                    <td>조미경</td>
-                                                    <td>2018.03.26</td>
-                                                    <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
-                                                    <td>관악</td>
-                                                    <td>조리원이용 (4주이상) 출퇴근 6일</td>
-                                                </tr>
-                                                <tr class="even pointer">
-                                                    <td>
-                                                        <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
-                                                    </td>
-                                                    <td><span class="label label-warning">대기</span></td>
-                                                    <td>최정은</td>
-                                                    <td>전화옴</td>
-                                                    <td>조미경</td>
-                                                    <td>2018.03.26</td>
-                                                    <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
-                                                    <td>관악</td>
-                                                    <td>조리원이용 (4주이상) 출퇴근 6일</td>
-                                                </tr>
-                                                <tr class="odd pointer">
-                                                    <td>
-                                                        <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
-                                                    </td>
-                                                    <td><span class="label label-warning">대기</span></td>
-                                                    <td>최정은</td>
-                                                    <td>전화옴</td>
-                                                    <td>조미경</td>
-                                                    <td>2018.03.26</td>
-                                                    <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
-                                                    <td>관악</td>
-                                                    <td>조리원이용 (4주이상) 출퇴근 6일</td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                        </table>
-                                        <nav aria-label="Page navigation example">
-                                            <ul class="pagination pull-right">
-                                                <li class="page-item disabled">
-                                                    <a class="page-link" href="#" tabindex="-1">이전</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">1</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">2</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">3</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">다음</a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
+                                    <button id="send" type="submit" class="btn btn-primary btn-sm">위 조건으로 검색</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- 검색결과 테이블 -->
+                <div class="row consult-search-result">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="x_panel tile fixed_height_460">
+                            <div class="x_title">
+                                <h2>상담검색결과</h2>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <div class="table-responsive">
+                                    <table class="table table-striped jambo_table bulk_action">
+                                        <thead>
+                                            <tr class="headings">
+                                                <th class="column-title">보기</th>
+                                                <th class="column-title">상담</th>
+                                                <th class="column-title">이름</th>
+                                                <th class="column-title">분류</th>
+                                                <th class="column-title">상담</th>
+                                                <th class="column-title">출산예정일</th>
+                                                <th class="column-title">진행상태</th>
+                                                <th class="column-title">지점</th>
+                                                <th class="column-title">희망서비스</th>
+                                            </tr>
+                                        </thead>
 
+                                        <tbody>
+                                            <tr class="even pointer">
+                                                <td>
+                                                    <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
+                                                </td>
+                                                <td><span class="label label-warning">대기</span></td>
+                                                <td>최정은</td>
+                                                <td>전화옴</td>
+                                                <td>조미경</td>
+                                                <td>2018.03.26</td>
+                                                <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
+                                                <td>관악</td>
+                                                <td>조리원이용 (4주이상) 출퇴근 6일</td>
+                                            </tr>
+                                            <tr class="odd pointer">
+                                                <td>
+                                                    <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
+                                                </td>
+                                                <td><span class="label label-info">진행</span></td>
+                                                <td>최정은</td>
+                                                <td>전화옴</td>
+                                                <td>조미경</td>
+                                                <td>2018.03.26</td>
+                                                <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
+                                                <td>관악</td>
+                                                <td>조리원이용 (4주이상) 출퇴근 6일</td>
+                                            </tr>
+                                            <tr class="even pointer">
+                                                <td>
+                                                    <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
+                                                </td>
+                                                <td><span class="label label-success">완료</span></td>
+                                                <td>최정은</td>
+                                                <td>전화옴</td>
+                                                <td>조미경</td>
+                                                <td>2018.03.26</td>
+                                                <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
+                                                <td>관악</td>
+                                                <td>조리원이용 (4주이상) 출퇴근 6일</td>
+                                            </tr>
+                                            <tr class="odd pointer">
+                                                <td>
+                                                    <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
+                                                </td>
+                                                <td><span class="label label-warning">대기</span></td>
+                                                <td>최정은</td>
+                                                <td>전화옴</td>
+                                                <td>조미경</td>
+                                                <td>2018.03.26</td>
+                                                <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
+                                                <td>관악</td>
+                                                <td>조리원이용 (4주이상) 출퇴근 6일</td>
+                                            </tr>
+                                            <tr class="even pointer">
+                                                <td>
+                                                    <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
+                                                </td>
+                                                <td><span class="label label-warning">대기</span></td>
+                                                <td>최정은</td>
+                                                <td>전화옴</td>
+                                                <td>조미경</td>
+                                                <td>2018.03.26</td>
+                                                <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
+                                                <td>관악</td>
+                                                <td>조리원이용 (4주이상) 출퇴근 6일</td>
+                                            </tr>
+                                            <tr class="odd pointer">
+                                                <td>
+                                                    <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
+                                                </td>
+                                                <td><span class="label label-warning">대기</span></td>
+                                                <td>최정은</td>
+                                                <td>전화옴</td>
+                                                <td>조미경</td>
+                                                <td>2018.03.26</td>
+                                                <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
+                                                <td>관악</td>
+                                                <td>조리원이용 (4주이상) 출퇴근 6일</td>
+                                            </tr>
+                                            <tr class="even pointer">
+                                                <td>
+                                                    <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
+                                                </td>
+                                                <td><span class="label label-warning">대기</span></td>
+                                                <td>최정은</td>
+                                                <td>전화옴</td>
+                                                <td>조미경</td>
+                                                <td>2018.03.26</td>
+                                                <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
+                                                <td>관악</td>
+                                                <td>조리원이용 (4주이상) 출퇴근 6일</td>
+                                            </tr>
+                                            <tr class="odd pointer">
+                                                <td>
+                                                    <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
+                                                </td>
+                                                <td><span class="label label-warning">대기</span></td>
+                                                <td>최정은</td>
+                                                <td>전화옴</td>
+                                                <td>조미경</td>
+                                                <td>2018.03.26</td>
+                                                <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
+                                                <td>관악</td>
+                                                <td>조리원이용 (4주이상) 출퇴근 6일</td>
+                                            </tr>
+                                            <tr class="even pointer">
+                                                <td>
+                                                    <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
+                                                </td>
+                                                <td><span class="label label-warning">대기</span></td>
+                                                <td>최정은</td>
+                                                <td>전화옴</td>
+                                                <td>조미경</td>
+                                                <td>2018.03.26</td>
+                                                <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
+                                                <td>관악</td>
+                                                <td>조리원이용 (4주이상) 출퇴근 6일</td>
+                                            </tr>
+                                            <tr class="odd pointer">
+                                                <td>
+                                                    <a href="order_consult_detail.html" class="btn btn-primary btn-xs btn-mb-0">보기</a>
+                                                </td>
+                                                <td><span class="label label-warning">대기</span></td>
+                                                <td>최정은</td>
+                                                <td>전화옴</td>
+                                                <td>조미경</td>
+                                                <td>2018.03.26</td>
+                                                <td>[2018.06.26] 문자발송 완료 고객확인 대기중</td>
+                                                <td>관악</td>
+                                                <td>조리원이용 (4주이상) 출퇴근 6일</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination pull-right">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">이전</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">1</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">3</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">다음</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- /page content -->
 
-            <!-- footer content -->
-            <footer>
-                <div class="pull-right">
-                    Wellness Intelligence ADMIN PAGE Create by - Spacemonkey
-                </div>
-                <div class="clearfix"></div>
-            </footer>
-            <!-- /footer content -->
+
         </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+                Wellness Intelligence ADMIN PAGE Create by - Spacemonkey
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
     </div>
 
     <!-- jQuery -->
