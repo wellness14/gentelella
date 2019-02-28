@@ -47,23 +47,45 @@
                             <ul class="nav side-menu">
                                 <li>
                                     <a href="order_dash.html">
+                                        <span class="badge bg-gray" style="margin-right: 5px;">0</span>
                                         주문 대시보드
+                                        <span class="red">N</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="order_consult.html">상담/문의</a>
+                                    <a href="order_consult.html">
+                                        <span class="badge bg-gray" style="margin-right: 5px;">0</span>
+                                        상담/문의
+                                        <span class="red">N</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="order_contract_payment.html">계약/결제</a>
+                                    <a href="order_contract_payment.html">
+                                        <span class="badge bg-gray" style="margin-right: 5px;">0</span>
+                                        계약/결제
+                                        <span class="red">N</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="order_service_now.html">서비스</a>
+                                    <a href="order_service_now.html">
+                                        <span class="badge bg-gray" style="margin-right: 5px;">0</span>
+                                        서비스
+                                        <span class="red">N</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="order_extension.html">연장</a>
+                                    <a href="#!">
+                                        <span class="badge bg-gray" style="margin-right: 5px;">0</span>
+                                        연장
+                                        <span class="red">N</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="order_complete.html">완료</a>
+                                    <a href="#!">
+                                        <span class="badge bg-gray" style="margin-right: 5px;">0</span>
+                                        완료
+                                        <span class="red">N</span>
+                                    </a>
                                 </li>
                                 <li>
                                     <a>출산선물
@@ -84,6 +106,9 @@
                                             <a href="#!">현황정보</a>
                                         </li>
                                     </ul>
+                                </li>
+                                <li>
+                                    <a>게시판 관리</a>
                                 </li>
                             </ul>
                         </div>
@@ -115,13 +140,19 @@
                     <nav>
                         <h1 style="display: inline-block; font-size: 25px; margin-top: 15px;">MNB산후도우미</h1>
                         <div class="nav float-right" style="margin-top: 10px;">
-                            <div class="input-group">
+<!--
+                            <input type="text" class="form-control" placeholder="이름, ID, 휴대번호">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary btn-sm">검색</button>
+                            </span>
+-->
+                           <div class="input-group float-left" style="width: 300px;">
                                 <input type="text" class="form-control" placeholder="이름, ID, 휴대번호">
                                 <span class="input-group-btn">
-                                    <button type="button" class="btn btn-primary btn-sm">검색</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".id-search">검색</button>
                                 </span>
-                                <a href="#!" class="btn btn-success btn-sm pull-right float-right">전체저장</a>
                             </div>
+                            <a href="#!" class="btn btn-success pull-right float-right">전체저장</a>
                         </div>
 
                         <ul class="nav navbar-nav float-right">
@@ -134,7 +165,7 @@
                                 <ul class="dropdown-menu dropdown-usermenu pull-right">
                                     <li>
                                         <a href="login.html">
-                                            <i class="fa fa-sign-out pull-right"></i> 로그아웃</a>
+                                        <i class="fa fa-sign-out pull-right"></i> 로그아웃</a>
                                     </li>
                                 </ul>
                             </li>
@@ -246,11 +277,14 @@
                         </div>
 
                         <div class="title_right">
-                            <a href="order_consult_detail.html" class="btn btn-primary btn-sm pull-right consult-save">저장 후 서비스 &middot; 계약정보 이동</a>
-                            <a href="#!" class="btn btn-warning btn-sm pull-right temp-save" data-toggle="modal" data-target=".temp-save-list">임시저장(10)</a>
-                            <a href="#!" class="btn btn-default btn-sm pull-right consult-cancel">작성취소</a>
+                            <a href="order_consult_detail.html" class="btn btn-primary btn-sm pull-right consult-save">저장</a>
+<!--                            <a href="#!" class="btn btn-warning btn-sm pull-right temp-save" data-toggle="modal" data-target=".temp-save-list">임시저장(10)</a>-->
+                            <a href="#" class="btn btn-default btn-sm pull-right consult-list" style="margin-left: 10px;">목록</a>
+                            <a href="#" class="btn btn-default btn-sm pull-right consult-view" style="margin-left: 10px;">뷰</a>
+                            <a href="#" class="btn btn-danger btn-sm pull-right consult-cancel" style="margin-left: 10px;">작성취소</a>
 
                             <!-- 임시저장 팝업 -->
+<!--
                             <div class="modal fade bs-example-modal-lg temp-save-list" tabindex="-1" role="dialog" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
@@ -304,12 +338,13 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
-                                            <!-- <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">보내기</button> -->
+                                             <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">보내기</button> 
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
+-->
                             <!-- 임시저장 팝업 -->
 
                         </div>
@@ -327,10 +362,9 @@
                                         <!--((아이디,이름,휴대번호검색,성함,휴대전화,주소 정보를 가져와서 필드에 반영-->
                                         <span class="input-group-btn">
                                             <button type="button" class="btn btn-secondary btn-addr-search" data-toggle="modal" data-target=".id-search">검색</button>
-
-
                                         </span>
                                     </div>
+                                    <!-- 기본정보 아이디,이름 검색 모달창 -->
                                     <div class="modal fade bs-example-modal-lg id-search">
                                         <div class="modal-dialog modal-lg">
                                             <div class="modal-content">
@@ -388,6 +422,13 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="registration-number">주민등록번호
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12 ">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">휴대전화
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
@@ -412,6 +453,7 @@
                                                 </div>
                                                 <input type="text" class="form-control addr1" placeholder="주소">
                                                 <input type="text" class="form-control addr2" placeholder="상세주소">
+                                                <a href="#!" class="btn btn-primary btn-sm float-right" style="margin-top: 10px; margin-right: 0;">저장</a>
                                             </div>
                                         </div>
                                     </form>
@@ -434,28 +476,28 @@
                                     </h4>
                                     <ul class="list-unstyled">
                                         <li>
-                                            <input type="checkbox" class="flat" id="loc_all">
-                                            <label for="loc_all">전체</label>
+                                            <label for="loc_all"><input type="checkbox" class="flat" id="loc_all">
+                                            전체</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" class="flat" id="">
-                                            <label for="">전화옴</label>
+                                            <label><input type="checkbox" class="flat" id="">
+                                            전화옴</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" class="flat" id="">
-                                            <label for="">홈페이지</label>
+                                            <label><input type="checkbox" class="flat" id="">
+                                            홈페이지</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" class="flat" id="">
-                                            <label for="">전시회</label>
+                                            <label><input type="checkbox" class="flat" id="">
+                                            전시회</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" class="flat" id="">
-                                            <label for="">바우처</label>
+                                            <label><input type="checkbox" class="flat" id="">
+                                             바우처</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" class="flat" id="">
-                                            <label for="">조리원소개</label>
+                                            <label><input type="checkbox" class="flat" id="">
+                                             조리원소개</label>
                                         </li>
                                         <li>
                                             <!-- <input type="checkbox" class="flat" id=""> -->
@@ -470,37 +512,32 @@
                                         추천경로선택
                                         <small>* 지인추천현황은 통계메뉴에서 확인</small>
                                     </h4>
-                                    <ul class="list-unstyled float-left" style="width: 290px">
+                                    <ul class="list-unstyled" style="width: 290px">
                                         <li>
-                                            <input type="checkbox" class="flat" id="">
-                                            <label for="">검색을 통해</label>
+                                            <label><input type="checkbox" class="flat" id="">
+                                             검색을 통해</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" class="flat" id="">
-                                            <label for="">블로그</label>
+                                            <label><input type="checkbox" class="flat" id="">
+                                             블로그</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" class="flat" id="">
-                                            <label for="">지인추천</label>
+                                            <label><input type="checkbox" class="flat" id="">
+                                             지인추천</label>
                                         </li>
                                     </ul>
 
-                                    <div class="input-group reference float-left">
-                                        <div class="input-group">
+                                    <div class="input-group reference">
+                                        <div class="input-group float-left">
                                             <input type="text" class="form-control" placeholder="추천인의 이름, id, 휴대번호">
                                             <span class="input-group-btn">
                                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".user-search">검색</button>
                                             </span>
                                         </div>
-                                        <!-- <input type="text" class="form-control" placeholder="지인추천 선택 시 추천인의 이름이나 id, 휴대번호로 검색">
-                                        <span class="input-group-btn">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".user-search">검색</button>
-                                        </span> -->
                                         <!-- 추천지인검색 팝업 -->
                                         <div class="modal fade bs-example-modal-lg user-search" tabindex="-1" role="dialog" aria-hidden="true">
                                             <div class="modal-dialog modal-lg">
                                                 <div class="modal-content">
-
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal">
                                                             <span aria-hidden="true">×</span>
@@ -542,7 +579,61 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- 추천지인검색 팝업 -->
+                                        <!-- /추천지인검색 팝업 -->
+                                        <!-- 추천관리사 검색-->
+                                        <div class="input-group float-left">
+                                            <input type="text" class="form-control" placeholder="추천관리사의 이름, id, 휴대번호">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".user-search2">검색</button>
+                                            </span>
+                                        </div>
+                                         <!-- 추천관리사검색 팝업 -->
+                                        <div class="modal fade bs-example-modal-lg user-search2" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                        <h4 class="modal-title" id="myModalLabel">추천지인검색</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>아이디</th>
+                                                                    <th>계약자</th>
+                                                                    <th>사업자명</th>
+                                                                    <th>휴대폰번호</th>
+                                                                    <th></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">ruice33</th>
+                                                                    <td>관리사</td>
+                                                                    <td>관리사</td>
+                                                                    <td>010-4461-8845</td>
+                                                                    <td><a href="#!" class="btn btn-xs btn-primary" data-dismiss="modal">확인</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">ruice33</th>
+                                                                    <td>관리사</td>
+                                                                    <td>관리사</td>
+                                                                    <td>010-4461-8845</td>
+                                                                    <td>
+                                                                        <a href="#!" class="btn btn-xs btn-primary" data-dismiss="modal">확인</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /추천관리사검색 팝업 -->
                                     </div>
                                 </div>
                             </div>
@@ -552,7 +643,6 @@
                             <div class="x_panel tile">
                                 <div class="x_title">
                                     <h2>가입정보</h2>
-
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content regist-info">
@@ -576,38 +666,7 @@
                                                     <div class="modal-body">
                                                         <form action="">
                                                             <input type="number" id="" class="form-control" placeholder="전화번호입력">
-                                                            <!-- <div class="btn-group">
-                                                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm" type="button" aria-expanded="false">전체(본사/지사전체)
-                                                                    <span class="caret"></span>
-                                                                </button>
-                                                                <ul role="menu" class="dropdown-menu">
-                                                                    <li>
-                                                                        <a href="#">본사</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">지사</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="btn-group">
-                                                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm" type="button" aria-expanded="false">모든사람에게
-                                                                    <span class="caret"></span>
-                                                                </button>
-                                                                <ul role="menu" class="dropdown-menu">
-                                                                    <li>
-                                                                        <a href="#">서동필</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">손선애</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">정혜윤</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">서원우</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div> -->
+                                                            
                                                             <div class="message-box">
                                                                 <textarea name="" id="" placeholder="내용을 입력해주세요.">마더앤베이비(산후도우미) 회원가입을 부탁드립니다. 
                                                                     
@@ -669,40 +728,40 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">출산경험</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="natal-exp" class="flat" id="">
-                                                    <label for="">초산</label>
-                                                    <input type="radio" name="natal-exp" class="flat" id="">
-                                                    <label for="">경산</label>
+                                                    <label><input type="radio" name="natal-exp" class="flat" id="">
+                                                    초산</label>
+                                                    <label><input type="radio" name="natal-exp" class="flat" id="">
+                                                    경산</label>
                                                 </div>
                                                 <hr>
                                                 <small>* 아래는 경산인 경우 자녀의 정보</small>
                                                 <div class="radio-group">
-                                                    <input type="radio" name="child-gender1" class="flat" id="">
-                                                    <label for="">남</label>
-                                                    <input type="radio" name="child-gender1" class="flat" id="">
-                                                    <label for="">여</label>
-                                                    <input type="number" class="form-control input-sm" placeholder="나이">세
+                                                    <label><input type="radio" name="child-gender1" class="flat" id="">
+                                                    남</label>
+                                                    <label><input type="radio" name="child-gender1" class="flat" id="">
+                                                    여</label>
+                                                    <label><input type="number" class="form-control input-sm" placeholder="나이">세</label>
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="radio" name="child-gender2" class="flat" id="">
-                                                    <label for="">남</label>
-                                                    <input type="radio" name="child-gender2" class="flat" id="">
-                                                    <label for="">여</label>
-                                                    <input type="number" class="form-control input-sm" placeholder="나이">세
+                                                    <label><input type="radio" name="child-gender1" class="flat" id="">
+                                                    남</label>
+                                                    <label><input type="radio" name="child-gender1" class="flat" id="">
+                                                    여</label>
+                                                    <label><input type="number" class="form-control input-sm" placeholder="나이">세</label>
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="radio" name="child-gender3" class="flat" id="">
-                                                    <label for="">남</label>
-                                                    <input type="radio" name="child-gender3" class="flat" id="">
-                                                    <label for="">여</label>
-                                                    <input type="number" class="form-control input-sm" placeholder="나이">세
+                                                    <label><input type="radio" name="child-gender1" class="flat" id="">
+                                                    남</label>
+                                                    <label><input type="radio" name="child-gender1" class="flat" id="">
+                                                    여</label>
+                                                    <label><input type="number" class="form-control input-sm" placeholder="나이">세</label>
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="radio" name="child-gender4" class="flat" id="">
-                                                    <label for="">남</label>
-                                                    <input type="radio" name="child-gender4" class="flat" id="">
-                                                    <label for="">여</label>
-                                                    <input type="number" class="form-control input-sm" placeholder="나이">세
+                                                    <label><input type="radio" name="child-gender1" class="flat" id="">
+                                                    남</label>
+                                                    <label><input type="radio" name="child-gender1" class="flat" id="">
+                                                    여</label>
+                                                    <label><input type="number" class="form-control input-sm" placeholder="나이">세</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -710,12 +769,12 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">태아유형</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="infant-type" class="flat" id="">
-                                                    <label for="">단태아</label>
-                                                    <input type="radio" name="infant-type" class="flat" id="">
-                                                    <label for="">쌍둥이</label>
-                                                    <input type="radio" name="infant-type" class="flat" id="">
-                                                    <label for="">삼태아</label>
+                                                    <label><input type="radio" name="infant-type" class="flat" id="">
+                                                    단태아</label>
+                                                    <label><input type="radio" name="infant-type" class="flat" id="">
+                                                    쌍둥이</label>
+                                                    <label><input type="radio" name="infant-type" class="flat" id="">
+                                                    삼태아</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -723,10 +782,10 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">중증장애산모</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="has-disability" class="flat" id="">
-                                                    <label for="">예</label>
-                                                    <input type="radio" name="has-disability" class="flat" id="">
-                                                    <label for="">아니오</label>
+                                                    <label><input type="radio" name="has-disability" class="flat" id="">
+                                                    예</label>
+                                                    <label><input type="radio" name="has-disability" class="flat" id="">
+                                                    아니오</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -734,8 +793,8 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">산후조리원이용</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="use-natal-center" class="flat" id="">
-                                                    <label for="">예</label>
+                                                    <label><input type="radio" name="use-natal-center" class="flat" id="">
+                                                    예</label>
                                                     <select name="" id="" class="form-control input-sm">
                                                         <option value="">1주</option>
                                                         <option value="">10일</option>
@@ -743,8 +802,8 @@
                                                         <option value="">3주</option>
                                                         <option value="">4주</option>
                                                     </select>
-                                                    <input type="radio" name="use-natal-center" class="flat" id="">
-                                                    <label for="">아니오</label>
+                                                    <label><input type="radio" name="use-natal-center" class="flat" id="">
+                                                    아니오</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -752,12 +811,12 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">관리사서비스 희망장소</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="service-locale" class="flat" id="">
-                                                    <label for="">자택</label>
-                                                    <input type="radio" name="service-locale" class="flat" id="">
-                                                    <label for="">친정</label>
-                                                    <input type="radio" name="service-locale" class="flat" id="">
-                                                    <label for="">시댁</label>
+                                                    <label><input type="radio" name="service-locale" class="flat" id="">
+                                                    자택</label>
+                                                    <label><input type="radio" name="service-locale" class="flat" id="">
+                                                    친정</label>
+                                                    <label><input type="radio" name="service-locale" class="flat" id="">
+                                                    시댁</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -787,24 +846,24 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">태아유형(출산)</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="child-gender" class="flat" id="">
-                                                    <label for="">남</label>
-                                                    <input type="radio" name="child-gender" class="flat" id="">
-                                                    <label for="">여</label>
+                                                    <label><input type="radio" name="child-gender" class="flat" id="">
+                                                    남</label>
+                                                    <label><input type="radio" name="child-gender" class="flat" id="">
+                                                    여</label>
                                                     <input type="number" class="form-control input-sm" placeholder="몸무게">kg
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="radio" name="child-gender" class="flat" id="">
-                                                    <label for="">남</label>
-                                                    <input type="radio" name="child-gender" class="flat" id="">
-                                                    <label for="">여</label>
+                                                    <label><input type="radio" name="child-gender" class="flat" id="">
+                                                    남</label>
+                                                    <label><input type="radio" name="child-gender" class="flat" id="">
+                                                    여</label>
                                                     <input type="number" class="form-control input-sm" placeholder="몸무게">kg
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="radio" name="child-gender" class="flat" id="">
-                                                    <label for="">남</label>
-                                                    <input type="radio" name="child-gender" class="flat" id="">
-                                                    <label for="">여</label>
+                                                    <label><input type="radio" name="child-gender" class="flat" id="">
+                                                    남</label>
+                                                    <label><input type="radio" name="child-gender" class="flat" id="">
+                                                    여</label>
                                                     <input type="number" class="form-control input-sm" placeholder="몸무게">kg
                                                 </div>
                                             </div>
@@ -813,10 +872,10 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">분만정보</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="natal-type" class="flat" id="">
-                                                    <label for="">자연분만</label>
-                                                    <input type="radio" name="natal-type" class="flat" id="">
-                                                    <label for="">제왕절개</label>
+                                                    <label><input type="radio" name="natal-type" class="flat" id="">
+                                                    자연분만</label>
+                                                    <label><input type="radio" name="natal-type" class="flat" id="">
+                                                    제왕절개</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -824,12 +883,12 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">관리사서비스 희망장소</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="service-locale" class="flat" id="">
-                                                    <label for="">자택</label>
-                                                    <input type="radio" name="service-locale" class="flat" id="">
-                                                    <label for="">친정</label>
-                                                    <input type="radio" name="service-locale" class="flat" id="">
-                                                    <label for="">시댁</label>
+                                                    <label><input type="radio" name="service-locale" class="flat" id="">
+                                                    자택</label>
+                                                    <label><input type="radio" name="service-locale" class="flat" id="">
+                                                    친정</label>
+                                                    <label><input type="radio" name="service-locale" class="flat" id="">
+                                                    시댁</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -1111,16 +1170,16 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">바우처 서비스 기간</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">5일</label>
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">10일</label>
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">15일</label>
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">20일</label>
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">25일</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                    5일</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     10일</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     15일</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     20일</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     25일</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -1161,8 +1220,8 @@
                                                 <div class="row">
                                                     <div class="col-md-6 col-sm-6 ">
                                                         <div class="input-group">
-                                                            <input type="checkbox" class="flat">
-                                                            <label for="">고양이</label>
+                                                            <label><input type="checkbox" class="flat">
+                                                             고양이</label>
                                                             <select name="" id="" class="form-control input-sm">
                                                                 <option value="">선택</option>
                                                                 <option value=""></option>
@@ -1170,8 +1229,8 @@
                                                             </select>
                                                         </div>
                                                         <div class="input-group">
-                                                            <input type="checkbox" class="flat">
-                                                            <label for="">새</label>
+                                                            <label><input type="checkbox" class="flat">
+                                                             새</label>
                                                             <select name="" id="" class="form-control input-sm">
                                                                 <option value="">선택</option>
                                                                 <option value=""></option>
@@ -1181,8 +1240,8 @@
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 ">
                                                         <div class="input-group">
-                                                            <input type="checkbox" class="flat">
-                                                            <label for="">개</label>
+                                                            <label><input type="checkbox" class="flat">
+                                                             개</label>
                                                             <select name="" id="" class="form-control input-sm">
                                                                 <option value="">선택</option>
                                                                 <option value=""></option>
@@ -1190,8 +1249,8 @@
                                                             </select>
                                                         </div>
                                                         <div class="input-group">
-                                                            <input type="checkbox" class="flat">
-                                                            <label for="">기타</label>
+                                                            <label><input type="checkbox" class="flat">
+                                                             기타</label>
                                                             <select name="" id="" class="form-control input-sm">
                                                                 <option value="">선택</option>
                                                                 <option value=""></option>
@@ -1224,17 +1283,17 @@
                                                     <label for="" class="control-label col-md-2 col-sm-2 col-xs-12">택배비</label>
                                                     <div class="col-md-10 chk-box">
                                                         <div class="radio-group">
-                                                            <input type="radio" class="flat" name="delivery-fare">
-                                                            <label for="">무료</label>
-                                                            <input type="radio" class="flat" name="delivery-fare">
-                                                            <label for="">유료</label>
+                                                            <label><input type="radio" class="flat" name="delivery-fare">
+                                                             무료</label>
+                                                            <label><input type="radio" class="flat" name="delivery-fare">
+                                                             유료</label>
                                                         </div>
                                                         <hr>
                                                         <label for="">입금일</label>
                                                         <input type="date" class="form-control input-sm">
                                                         <br />
                                                         <br />
-                                                        <label for="">비용</label>
+                                                        <label>비용</label>
                                                         <input type="number" class="form-control input-sm">
                                                     </div>
                                                 </div>
@@ -1242,10 +1301,10 @@
                                                     <label for="" class="control-label col-md-2 col-sm-2 col-xs-12">대여비</label>
                                                     <div class="col-md-10 chk-box">
                                                         <div class="radio-group">
-                                                            <input type="radio" class="flat" name="rent-fare">
-                                                            <label for="">무료</label>
-                                                            <input type="radio" class="flat" name="rent-fare">
-                                                            <label for="">유료</label>
+                                                            <label><input type="radio" class="flat" name="rent-fare">
+                                                             무료</label>
+                                                            <label><input type="radio" class="flat" name="rent-fare">
+                                                             유료</label>
                                                         </div>
                                                         <hr>
                                                         <label for="">입금일</label>
@@ -1305,10 +1364,10 @@
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" class="flat" name="cash-receipt">
-                                                    <label for="">네</label>
-                                                    <input type="radio" class="flat" name="cash-receipt">
-                                                    <label for="">아니오</label>
+                                                    <label><input type="radio" class="flat" name="cash-receipt">
+                                                     네</label>
+                                                    <label><input type="radio" class="flat" name="cash-receipt">
+                                                     아니오</label>
                                                 </div>
                                                 <input type="text" class="form-control input-md">
                                             </div>
@@ -1359,38 +1418,38 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">서비스 형태</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">입주</label>
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">출근</label>
-                                                    <input type="radio" name="service-period" class="flat movein_commute" id="">
-                                                    <label for="">입주+출퇴근</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     입주</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     출근</label>
+                                                    <label><input type="radio" name="service-period" class="flat movein_commute" id="">
+                                                     입주+출퇴근</label>
                                                     <br />
                                                     <div>
                                                         <hr>
                                                         <div class="radio-group">
-                                                            <input type="radio" name="service-period" class="flat" id="">
-                                                            <label for="">5일</label>
-                                                            <input type="radio" name="service-period" class="flat" id="">
-                                                            <label for="">6일</label>
+                                                            <label><input type="radio" name="service-period" class="flat" id="">
+                                                             5일</label>
+                                                            <label><input type="radio" name="service-period" class="flat" id="">
+                                                             6일</label>
                                                         </div>
                                                         <div>
-                                                            <label for="">입주시작</label>
+                                                            <label>입주시작</label>
                                                             <div class="radio-group">
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">입주5일</label>
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">입주6일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 입주5일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 입주6일</label>
                                                                 <input type="date" class="form-control input-inline input-sm">
                                                             </div>
                                                         </div>
                                                         <div>
-                                                            <label for="">출근시작</label>
+                                                            <label>출근시작</label>
                                                             <div class="radio-group">
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">출근5일</label>
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">출근6일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 출근5일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 출근6일</label>
                                                                 <input type="date" class="form-control input-inline input-sm">
                                                             </div>
                                                         </div>
@@ -1516,26 +1575,26 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">추가금 케어형태</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">가족케어</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     가족케어</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">취학아동</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     취학아동</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">추가가족</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     추가가족</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">쌍둥이케어</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     쌍둥이케어</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
@@ -1691,38 +1750,38 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">서비스 형태</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">입주</label>
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">출근</label>
-                                                    <input type="radio" name="service-period" class="flat movein_commute" id="">
-                                                    <label for="">입주+출퇴근</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     입주</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     출근</label>
+                                                    <label><input type="radio" name="service-period" class="flat movein_commute" id="">
+                                                     입주+출퇴근</label>
                                                     <br />
                                                     <div>
                                                         <hr>
                                                         <div class="radio-group">
-                                                            <input type="radio" name="service-period" class="flat" id="">
-                                                            <label for="">5일</label>
-                                                            <input type="radio" name="service-period" class="flat" id="">
-                                                            <label for="">6일</label>
+                                                            <label><input type="radio" name="service-period" class="flat" id="">
+                                                             5일</label>
+                                                            <label><input type="radio" name="service-period" class="flat" id="">
+                                                             6일</label>
                                                         </div>
                                                         <div>
-                                                            <label for="">입주시작</label>
+                                                            <label>입주시작</label>
                                                             <div class="radio-group">
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">입주5일</label>
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">입주6일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 입주5일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 입주6일</label>
                                                                 <input type="date" class="form-control input-inline input-sm">
                                                             </div>
                                                         </div>
                                                         <div>
-                                                            <label for="">출근시작</label>
+                                                            <label>출근시작</label>
                                                             <div class="radio-group">
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">출근5일</label>
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">출근6일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 출근5일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 출근6일</label>
                                                                 <input type="date" class="form-control input-inline input-sm">
                                                             </div>
                                                         </div>
@@ -1733,9 +1792,9 @@
                                         <div class="form-group">
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">관리사배정</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <a href="#!" class="btn btn-default btn-xs btn-dark go-helper-list2" data-toggle="modal" data-target=".helper-list2">관리사목록</a>
+                                                <a href="#!" class="btn btn-default btn-xs btn-dark go-helper-list1" data-toggle="modal" data-target=".helper-list1">관리사목록</a>
                                                 <input type="text" class="form-control input-inline input-sm" placeholder="관리사분 성함">
-                                                <div class="modal fade bs-example-modal-lg helper-list2" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal fade bs-example-modal-lg helper-list1" tabindex="-1" role="dialog" aria-hidden="true">
                                                     <div class="modal-dialog modal-lg">
                                                         <div class="modal-content">
 
@@ -1764,7 +1823,7 @@
                                                                             <td>성동</td>
                                                                             <td>입주선호</td>
                                                                             <td>
-                                                                                <a href="#!" class="btn btn-xs btn-default">상세정보</a>
+                                                                                <a href="policy_manage_helper_detail.html" class="btn btn-xs btn-default" target="_blank">상세정보</a>
                                                                             </td>
                                                                             <td>
                                                                                 <a href="#!" class="btn btn-xs btn-info">선택</a>
@@ -1848,26 +1907,26 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">추가금 케어형태</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">가족케어</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     가족케어</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">취학아동</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     취학아동</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">추가가족</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     추가가족</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">쌍둥이케어</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     쌍둥이케어</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
@@ -2023,38 +2082,38 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">서비스 형태</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">입주</label>
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">출근</label>
-                                                    <input type="radio" name="service-period" class="flat movein_commute" id="">
-                                                    <label for="">입주+출퇴근</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     입주</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     출근</label>
+                                                    <label><input type="radio" name="service-period" class="flat movein_commute" id="">
+                                                     입주+출퇴근</label>
                                                     <br />
                                                     <div>
                                                         <hr>
                                                         <div class="radio-group">
-                                                            <input type="radio" name="service-period" class="flat" id="">
-                                                            <label for="">5일</label>
-                                                            <input type="radio" name="service-period" class="flat" id="">
-                                                            <label for="">6일</label>
+                                                            <label><input type="radio" name="service-period" class="flat" id="">
+                                                             5일</label>
+                                                            <label><input type="radio" name="service-period" class="flat" id="">
+                                                             6일</label>
                                                         </div>
                                                         <div>
-                                                            <label for="">입주시작</label>
+                                                            <label>입주시작</label>
                                                             <div class="radio-group">
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">입주5일</label>
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">입주6일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 입주5일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 입주6일</label>
                                                                 <input type="date" class="form-control input-inline input-sm">
                                                             </div>
                                                         </div>
                                                         <div>
-                                                            <label for="">출근시작</label>
+                                                            <label>출근시작</label>
                                                             <div class="radio-group">
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">출근5일</label>
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">출근6일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 출근5일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 출근6일</label>
                                                                 <input type="date" class="form-control input-inline input-sm">
                                                             </div>
                                                         </div>
@@ -2065,9 +2124,9 @@
                                         <div class="form-group">
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">관리사배정</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <a href="#!" class="btn btn-default btn-xs btn-dark go-helper-list3" data-toggle="modal" data-target=".helper-list3">관리사목록</a>
+                                                <a href="#!" class="btn btn-default btn-xs btn-dark go-helper-list1" data-toggle="modal" data-target=".helper-list1">관리사목록</a>
                                                 <input type="text" class="form-control input-inline input-sm" placeholder="관리사분 성함">
-                                                <div class="modal fade bs-example-modal-lg helper-list3" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal fade bs-example-modal-lg helper-list1" tabindex="-1" role="dialog" aria-hidden="true">
                                                     <div class="modal-dialog modal-lg">
                                                         <div class="modal-content">
 
@@ -2096,7 +2155,7 @@
                                                                             <td>성동</td>
                                                                             <td>입주선호</td>
                                                                             <td>
-                                                                                <a href="#!" class="btn btn-xs btn-default">상세정보</a>
+                                                                                <a href="policy_manage_helper_detail.html" class="btn btn-xs btn-default" target="_blank">상세정보</a>
                                                                             </td>
                                                                             <td>
                                                                                 <a href="#!" class="btn btn-xs btn-info">선택</a>
@@ -2180,26 +2239,26 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">추가금 케어형태</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">가족케어</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     가족케어</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">취학아동</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     취학아동</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">추가가족</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     추가가족</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">쌍둥이케어</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     쌍둥이케어</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
@@ -2355,38 +2414,38 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">서비스 형태</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">입주</label>
-                                                    <input type="radio" name="service-period" class="flat" id="">
-                                                    <label for="">출근</label>
-                                                    <input type="radio" name="service-period" class="flat movein_commute" id="">
-                                                    <label for="">입주+출퇴근</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     입주</label>
+                                                    <label><input type="radio" name="service-period" class="flat" id="">
+                                                     출근</label>
+                                                    <label><input type="radio" name="service-period" class="flat movein_commute" id="">
+                                                     입주+출퇴근</label>
                                                     <br />
                                                     <div>
                                                         <hr>
                                                         <div class="radio-group">
-                                                            <input type="radio" name="service-period" class="flat" id="">
-                                                            <label for="">5일</label>
-                                                            <input type="radio" name="service-period" class="flat" id="">
-                                                            <label for="">6일</label>
+                                                            <label><input type="radio" name="service-period" class="flat" id="">
+                                                             5일</label>
+                                                            <label><input type="radio" name="service-period" class="flat" id="">
+                                                             6일</label>
                                                         </div>
                                                         <div>
-                                                            <label for="">입주시작</label>
+                                                            <label>입주시작</label>
                                                             <div class="radio-group">
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">입주5일</label>
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">입주6일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 입주5일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 입주6일</label>
                                                                 <input type="date" class="form-control input-inline input-sm">
                                                             </div>
                                                         </div>
                                                         <div>
-                                                            <label for="">출근시작</label>
+                                                            <label>출근시작</label>
                                                             <div class="radio-group">
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">출근5일</label>
-                                                                <input type="radio" name="service-period-detail" class="flat" id="">
-                                                                <label for="">출근6일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 출근5일</label>
+                                                                <label><input type="radio" name="service-period-detail" class="flat" id="">
+                                                                 출근6일</label>
                                                                 <input type="date" class="form-control input-inline input-sm">
                                                             </div>
                                                         </div>
@@ -2397,9 +2456,9 @@
                                         <div class="form-group">
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">관리사배정</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <a href="#!" class="btn btn-default btn-xs btn-dark go-helper-list4" data-toggle="modal" data-target=".helper-list4">관리사목록</a>
+                                                <a href="#!" class="btn btn-default btn-xs btn-dark go-helper-list1" data-toggle="modal" data-target=".helper-list1">관리사목록</a>
                                                 <input type="text" class="form-control input-inline input-sm" placeholder="관리사분 성함">
-                                                <div class="modal fade bs-example-modal-lg helper-list4" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal fade bs-example-modal-lg helper-list1" tabindex="-1" role="dialog" aria-hidden="true">
                                                     <div class="modal-dialog modal-lg">
                                                         <div class="modal-content">
 
@@ -2428,7 +2487,7 @@
                                                                             <td>성동</td>
                                                                             <td>입주선호</td>
                                                                             <td>
-                                                                                <a href="#!" class="btn btn-xs btn-default">상세정보</a>
+                                                                                <a href="policy_manage_helper_detail.html" class="btn btn-xs btn-default" target="_blank">상세정보</a>
                                                                             </td>
                                                                             <td>
                                                                                 <a href="#!" class="btn btn-xs btn-info">선택</a>
@@ -2512,26 +2571,26 @@
                                             <label for="" class="control-label col-md-3 col-sm-3 col-xs-12">추가금 케어형태</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12 chk-box">
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">가족케어</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     가족케어</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">취학아동</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     취학아동</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">추가가족</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     추가가족</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>
                                                 <div class="radio-group">
-                                                    <input type="checkbox" class="flat">
-                                                    <label for="">쌍둥이케어</label>
+                                                    <label><input type="checkbox" class="flat">
+                                                     쌍둥이케어</label>
                                                     <input type="date" class="form-control input-sm input-inline"> ~
                                                     <input type="date" class="form-control input-sm input-inline">
                                                 </div>

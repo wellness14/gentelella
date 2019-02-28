@@ -570,6 +570,7 @@
 }
 .order_consult_new .consult-comment .btn {
   margin-top: 10px;
+    margin-right: 10px;
 }
 .order_consult_new .voucher .radio-group {
   margin-bottom: 0;
@@ -1528,6 +1529,24 @@
     height: 0px;
     overflow: hidden;
 }
+
+
+
+/*order_dash.html*/
+/*산모이름 생략표시*/
+.milestoneTable tr th:nth-of-type(2) {
+      overflow: hidden; 
+      text-overflow: ellipsis;
+      white-space: nowrap; 
+    }
+/*MILESTONE color*/
+.label-default-01 {background: #4D566D;}
+.label-default-02 {background: #6E5A7D;}
+.label-default-03 {background: #C36E82;}
+.label-default-04-1 {background: #00A388;}
+.label-default-04-2 {background: #79BD8F;}
+.label-default-04-3 {background: #A7CF73;}
+.label-default-05 {background: #4D566D;}
 
 
 @media (min-width: 992px) {

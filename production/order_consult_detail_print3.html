@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>마더앤베이비 관리자 - 상담상세정보</title>
+
+
+    <style>
+        body {font-size: 10px;}
+        .page {width: 21cm;padding: 0.5cm; margin: 20px auto;background: #fff; border: 1px solid #666; }
+                /*min-height: 29.7cm;*/
+        .row {}
+        h2 {padding: 3px 2px 2px 2px; border-bottom: 1px solid #000;}
+        .tile {margin-bottom: 2px;}
+        .service-price dt {margin-bottom: }
+        .form-control-print {font-size: 9px; color: #333; width: 100%;}
+        
+        .page-divide {page-break-after: always;}
+        .print-button {display: block; text-align: center; margin-top: 20px;}
+
+
+        @page {size: A4;margin: 0;}
+
+        @media print {
+            #print-button {display: none;}
+           .page {border: 0px;}
+        }
+         dl {width: 100%; overflow: hidden;}
+         dt {float: left; font-weight: bold;  margin-right: 5px; background: #777; border-radius: 3px; padding: 2px 3px; color: #fff; font-size: 10px;}
+         dd {float: left; margin: 0px;  margin-right: 10px; margin-top: 1px; font-size: 12px;}
+
+    </style>
+</head>
+
+<body>
+    <a href="javascript:window.print()" class="print-button"><button id="print-button">인쇄하기</button></a>
+    <!-- page content1 -->
+    <div class="page">
+        <div class="subpage">
+                <!-- 개인정보 -->
+                <div>
+                    <div class="x_panel tile">
+                        <h2>기본정보</h2>                            
+                            <dl>
+                                <dt>성함</dt>
+                                <dd>조아라</dd>
+                                <dt>생년월일</dt>
+                                <dd>1990.10.10(만 27세)</dd>
+                                <dt>주민번호</dt>
+                                <dd>900000-0000000</dd>
+                                <dt>연락처</dt>
+                                <dd>010-1111-2222 | 02-111-2222</dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>서울 관악구 관악동 666-34 내일모레아파트 1동101호</dd>
+                            </dl>
+                    </div>
+                </div>
+                <div>
+                    <div class="x_panel tile">
+                        <div class="x_title">
+                            <h2>추천 &middot; 상담정보</h2>
+                        </div>
+                        <div class="x_content recommend-consult">
+                            <dl>
+                                <dt>접근분류</dt>
+                                <dd><span class="label label-default">전화옴</span></dd>
+                                <dt>추천경로</dt>
+                                <dd><span class="label label-default">검색</span></dd>
+                                <dt>상담직원</dt>
+                                <dd><span class="label label-default">조미경</span></dd>
+                                <dt>상담지점</dt>
+                                <dd><span class="label label-default">관악</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- 출산정보 -->
+                <div class=" " style=" ">
+                    <div class="x_panel tile" style=" ">
+                        <div class="x_title">
+                            <h2>사전정보</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content before-info">
+                            <dl>
+                                <dt>지정병원</dt>
+                                <dd>00</dd>
+                                <dt>출산예정일</dt>
+                                <dd>yyyy.mm.dd</dd>
+                                <dt>수술예정일</dt>
+                                <dd>00</dd>
+                            </dl>
+                            <dl>
+                                <dt>출산경험</dt>
+                                <dd>경산 [남(9), 여(6)]</dd>
+                                <dt>태아유형</dt>
+                                <dd>단태아</dd>
+                                <dt>중증장애산모</dt>
+                                <dd>아니오</dd>
+                                <dt>산후조리원 예정</dt>
+                                <dd>2주 이용</dd>
+                                <dt>관리사서비스 희망장소</dt>
+                                <dd>자택</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="x_panel tile" >
+                        <div class="x_title">
+                            <h2>완료정보</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content completion-info">
+                            <dl>
+                                <dt>출산일</dt>
+                                <dd>0000.00.00</dd>
+                                <dt>태아유형(출산)</dt>
+                                <dd>성별[-] 몸무게[-kg]</dd>
+                                <dt>산후조리원</dt>
+                                <dd>0000</dd>
+                                <dt>분만형태</dt>
+                                <dd>0000</dd>
+                                <dt>관리사서비스 장소</dt>
+                                <dd>자택</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="x_panel tile">
+                        <div class="x_title">
+                            <h2>바우처</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content voucher">
+                            <dl>
+                                <dt>바우처 소득유형</dt>
+                                <dd>A-가-3</dd>
+                                <dt>바우처 서비스 기간</dt>
+                                <dd>단축 5일</dd>
+                                <dt>태아유형</dt>
+                                <dd>단태아[사전정보참조]</dd>
+                                <dt>출산순위</dt>
+                                <dd>셋째아[사전정보참조]</dd>
+                            </dl>
+                            <dl>
+                                <dt>정부지원금</dt>
+                                <dd>918,000원 [자동산정]</dd>
+                                <dt>본인부담금</dt>
+                                <dd>102,000원 [자동산정]</dd>
+                                <dt>거주지역</dt>
+                                <dd>서울시 관악구 [주소 자동 참조]</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!--기타정보-->
+                <div>
+                    <div class="x_panel tile">
+                        <div class="x_title">
+                            <h2>기타정보</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content etc-info">
+                            <dl>
+                                <dt>반려동물</dt>
+                                <dd>고양이1 강아지1</dd>
+                                <dt>현금영수증</dt>
+                                <dd>네
+                                    <span>[발행됨]</span>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>대여품목</dt>
+                                <dd>
+                                    <strong>적외선방사 피부관리기</strong><br/>
+                                    시작일 2018.02.22 | 회수일 2018.02.05 
+                                    택배비 유료 | 입금 2018.02.02 | 비용 10,000
+                                    대여비 유료 | 입금 2018.02.02 | 비용 10,000
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>선물</dt>
+                                <dd>
+                                    <strong>아기 체중계 1EA</strong>발송일 2018.02.22
+                                </dd>
+                                <dt>단말기</dt>
+                                <dd>
+                                    <strong>단말기번호 18</strong>
+                                     2018.02.22
+                                    회수일 2018.02.22
+                                </dd>
+                                
+                            </dl>
+<!--
+                            <div class="x_content consult">
+                                <textarea name="" id="" class="form-control-print">----2018.1.13 | 작성자 : 조미경---- 서비스 신청을 위해 입금 하기로 함 ----2018.1.12 | 작성자 : 조미경---- 서비스요청시 신생아 케어에 중점을 둘 것을 부탁</textarea>
+                            </div>
+-->
+                        </div>
+                    </div>
+                </div>
+                
+                <!--상담-->
+                <div>
+                    <div class="x_panel tile">
+                        <div class="x_title">
+                            <h2>상담</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div>
+                            <textarea name="" id="" class="form-control-print" style="min-height: 50px;">----2018.1.13 | 작성자 : 조미경---- 서비스 신청을 위해 입금 하기로 함 ----2018.1.12 | 작성자 : 조미경---- 서비스요청시 신생아 케어에 중점을 둘 것을 부탁----2018.1.13 | 작성자 : 조미경---- 서비스 신청을 위해 입금 하기로 함 ----2018.1.12 | 작성자 : 조미경---- 서비스요청시 신생아 케어에 중점을 둘 것을 부탁----2018.1.13 | 작성자 : 조미경---- 서비스 신청을 위해 입금 하기로 함 ----2018.1.12 | 작성자 : 조미경---- 서비스요청시 신생아 케어에 중점을 둘 것을 부탁----2018.1.13 | 작성자 : 조미경---- 서비스 신청을 위해 입금 하기로 함 ----2018.1.12 | 작성자 : 조미경---- 서비스요청시 신생아 케어에 중점을 둘 것을 부탁----2018.1.13 | 작성자 : 조미경---- 서비스 신청을 위해 입금 하기로 함 ----2018.1.12 | 작성자 : 조미경---- 서비스요청시 신생아 케어에 중점을 둘 것을 부탁</textarea>
+                        </div>
+                    </div>
+                </div>
+
+               
+               <!-- 계산기 -->
+                <div>
+                    <div class="x_panel tile bg-dark">
+                        <div class="x_title">
+                            <h2>서비스 금액</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content service-price">
+                            <dl>
+                                <dt>기본 :
+                                    <span class="label label-default">프라이빗</span>
+                                    <span class="label label-default">2주</span>
+                                    <span class="label label-default">입주</span>
+                                    <span class="label label-default">5일</span>
+                                </dt>
+                                <dd class="text-right" style="text-align: right">2,160,000원</dd>
+                                <dt>옵션</dt>
+                                <dd class="text-right" style="text-align: right">687,000원</dd>
+                            
+                                <dt>연장1 :
+                                    <span class="label label-default">프라이빗</span>
+                                    <span class="label label-default">2주</span>
+                                    <span class="label label-default">입주</span>
+                                    <span class="label label-default">5일</span>
+                                </dt>
+                                <dd class="text-right" style="text-align: right">2,167,000원</dd>
+                                <dt>옵션</dt>
+                                <dd class="text-right" style="text-align: right">687,000원</dd>
+                            </dl>
+                            <dl> 
+                                <dt>연장2 :
+                                    <span class="label label-default">프라이빗</span>
+                                    <span class="label label-default">2주</span>
+                                    <span class="label label-default">입주</span>
+                                    <span class="label label-default">5일</span>
+                                </dt>
+                                <dd class="text-right" style="text-align: right">2,167,000원</dd>
+                                <dt>옵션</dt>
+                                <dd class="text-right" style="text-align: right">687,000원</dd>
+                          
+                                <dt>연장3 :
+                                    <span class="label label-default">프라이빗</span>
+                                    <span class="label label-default">2주</span>
+                                    <span class="label label-default">입주</span>
+                                    <span class="label label-default">5일</span>
+                                </dt>
+                                <dd class="text-right" style="text-align: right">2,167,000원</dd>
+                                <dt>옵션</dt>
+                                <dd class="text-right" style="text-align: right">687,000원</dd>
+                            </dl>
+                            <hr>
+                            <dl>
+                                <dt>
+                                    <span class="total-price-label">총액</span>
+                                </dt>
+                                <dd style="text-align: right">
+                                    <span class="total-price text-right">1,800,000원</span>
+                                </dd>
+                                <dt>
+                                    <span class="voucher-label">바우처</span>
+                                </dt>
+                                <dd style="text-align: right">
+                                    <span class="voucher-price red">1,000,000원</span>
+                                </dd>
+                                <dt>
+                                    <span class="income-label">입금받음</span>
+                                </dt>
+                                <dd style="text-align: right">
+                                    <span class="income-price red">750,000원</span>
+                                </dd>
+                                <dt>
+                                    <span class="balance-label">잔액</span>
+                                </dt>
+                                <dd style="text-align: right">
+                                    <span class="balance-price green">200,000원</span>
+                                </dd>
+                            </dl>
+                            <textarea name="" id="" class="form-control-print" style="min-height: 50px;">*2018.2.23 잔액 입금확인 [조미경 확인] *2018.2.22 추가서비스 신청 [조미경 확인] *2018.2.18 잔금입금 [조미경 확인]</textarea>
+                        </div>
+                    </div>
+                </div>
+               
+                <!--서비스제공-->
+                <div>
+                    <div class="x_panel tile">
+                        <div class="x_title">
+                            <h2>서비스 제공</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content service-offer">
+                            <dl>
+                                <dt>서비스</dt>
+                                <dd>프라이빗</dd>
+                                <dt>서비스 기간</dt>
+                                <dd>2주 / 2018.02.20 ~ 2018.03.05</dd>
+                                <dt>서비스 형태</dt>
+                                <dd>입주 / 5일</dd>
+                                <dt>관리사</dt>
+                                <dd>조아라</dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 케어형태</dt>
+                                <dd>
+                                    가족케어 5일 : <strong>50,000원</strong> /
+                                    취학아동 5일 : <strong>35,000원</strong> /
+                                    추가가족 5일 * 3인 : <strong>75,000원</strong> /
+                                    쌍둥이케어 5일 : <strong>150,000원</strong>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 시간초과</dt>
+                                <dd>
+                                    21일 : <strong>3시간 | 39,000원</strong> /
+                                    22일 : <strong>1시간 | 13,000원</strong> /
+                                    24일(주말) : <strong>2시간 | 26,000원</strong> /
+                                    25일(주말) : <strong>1시간 | 13,000원</strong>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 휴일근무</dt>
+                                <dd>
+                                    24일 : <strong>26,000원</strong> /
+                                    25일 : <strong>13,000원</strong>
+                                </dd>
+                            </dl>
+                            <textarea name="" id="" class="form-control-print" style="min-height: 70px;">2018.1.15 | 작성자 : 조미경---- 관리사(조아라)→관리사(김아라) 변경 완료 2018.1.13 | 작성자 : 조미경---- 관리사(조아라) 배정 완료 2018.1.12 | 작성자 : 조미경---- 서비스 시작
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+<!--
+            </div>
+        </div>
+-->
+                
+                
+        <!-- page content2 -->
+<!--
+        <div class="page">
+            <div class="subpage">
+-->
+                <!--서비스제공 연장1-->
+                <div>
+                    <div class="x_panel tile"  style="page-break-before:always">
+                        <div class="x_title">
+                            <h2>서비스 제공 - 연장1</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content service-offer">
+                            <dl>
+                                <dt>서비스</dt>
+                                <dd>프라이빗</dd>
+                                <dt>서비스 기간</dt>
+                                <dd>2주 / 2018.02.20 ~ 2018.03.05</dd>
+                                <dt>서비스 형태</dt>
+                                <dd>입주 / 5일</dd>
+                                <dt>관리사</dt>
+                                <dd>조아라</dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 케어형태</dt>
+                                <dd>
+                                    가족케어 5일 : <strong>50,000원</strong> /
+                                    취학아동 5일 : <strong>35,000원</strong> /
+                                    추가가족 5일 * 3인 : <strong>75,000원</strong> /
+                                    쌍둥이케어 5일 : <strong>150,000원</strong>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 시간초과</dt>
+                                <dd>
+                                    21일 : <strong>3시간 | 39,000원</strong> /
+                                    22일 : <strong>1시간 | 13,000원</strong> /
+                                    24일(주말) : <strong>2시간 | 26,000원</strong> /
+                                    25일(주말) : <strong>1시간 | 13,000원</strong>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 휴일근무</dt>
+                                <dd>
+                                    24일 : <strong>26,000원</strong> /
+                                    25일 : <strong>13,000원</strong>
+                                </dd>
+                            </dl>
+                            <textarea name="" id="" class="form-control-print" style="min-height: 70px;">2018.1.15 | 작성자 : 조미경---- 관리사(조아라)→관리사(김아라) 변경 완료 2018.1.13 | 작성자 : 조미경---- 관리사(조아라) 배정 완료 2018.1.12 | 작성자 : 조미경---- 서비스 시작
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--서비스제공 연장2-->
+                <div>
+                    <div class="x_panel tile">
+                        <div class="x_title">
+                            <h2>서비스 제공 - 연장2</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content service-offer">
+                            <dl>
+                                <dt>서비스</dt>
+                                <dd>프라이빗</dd>
+                                <dt>서비스 기간</dt>
+                                <dd>2주 / 2018.02.20 ~ 2018.03.05</dd>
+                                <dt>서비스 형태</dt>
+                                <dd>입주 / 5일</dd>
+                                <dt>관리사</dt>
+                                <dd>조아라</dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 케어형태</dt>
+                                <dd>
+                                    가족케어 5일 : <strong>50,000원</strong> /
+                                    취학아동 5일 : <strong>35,000원</strong> /
+                                    추가가족 5일 * 3인 : <strong>75,000원</strong> /
+                                    쌍둥이케어 5일 : <strong>150,000원</strong>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 시간초과</dt>
+                                <dd>
+                                    21일 : <strong>3시간 | 39,000원</strong> /
+                                    22일 : <strong>1시간 | 13,000원</strong> /
+                                    24일(주말) : <strong>2시간 | 26,000원</strong> /
+                                    25일(주말) : <strong>1시간 | 13,000원</strong>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 휴일근무</dt>
+                                <dd>
+                                    24일 : <strong>26,000원</strong> /
+                                    25일 : <strong>13,000원</strong>
+                                </dd>
+                            </dl>
+                            <textarea name="" id="" class="form-control-print" style="min-height: 70px;">2018.1.15 | 작성자 : 조미경---- 관리사(조아라)→관리사(김아라) 변경 완료 2018.1.13 | 작성자 : 조미경---- 관리사(조아라) 배정 완료 2018.1.12 | 작성자 : 조미경---- 서비스 시작
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--서비스제공 연장3-->
+                <div>
+                    <div class="x_panel tile">
+                        <div class="x_title">
+                            <h2>서비스 제공 - 연장3</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content service-offer">
+                            <dl>
+                                <dt>서비스</dt>
+                                <dd>프라이빗</dd>
+                                <dt>서비스 기간</dt>
+                                <dd>2주 / 2018.02.20 ~ 2018.03.05</dd>
+                                <dt>서비스 형태</dt>
+                                <dd>입주 / 5일</dd>
+                                <dt>관리사</dt>
+                                <dd>조아라</dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 케어형태</dt>
+                                <dd>
+                                    가족케어 5일 : <strong>50,000원</strong> /
+                                    취학아동 5일 : <strong>35,000원</strong> /
+                                    추가가족 5일 * 3인 : <strong>75,000원</strong> /
+                                    쌍둥이케어 5일 : <strong>150,000원</strong>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 시간초과</dt>
+                                <dd>
+                                    21일 : <strong>3시간 | 39,000원</strong> /
+                                    22일 : <strong>1시간 | 13,000원</strong> /
+                                    24일(주말) : <strong>2시간 | 26,000원</strong> /
+                                    25일(주말) : <strong>1시간 | 13,000원</strong>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>추가금 휴일근무</dt>
+                                <dd>
+                                    24일 : <strong>26,000원</strong> /
+                                    25일 : <strong>13,000원</strong>
+                                </dd>
+                            </dl>
+                            <textarea name="" id="" class="form-control-print" style="min-height: 70px;">2018.1.15 | 작성자 : 조미경---- 관리사(조아라)→관리사(김아라) 변경 완료 2018.1.13 | 작성자 : 조미경---- 관리사(조아라) 배정 완료 2018.1.12 | 작성자 : 조미경---- 서비스 시작
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- /page content -->
+
+</body>
+
+</html>
